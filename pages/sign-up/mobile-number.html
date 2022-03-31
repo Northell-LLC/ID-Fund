@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <div class="registration">
+        <div class="registration-left-section">
+            <div class="registration-links">
+                <div style="cursor: pointer">
+                    <img src="../../assets/images/arrow-left.svg" alt="img" />
+                    <span>Back</span>
+                </div>
+                <div>
+                    <span>Already have an account?</span>
+                    <a>Login</a>
+                </div>
+            </div>
+            <div class="registration-steps">
+                <div class="registration-step">
+                    <img src="../../assets/images/check-circle.svg" alt="img" />
+                    <p>Sign Up</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/current-step-circle.svg" alt="img" />
+                    <p>Mobile Number and Password</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Confirmation Code</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Address Details</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Qualified Investor</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Sign NDA</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Verify Your Identity</p>
+                </div>
+                <div class="step-hr">
+                    <hr />
+                </div>
+                <div class="registration-step">
+                    <img src="../../assets/images/step-circle.svg" alt="img" />
+                    <p>Registration Complete</p>
+                </div>
+            </div>
+            <p>Mobile Number and Password</p>
+        </div>
+        <div class="registration-right-section">
+            <img src="../../assets/images/logo.svg" alt="logo" />
+            <div class="registration-form">
+                <h1>Mobile Number and Password</h1>
+                <form>
+                    <label class="registration-input">
+                        <span>Mobile number</span>
+                        <input class="input-phone" id="phone" type="number" name="phone" pattern="[0-9]*" placeholder="000 000 0000"/>
+                    </label>
+                    <label class="registration-input">
+                        <span>Password</span>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password" placeholder="••••••••" />
+                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        </div>
+                    </label>
+                    <div class="validation-form">
+                        <div>
+                            <img src="../../assets/images/uncheck-field.svg" alt="img" id="validation_field_1"/>
+                            <span>Must be a leatert 8 characters long</span>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/uncheck-field.svg" alt="img" id="validation_field_2"/>
+                            <span>Must contain a lowercase letter</span>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/uncheck-field.svg" alt="img" id="validation_field_3"/>
+                            <span>Must contain an uppercase letter</span>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/uncheck-field.svg" alt="img" id="validation_field_4"/>
+                            <span>Must contain a special character</span>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/uncheck-field.svg" alt="img" id="validation_field_5"/>
+                            <span>Must contain a number</span>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I have read <a>Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <button class="button">Confirm</button>
+                </form>
+                <div class="registration-form-link">
+                    <a href="#">Privacy Policy | Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../utils/passwordShowHide.js"></script>
+<script type="text/javascript" src="../../utils/passwordValidation.js"></script>
+<script type="text/javascript" src="../../utils/mobileNumber.js"></script>
+</html>
