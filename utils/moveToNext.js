@@ -1,29 +1,23 @@
-function moveToNext (event) {
-    const target = event.target;
-    const maxLength = parseInt(target.attributes["maxlength"].value, 10);
-    const myLength = target.value.length;
-    if (myLength >= maxLength) {
-        let next = target;
-        while (next = next.nextElementSibling) {
-            if (next == null)
-                break;
-            if (next.tagName.toLowerCase() === "input") {
-                next.focus();
-                break;
-            }
+function moveInput(position, target) {
+    const check = position !== 'previous' ? target.nextElementSibling : target.previousElementSibling;
+
+    while (target = check) {
+        if (target.tagName.toLowerCase() === "input") {
+            target.focus();
+            break;
         }
     }
-    // Move to previous field if empty (user pressed backspace)
-    else if (myLength === 0) {
-        let previous = target;
-        while (previous = previous.previousElementSibling) {
-            if (previous == null)
-                break;
-            if (previous.tagName.toLowerCase() === "input") {
-                previous.focus();
-                break;
-            }
-        }
+
+}
+
+function moveToNext (event) {
+    const { target } = event;
+    const myLength = target.value.length;
+
+    if (myLength) {
+        moveInput('next', target);
+    } else {
+        moveInput('previous', target);
     }
 }
 

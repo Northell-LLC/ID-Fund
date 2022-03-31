@@ -1,5 +1,8 @@
-const input = document.querySelectorAll(".input-number");
-
-for (let i = 0; i < input.length; i++) {
-    input[i].addEventListener("input", () => input[i].value = input[i].value.replace(/[^0-9]/g,''));
+function replaceSymbols() {
+    this.value = this.value.replace(/[^0-9]/g,'')
 }
+
+const input = document.querySelectorAll(".input-number");
+input.forEach((el) =>  {
+    el.addEventListener("input", replaceSymbols);
+});

@@ -1,33 +1,21 @@
+function checkPassword (rule, selector) {
+    document.querySelector(selector).src = `../../assets/images/${rule ?  'check' : 'uncheck'}-field.svg`;
+}
+
 function handlePasswordChange (event) {
-    if(event.target.value.length >= 8) {
-        document.querySelector('#validation_field_1').src = '../../assets/images/check-field.svg'
-    } else {
-        document.querySelector('#validation_field_1').src = '../../assets/images/uncheck-field.svg'
-    }
+    const { value } = event.target;
 
-    if(/[a-z]/.test(event.target.value) && event.target.value !== '') {
-        document.querySelector('#validation_field_2').src = '../../assets/images/check-field.svg'
-    } else {
-        document.querySelector('#validation_field_2').src = '../../assets/images/uncheck-field.svg'
-    }
+    const rules = [
+        value.length >= 8,
+        /[a-z]/.test(value) && value !== '',
+        /[A-Z]/.test(value) && value !== '',
+        /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(value) && value !== '',
+        /\d/.test(value)
+    ]
 
-    if(/[A-Z]/.test(event.target.value) && event.target.value !== '') {
-        document.querySelector('#validation_field_3').src = '../../assets/images/check-field.svg'
-    } else {
-        document.querySelector('#validation_field_3').src = '../../assets/images/uncheck-field.svg'
-    }
-
-    if(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(event.target.value) && event.target.value !== '') {
-        document.querySelector('#validation_field_4').src = '../../assets/images/check-field.svg'
-    } else {
-        document.querySelector('#validation_field_4').src = '../../assets/images/uncheck-field.svg'
-    }
-
-    if(/\d/.test(event.target.value)) {
-        document.querySelector('#validation_field_5').src = '../../assets/images/check-field.svg'
-    } else {
-        document.querySelector('#validation_field_5').src = '../../assets/images/uncheck-field.svg'
-    }
+    rules.forEach((rule, index) => {
+        checkPassword(rule, `#validation_field_${index + 1}`);
+    })
 }
 
 const password = document.querySelector('#password');
