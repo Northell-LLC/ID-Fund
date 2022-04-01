@@ -278,41 +278,6 @@ input::-webkit-inner-spin-button {
     border-color: #EFEFEF;
     box-shadow: unset; }
 
-.custom-control-label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #021B79;
-  cursor: pointer; }
-
-.custom-control-label::after {
-  width: 20px;
-  height: 20px;
-  top: -2px;
-  left: -1.7rem; }
-
-.custom-radio .custom-control-label::before {
-  width: 20px;
-  height: 20px;
-  transition: unset;
-  top: -2px;
-  left: -1.7rem;
-  border: 2px solid #4D5D99; }
-
-.custom-control-input:checked ~ .custom-control-label::before {
-  width: 20px;
-  height: 20px; }
-
-.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  left: -1.7rem;
-  border-radius: 50%;
-  background-image: url("../assets/images/Ellipse 1 (Stroke).svg");
-  background-position: center;
-  background-size: cover; }
-
 .form-check .form-check-input {
   cursor: pointer;
   border-color: #021B79;
@@ -322,6 +287,15 @@ input::-webkit-inner-spin-button {
 .form-check .form-check-input:checked {
   background-color: #021B79;
   border-color: #021B79; }
+.form-check .form-check-input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-left: 0;
+  float: unset; }
+.form-check .form-check-input:checked[type=radio] {
+  border: unset;
+  background-color: unset;
+  background-image: url("../assets/images/Ellipse 1 (Stroke).svg"); }
 .form-check .form-check-label {
   font-weight: 500;
   font-size: 14px;
@@ -495,7 +469,10 @@ input::-webkit-inner-spin-button {
     grid-gap: 32px; }
     .registration .radio-wrap > div {
       display: flex;
-      padding-left: 1.7rem; }
+      grid-gap: 10px;
+      align-items: flex-end;
+      margin-right: 0;
+      padding-left: 0; }
   .registration .confirm-number-form {
     display: flex;
     grid-gap: 24px;
