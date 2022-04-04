@@ -3,6 +3,12 @@
 .registration {
   display: flex;
 
+  &-title {
+    >div {
+      display: none;
+    }
+  }
+
   &-description {
     text-align: center;
     font-weight: 500;
@@ -301,20 +307,6 @@
   .registration-form {
     padding: 0;
   }
-}
-
-@media (max-width: 992px) {
-  .registration-links {
-    padding: 40px 40px 0;
-  }
-
-  .registration-right-section {
-    padding: 40px 40px;
-  }
-
-  .registration-steps {
-    padding-left: 40px;
-  }
 
   .registration {
     .confirm-number-form {
@@ -332,9 +324,34 @@
   }
 }
 
+@media (max-width: 992px) {
+  .registration-links {
+    padding: 40px 40px 0;
+  }
+
+  .registration-right-section {
+    padding: 40px 40px;
+  }
+
+  .registration-steps {
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .registration {
     flex-direction: column;
+  }
+
+
+  .registration-title {
+    display: grid;
+    grid-gap: 8px;
+
+    >div {
+      margin-top: 0px;
+      display: flex;
+    }
   }
 
   .registration-left-section {
@@ -455,5 +472,9 @@
 
   .registration-form-link {
     margin-top: -8px;
+  }
+
+  .sign-up {
+    display: none;
   }
 }
