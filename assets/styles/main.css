@@ -308,6 +308,7 @@ input::-webkit-inner-spin-button {
 
 .button {
   width: 100%;
+  font-family: 'Inter', sans-serif;
   background: #021B79;
   border-radius: 8px;
   font-weight: 700;

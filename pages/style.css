@@ -308,6 +308,7 @@ input::-webkit-inner-spin-button {
 
 .button {
   width: 100%;
+  font-family: 'Inter', sans-serif;
   background: #021B79;
   border-radius: 8px;
   font-weight: 700;
@@ -322,6 +323,8 @@ input::-webkit-inner-spin-button {
 
 .registration {
   display: flex; }
+  .registration-title > div {
+    display: none; }
   .registration-description {
     text-align: center;
     font-weight: 500;
@@ -527,16 +530,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 1200px) {
   .registration-form {
-    padding: 0; } }
-@media (max-width: 992px) {
-  .registration-links {
-    padding: 40px 40px 0; }
-
-  .registration-right-section {
-    padding: 40px 40px; }
-
-  .registration-steps {
-    padding-left: 40px; }
+    padding: 0; }
 
   .registration .confirm-number-form {
     grid-gap: 10px; }
@@ -547,9 +541,25 @@ input::-webkit-inner-spin-button {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px; } }
+@media (max-width: 992px) {
+  .registration-links {
+    padding: 40px 40px 0; }
+
+  .registration-right-section {
+    padding: 40px 40px; }
+
+  .registration-steps {
+    padding-left: 40px; } }
 @media (max-width: 768px) {
   .registration {
     flex-direction: column; }
+
+  .registration-title {
+    display: grid;
+    grid-gap: 8px; }
+    .registration-title > div {
+      margin-top: 0px;
+      display: flex; }
 
   .registration-left-section {
     max-width: unset;
@@ -629,6 +639,9 @@ input::-webkit-inner-spin-button {
     margin-top: 8px; }
 
   .registration-form-link {
-    margin-top: -8px; } }
+    margin-top: -8px; }
+
+  .sign-up {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
