@@ -452,6 +452,10 @@ input::-webkit-inner-spin-button {
       grid-gap: 24px; }
       .registration-form form > button {
         margin-top: 16px; }
+  .registration .reset-password-form {
+    grid-gap: 16px; }
+    .registration .reset-password-form > button {
+      margin-top: 24px; }
   .registration-success {
     display: grid;
     justify-items: center; }
@@ -617,6 +621,8 @@ input::-webkit-inner-spin-button {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px; }
+    .registration-links__login {
+      display: none; }
 
   .registration-step p {
     display: none; } }
@@ -637,6 +643,10 @@ input::-webkit-inner-spin-button {
     grid-gap: 32px; }
     .registration-form form > button {
       margin-top: 8px; }
+    .registration-form .reset-password-form {
+      grid-gap: 24px; }
+      .registration-form .reset-password-form > button {
+        margin-top: 8px; }
 
   .registration-success img {
     margin-bottom: 16px; }
