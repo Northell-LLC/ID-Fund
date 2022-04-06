@@ -61,6 +61,12 @@
     }
   }
 
+  .login {
+    padding-top: 212px;
+    padding-right: 80px;
+    padding-left: 0;
+  }
+
   &-step {
     display: flex;
     align-items: center;
@@ -367,6 +373,10 @@
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
+    }
+
+    .login {
+      display: none;
     }
   }
 
