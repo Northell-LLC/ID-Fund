@@ -492,6 +492,8 @@ input::-webkit-inner-spin-button {
       align-items: flex-end;
       margin-right: 0;
       padding-left: 0; }
+      .registration .radio-wrap > div label {
+        font-size: 16px; }
   .registration .confirm-number-form {
     display: flex;
     grid-gap: 24px;
