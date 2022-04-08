@@ -626,6 +626,9 @@ input::-webkit-inner-spin-button {
     .registration-links__login {
       display: none; }
 
+  .registration-success button {
+    max-width: 100% !important; }
+
   .registration-step p {
     display: none; } }
 @media (max-width: 575px) {
