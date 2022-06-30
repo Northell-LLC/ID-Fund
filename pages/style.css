@@ -209,7 +209,7 @@ input {
   font-weight: 500; }
 @font-face {
   font-family: 'Inter';
-  src: url("../fonts/Inter-Bold.ttf");
+  src: url("../assets/fonts/Inter-Regular.ttf");
   font-weight: 700; }
 body {
   font-family: 'Inter', sans-serif; }
@@ -673,4 +673,308 @@ input::-webkit-inner-spin-button {
   .sign-up {
     display: none; } }
 
+  .container {
+    width: 1170px;
+  }
+
+  .hr {
+    background: #c2c2c2;
+    height: 1px;
+  }
+
+  .nav-item {
+    margin: 0 0 0 40px;
+  }
+
+  .nav-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #021B79;
+  }
+
+  .nav-link:hover {
+    color: #021B79;
+  }
+
+  .user-select {
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+  }
+
+  .user-name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #021B79;
+  }
+
+  .deals-title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 48px;
+    color: #00073A;
+    margin: 48px 0 0 0;
+  }
+
+  .page-select {
+    display: flex;
+    margin: 24px 0 0 0;
+  }
+
+  .select-item {
+    position: relative;
+    margin: 0 24px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #021B79;
+  }
+
+  .select-item:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background: #021B79;
+    border-radius: 2px 2px 0 0;
+    transition: 0.2s;
+  }
+
+  .select-item:hover:before {
+    width: 100%;
+  }
+
+  .deals-item {
+    display: flex;
+    justify-content: space-between;
+    height: 293px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+  }
+
+  .item-body {
+    margin: 40px 0 0 40px;
+    width: 505px;
+  }
+
+  .item-header {
+    width: 505px;
+    display: flex;
+    margin: 0 0 17px 0;
+  }
+
+  .item-image {
+    width: 180px;
+    height: 80px;
+  }
+
+  .info-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 4px 0;
+  }
+
+  .info-desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #848899;
+  }
+
+  .item-investments {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 20px 0;
+  }
+
+  .investment-column {
+    width: 158px;
+  }
+
+  .investment-amount {
+    font-size: 16px;
+    line-height: 26px;
+    color: #00073A;
+  }
+
+  .investment-desc {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #848899;
+  }
+
+  .view-deal-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 18px;
+    gap: 10px;
+    width: 105px;
+    height: 40px;
+    background: #021B79;
+    border-radius: 8px;
+  }
+
+  .inner-button {
+    width: 69px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .item-video {
+    height: 293px;
+    width: 585px;
+  }
+
+  .carousel-item {
+    position: relative;
+    padding: 0 0 50% 0;
+  }
+
+  .slider-item {
+    background: #000;
+    height: 293px;
+    width: 585px;
+    color: #98B6D9;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+  }
+
+  .slider-video {
+    object-fit: cover;
+    height: 293px;
+    width: 585px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .video-controls {
+    position: absolute;
+    top: 110px;
+    left: 255px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .breadcrump-container {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: 16px 0 0 0;
+  }
+
+  .breadcrump-container button {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #021B79;
+  }
+
+  .back-button-container {
+    display: flex;
+  }
+
+  .breadcrumb {
+    margin: 0 0 0 24px;
+  }
+
+  .breadcrumb-item {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #021B79;
+  }
+
+  .deal-main {
+    display: flex;
+    gap: 24px;
+    height: 422px;
+    border-radius: 10px;
+    margin: 20px 0 32px 0;
+  }
+
+  .deal-video {
+    position: relative;
+  }
+
+  .video {
+    object-fit: cover;
+    width: 726px;
+    height: 422px;
+    border-radius: 10px;
+  }
+
+  .deal-video-controls {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .deal-info {
+    background: #F7F8FA;
+    border-radius: 10px;
+    width: 406px;
+    height: 422px;
+  }
+
+  .info-container {
+    margin: 40px;
+  }
+
+  .info-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+  }
+
+  .info-investments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .investment-item {
+    margin: 16px 0 0 0;
+  }
+
+  .investment-score {
+    font-size: 26px;
+    line-height: 40px;
+    color: #021B79;
+  }
+
+  .investment-score span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #848899;
+  }
+
+  .investment-desc {
+
+  }
+
+  .investment-button {
+    width: 326px;
+    height: 48px;
+    background: #178213;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 40px 0 0 0;
+  }
 /*# sourceMappingURL=style.css.map */
