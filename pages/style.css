@@ -674,7 +674,7 @@ input::-webkit-inner-spin-button {
     display: none; } }
 
   .container {
-    width: 1170px;
+    max-width: 1170px;
   }
 
   .hr {
@@ -687,13 +687,16 @@ input::-webkit-inner-spin-button {
   }
 
   .nav-link {
-    font-weight: 300;
     font-size: 14px;
     line-height: 22px;
     color: #021B79;
   }
 
   .nav-link:hover {
+    color: #021B79;
+  }
+
+  #active {
     color: #021B79;
   }
 
@@ -708,6 +711,74 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     line-height: 22px;
     color: #021B79;
+  }
+
+  .user-menu {
+    position: relative;
+  }
+
+  .user-menu-mobile {
+    position: relative;
+  }
+
+  .user-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 50;
+    left: -98px;
+    width: 196px;
+    height: 196px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 20px rgba(2, 27, 121, 0.08);
+    border-radius: 10px;
+  }
+
+  .dropdown-list li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: #00073A;
+  }
+
+  .dropdown-list li:last-child {
+    padding: 15px 14px;
+    color: #848899;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .dropdown-list li:hover {
+    background: #F7F8FA;
+    color: #0575E6;
+  }
+
+  .person-icon {
+    display: none;
+  }
+
+  #open {
+    display: none;
+  }
+
+  #close {
+    display: none;
+  }
+
+  .user-dropdown-mobile {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 50;
+    left: -168px;
+    width: 196px;
+    height: 196px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 20px rgba(2, 27, 121, 0.08);
+    border-radius: 10px;
   }
 
   .deals-title {
@@ -726,6 +797,7 @@ input::-webkit-inner-spin-button {
   .select-item {
     position: relative;
     margin: 0 24px 0 0;
+    padding: 0 0 12px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -736,16 +808,24 @@ input::-webkit-inner-spin-button {
     content: '';
     bottom: 0;
     left: 0;
-    position: absolute;
     width: 0;
+    position: absolute;
     height: 4px;
     background: #021B79;
     border-radius: 2px 2px 0 0;
     transition: 0.2s;
   }
 
-  .select-item:hover:before {
+  .select-item.active:before {
     width: 100%;
+  }
+
+  .deals-list {
+    display: block;
+  }
+
+  .deals-completed-list {
+    display: none;
   }
 
   .deals-item {
@@ -760,18 +840,20 @@ input::-webkit-inner-spin-button {
 
   .item-body {
     margin: 40px 0 0 40px;
-    width: 505px;
+    max-width: 505px;
   }
 
   .item-header {
-    width: 505px;
+    max-width: 505px;
     display: flex;
     margin: 0 0 17px 0;
   }
 
   .item-image {
-    width: 180px;
-    height: 80px;
+    min-width: 80px;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 16px 0 0;
   }
 
   .info-title {
@@ -794,7 +876,12 @@ input::-webkit-inner-spin-button {
   }
 
   .investment-column {
-    width: 158px;
+    max-width: 158px;
+    margin: 0 70px 0 0;
+  }
+
+  .completed-margin {
+    margin: 35px 0 0 0;
   }
 
   .investment-amount {
@@ -803,10 +890,23 @@ input::-webkit-inner-spin-button {
     color: #00073A;
   }
 
+  .investment-amount-completed {
+    font-size: 26px;
+    line-height: 40px;
+    color: #00073A;
+  }
+
   .investment-desc {
     font-weight: 300;
     font-size: 12px;
     line-height: 16px;
+    color: #848899;
+  }
+
+  .investment-desc-completed {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
     color: #848899;
   }
 
@@ -824,7 +924,7 @@ input::-webkit-inner-spin-button {
   }
 
   .inner-button {
-    width: 69px;
+    min-width: 69px;
     height: 22px;
     font-size: 14px;
     line-height: 22px;
@@ -832,8 +932,10 @@ input::-webkit-inner-spin-button {
   }
 
   .item-video {
-    height: 293px;
-    width: 585px;
+    width: 100%;
+    height: auto;
+    max-width: 585px;
+    max-height: 293px;
   }
 
   .carousel-item {
@@ -846,23 +948,177 @@ input::-webkit-inner-spin-button {
     height: 293px;
     width: 585px;
     color: #98B6D9;
-    border-radius: 0 10px 10px 0;
     position: relative;
+    border-radius: 0 10px 10px 0;
   }
 
   .slider-video {
     object-fit: cover;
-    height: 293px;
-    width: 585px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 0 10px 10px 0;
   }
 
   .video-controls {
     position: absolute;
-    top: 110px;
-    left: 255px;
+    top: 0;
+    left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  .play-pause-btn {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 1132px) {
+    .deals-item {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      height: 550px;
+      margin: 30px 0 10px 0;
+      padding: 10px 0 0 0;
+    }
+    .view-deal-button {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .item-body {
+      margin: 10px;
+      max-width: 505px;
+    }
+    .item-investments {
+      justify-content: space-between;
+    }
+    .investment-column {
+      margin: 0;
+    }
+    .investment-amount {
+      text-align: center;
+    }
+    .investment-desc {
+      text-align: center;
+    }
+    .item-video {
+      max-height: 200px;
+    }
+    .slider-video {
+      border-radius: 10px 10px 0 0;
+    }
+    .slider-item {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  @media (max-width: 992px) {
+    .container {
+      position: relative;
+    }
+    .navbar-brand {
+      margin: 0;
+    }
+    #open {
+      display: block;
+    }
+    .person-icon {
+      display: block;
+    }
+    .user-dropdown {
+      top: 50;
+      left: 50;
+    }
+    .navbar-mobile {
+      position: absolute;
+      z-index: 15;
+      width: 100%;
+      height: 100vh;
+      top: 70px;
+      left: 0;
+      background-color: #fff;
+    }
+    .navbar-mobile-list {
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .nav-item {
+      margin: 0;
+    }
+
+    .mobile-list-item {
+      text-align: center;
+      height: 90px;
+      padding: 25px;
+    }
+    .mobile-list-item a {
+      font-size: 24px;
+      line-height: 26px;
+      align-self: center;
+    }
+  }
+  @media (max-width: 920px) {
+    .deals-title {
+      margin: 36px 0 0 0;
+    }
+    .deals-item {
+      max-height: 480px;
+      margin: 20px 0 10px 0;
+    }
+    .item-body {
+      margin: 10px;
+      max-width: 505px;
+    }
+    .item-investments {
+      margin: 16px 0 14px 0;
+    }
+    .slider-item {
+      height: 235px;
+    }
+  }
+  @media (max-width: 535px) {
+    .deals-title {
+      margin: 26px 0 0 0;
+    }
+    .page-select {
+      margin: 18px 0 0 0;
+    }
+    .deals-item {
+      max-height: 480px;
+      margin: 20px 0 10px 0;
+    }
+    .slider-item {
+      height: 220px;
+    }
+    .play-pause-btn {
+      left: 44%;
+    }
+  }
+  @media (max-width: 450px) {
+    .play-pause-btn {
+      left: 43%;
+    }
+  }
+  @media (max-width: 416px) {
+    .slider-item {
+      height: 200px;
+    }
+    .play-pause-btn {
+      left: 42%;
+    }
+  }
+  @media (max-width: 370px) {
+    .play-pause-btn {
+      left: 41%;
+    }
   }
 
   .breadcrump-container {
@@ -976,5 +1232,15 @@ input::-webkit-inner-spin-button {
     text-align: center;
     color: #FFFFFF;
     margin: 40px 0 0 0;
+  }
+
+  .videos-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .video-bar-item {
+
   }
 /*# sourceMappingURL=style.css.map */

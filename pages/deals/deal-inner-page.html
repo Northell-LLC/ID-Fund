@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Deals</a>
+                            <a class="nav-link" id="active" href="#">Deals</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
@@ -36,14 +36,23 @@
                             <a class="nav-link" href="#">My Documents</a>
                         </li>
                     </ul>
-                    <div class="my-2 my-lg-0">
-                        <button class="btn my-2 my-sm-0">
+                    <div class="my-2 my-lg-0 user-menu">
+                        <div class="btn my-2 my-sm-0" id="show-dropdown">
                             <div class="user-select">
                                 <img src="../../assets/images/person.svg" alt="person-img">
                                 <p class="user-name">Peter</p>
                                 <img src="../../assets/images/arrow-down.svg" alt="arrow-down-img">
                             </div>
-                        </button>
+                        </div>
+                        <div class="user-dropdown dropdown-opened">
+                            <ul class="dropdown-list">
+                                <li>Profile</li>
+                                <li>My Documents</li>
+                                <li>Settings</li>
+                                <hr class="hr">
+                                <li>Log Out</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,15 +124,78 @@
                 </div>
             </div>
             <hr class="hr">
-            <div class="page-select">
+            <div class="page-select mb-2">
                 <div class="select-item">Overview</div>
                 <div class="select-item">Documents</div>
                 <div class="select-item">Investments</div>
             </div>
             <hr class="hr">
+            <div class="videos-bar">
+                <div class="video-bar-item">
+                    video-1
+                </div>
+                <div class="video-bar-item">
+                    video-2
+                </div>
+                <div class="video-bar-item">
+                    video-3
+                </div>
+            </div>
+            <div class="text-wrapper">
+                <div class="deal-summary">
+                    <div class="deal-summary-title">
+                        Deal Summary
+                    </div>
+                    <div class="deal-summary-main">
+                        <div class="main-text-part">
+                            Credit Sesame is a data analytics and artificial intelligence company that has already helped 15MM+ users
+                            improve their credit scores, increase their approval odds, lower the cost of credit, and save money.
+                        </div>
+                        <div class="main-text-part">
+                            They are funded by leading venture capital firms and strategic investors, including Menlo Ventures,
+                            Inventus Capital, Globespan Capital, IA Capital Groups, Symantec, Capital One Ventures, and Stanford
+                            University, among others. Credit Sesame closed a $30MM Series F round in late 2019 at a $355MM post-money
+                            valuation. The ID Fund has shares at $12.60 per share or a $375MM valuation.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="financial-info">
+                    <div class="info-investment">
+                        <div class="financial-title">
+                            Investment Type
+                        </div>
+                        <div class="financial-cards">
+                            <div class="card-item">
+                                Funding
+                            </div>
+                            <div class="card-item">
+                                Trading
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-industry">
+                        <div class="financial-title">
+                            Investment Type
+                        </div>
+                        <div class="financial-cards">
+                            <div class="card-item">
+                                Consumer
+                            </div>
+                            <div class="card-item">
+                                Products & Services
+                            </div>
+                            <div class="card-item">
+                                Technology
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../../utils/handle-dropdown.js"></script>
 </body>
 </html>

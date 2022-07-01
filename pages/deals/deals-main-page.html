@@ -16,36 +16,67 @@
     <div class="deals">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid container">
+                <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="open"></span>
+                    <span type="button" class="btn-close" id="close" aria-label="Close"></span>
+                </button>
                 <a class="navbar-brand d-flex" href="#">
                     <img src="../../assets/images/id-logo.svg" alt="id-logo">
                     <img src="../../assets/images/fund-logo.svg" alt="fund-logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Deals</a>
+                <div class="my-2 my-lg-0 user-menu-mobile">
+                    <div class="btn my-2 my-sm-0" id="show-dropdown">
+                        <div class="person-icon">
+                            <img src="../../assets/images/person.svg" alt="person-img">
+                        </div>
+                    </div>
+                    <div class="user-dropdown-mobile dropdown-opened">
+                        <ul class="dropdown-list">
+                            <li>Profile</li>
+                            <li>My Documents</li>
+                            <li>Settings</li>
+                            <hr class="hr">
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-mobile" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
+                            <a class="nav-link" id="active" href="#">Deals</a>
                         </li>
-                        <li class="nav-item">
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
                             <a class="nav-link" href="#">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
                             <a class="nav-link" href="#">News</a>
                         </li>
-                        <li class="nav-item">
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
                             <a class="nav-link" href="#">My Documents</a>
                         </li>
+                        <hr class="navbar-mobile-line">
                     </ul>
-                    <div class="my-2 my-lg-0">
-                        <button class="btn my-2 my-sm-0">
+                    <div class="my-2 my-lg-0 user-menu user-menu-visible">
+                        <div class="btn my-2 my-sm-0" id="show-dropdown">
                             <div class="user-select">
                                 <img src="../../assets/images/person.svg" alt="person-img">
                                 <p class="user-name">Peter</p>
-                                <img src="../../assets/images/arrow-down.svg" alt="arrow-down-img">
+                                <img src="../../assets/images/arrow-down.svg" id="dropdown-arrow" alt="arrow-down-img">
                             </div>
-                        </button>
+                        </div>
+                        <div class="user-dropdown dropdown-opened">
+                            <ul class="dropdown-list">
+                                <li>Profile</li>
+                                <li>My Documents</li>
+                                <li>Settings</li>
+                                <hr class="hr">
+                                <li>Log Out</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,8 +87,8 @@
                 Deals
             </div>
             <div class="page-select">
-                <div class="select-item">Open</div>
-                <div class="select-item">Completed</div>
+                <button class="select-item active" id="open-deals-tab">Open</button>
+                <button class="select-item" id="completed-deals-tab">Completed</button>
             </div>
             <hr class="hr">
             <div class="deals-list">
@@ -236,6 +267,140 @@
                     </div>
                 </div>
             </div>
+            <div class="deals-completed-list">
+                <div class="deals-item">
+                    <div class="item-body">
+                        <div class="item-header">
+                            <div class="item-image">
+                                <img src="../../assets/images/reebok-logo.svg" alt="reebok-logo-img">
+                            </div>
+                            <div class="item-info">
+                                <div class="info-title">
+                                    Credit Sesame
+                                </div>
+                                <div class="info-desc">
+                                    Credit Sesame is a data analytics and artificial intelligence company that has
+                                    already helped 15MM+ users improve the…
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr">
+                        <div class="item-investments">
+                            <div class="investment-column completed-margin">
+                                <div class="investment-amount-completed">
+                                    $103,297,765
+                                </div>
+                                <div class="investment-desc-completed">
+                                    Total Invested
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-video">
+                        <div class="slick-slider">
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="item-body">
+                        <div class="item-header">
+                            <div class="item-image">
+                                <img src="../../assets/images/reebok-logo.svg" alt="reebok-logo-img">
+                            </div>
+                            <div class="item-info">
+                                <div class="info-title">
+                                    Credit Sesame
+                                </div>
+                                <div class="info-desc">
+                                    Credit Sesame is a data analytics and artificial intelligence company that has
+                                    already helped 15MM+ users improve the…
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr">
+                        <div class="item-investments">
+                            <div class="investment-column completed-margin">
+                                <div class="investment-amount-completed">
+                                    $103,297,765
+                                </div>
+                                <div class="investment-desc-completed">
+                                    Total Invested
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-video">
+                        <div class="slick-slider">
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <video class="slider-video">
+                                    <source src="../../assets/media/waves-test.webm" type="video/webm">
+                                    <source src="../../assets/media/waves-test.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button type="button" class="play-pause-btn">
+                                        <img src="../../assets/images/play-button.svg" alt="play-button-img">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script
@@ -244,6 +409,9 @@
         crossorigin="anonymous"></script>
     <script src="../../libs/jquery-3.6.0.min.js"></script>
     <script src="../../libs/slick/slick.min.js"></script>
+    <script src="../../utils/handle-burger-menu.js"></script>
     <script src="../../utils/videoHandler.js"></script>
+    <script src="../../utils/deals-selector.js"></script>
+    <script src="../../utils/handle-dropdown.js"></script>
 </body>
 </html>
