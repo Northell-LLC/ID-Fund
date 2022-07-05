@@ -5,31 +5,31 @@ const userMenuMobile = document.querySelector('.user-menu-mobile');
 const dropdownArrow = document.querySelector('#dropdown-arrow');
 
 userMenu.addEventListener('mouseover', () => {
-    userDropdown.style.display = 'block';
-    dropdownArrow.src = '../../assets/images/arrow-up.svg';
+    userDropdown.classList.add('show-user-dropdown');
+    dropdownArrow.classList.add('dropdown-arrow-rotate');
 });
 
 userMenu.addEventListener('mouseout', () => {
-    userDropdown.style.display = 'none';
-    dropdownArrow.src = '../../assets/images/arrow-down.svg';
+    userDropdown.classList.remove('show-user-dropdown');
+    dropdownArrow.classList.remove('dropdown-arrow-rotate');
 });
 
 userMenuMobile.addEventListener('mouseover', () => {
-    userDropdownMobile.style.display = 'block';
-    dropdownArrow.src = '../../assets/images/arrow-up.svg';
+    userDropdownMobile.classList.add('show-user-dropdown');
+    dropdownArrow.classList.add('dropdown-arrow-rotate');
 });
 
 userMenuMobile.addEventListener('mouseout', () => {
-    userDropdownMobile.style.display = 'none';
-    dropdownArrow.src = '../../assets/images/arrow-down.svg';
+    userDropdownMobile.classList.remove('show-user-dropdown');
+    dropdownArrow.classList.remove('dropdown-arrow-rotate');
 });
 
 userDropdown.addEventListener('mouseout', () => {
-    userDropdown.style.display = 'none';
-    dropdownArrow.src = '../../assets/images/arrow-down.svg';
+    userDropdown.classList.remove('show-user-dropdown');
+    dropdownArrow.classList.remove('dropdown-arrow-rotate');
 });
 
 userDropdownMobile.addEventListener('mouseout', () => {
-    userDropdownMobile.style.display = 'none';
-    dropdownArrow.src = '../../assets/images/arrow-down.svg';
+    userDropdownMobile.classList.remove('show-user-dropdown');
+    dropdownArrow.classList.remove('dropdown-arrow-rotate');
 });

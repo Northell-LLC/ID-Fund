@@ -22,13 +22,3 @@ window.onload = function() {
         }
     })
 }
-
-$(document).ready(function(){
-    $('.slick-slider').slick({
-        infinite: true,
-        arrows: true,
-        dots: true,
-        prevArrow: "<img src='../../assets/images/left-arrow.svg' class='prev' alt='left-arrow'>",
-        nextArrow: "<img src='../../assets/images/right-arrow.svg' class='next' alt='right-arrow'>",
-    });
-});

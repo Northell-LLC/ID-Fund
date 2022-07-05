@@ -1,15 +1,14 @@
-
 const overviewTabButton = document.querySelector('#overview-tab-button');
 const documentsTabButton = document.querySelector('#documents-tab-button');
 const investmentsTabButton = document.querySelector('#investments-tab-button');
-const overviewTab = document.querySelector('#overview-tab');
-const documentsTab = document.querySelector('#documents-tab');
-const investmentsTab = document.querySelector('#investments-tab');
+const overviewTab = document.querySelector('.overview-tab');
+const documentsTab = document.querySelector('.documents-tab');
+const investmentsTab = document.querySelector('.investments-tab');
 
 overviewTabButton.addEventListener('click', () => {
-    overviewTab.style.display = 'block';
-    documentsTab.style.display = 'none';
-    investmentsTab.style.display = 'none';
+    overviewTab.classList.add('show-tab');
+    documentsTab.classList.remove('show-tab');
+    investmentsTab.classList.remove('show-tab');
 
     overviewTabButton.classList.add('active');
     documentsTabButton.classList.remove('active');
@@ -17,9 +16,9 @@ overviewTabButton.addEventListener('click', () => {
 });
 
 documentsTabButton.addEventListener('click', () => {
-    overviewTab.style.display = 'none';
-    documentsTab.style.display = 'block';
-    investmentsTab.style.display = 'none';
+    overviewTab.classList.remove('show-tab');
+    documentsTab.classList.add('show-tab');
+    investmentsTab.classList.remove('show-tab');
 
     overviewTabButton.classList.remove('active');
     documentsTabButton.classList.add('active');
@@ -27,9 +26,9 @@ documentsTabButton.addEventListener('click', () => {
 });
 
 investmentsTabButton.addEventListener('click', () => {
-    overviewTab.style.display = 'none';
-    documentsTab.style.display = 'none';
-    investmentsTab.style.display = 'block';
+    overviewTab.classList.remove('show-tab');
+    documentsTab.classList.remove('show-tab');
+    investmentsTab.classList.add('show-tab');
 
     overviewTabButton.classList.remove('active');
     documentsTabButton.classList.remove('active');
