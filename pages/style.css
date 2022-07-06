@@ -1844,4 +1844,130 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  .scroll-lock {
+    overflow: hidden;
+  }
+
+  .modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 40;
+  }
+
+  .modal-wrapper-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -170px 0 0 -300px;
+    display: none;
+    background-color: #fff;
+    width: 600px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 40;
+    padding: 40px;
+  }
+
+  .modal-visible {
+    display: block;
+  }
+
+  .modal-sup-title {
+    font-size: 16px;
+    line-height: 26px;
+    color: #5B6BA6;
+  }
+
+  .modal-title {
+    font-size: 34px;
+    line-height: 48px;
+    color: #00073A;
+    margin: 5px 0 0 0;
+  }
+
+  .input-label {
+    display: block;
+    margin: 16px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #021B79;
+  }
+
+  .input-label input {
+    display: block;
+    width: 520px;
+    height: 48px;
+    margin: 5px 0 0 0;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    padding: 13px 16px;
+  }
+
+  .modal-buttons-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 0 0;
+  }
+
+  .modal-cancel-button {
+    border: 1px solid #021B79;
+    width: 90px;
+    height: 48px;
+    background: #fff;
+    color: #021B79;
+    border-radius: 8px;
+  }
+
+  .modal-sign-button {
+    width: 153px;
+    height: 48px;
+    background: #021B79;
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 690px) {
+    .modal {
+      width: 300px;
+      height: 280px;
+      margin: -170px 0 0 -150px;
+      padding: 12px;
+    }
+    .modal-title {
+      font-size: 30px;
+    }
+    .input-label input {
+      width: 100%;
+    }
+    .modal-buttons-block {
+      margin: 30px 0 0 0;
+    }
+    .modal-cancel-button {
+      width: 132px;
+    }
+    .modal-sign-button {
+      width: 132px;
+    }
+  }
+
 /*# sourceMappingURL=style.css.map */
