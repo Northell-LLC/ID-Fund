@@ -1,4 +1,4 @@
-const openModalButton = document.querySelector('.investment-button');
+const openModalButton = document.querySelector('.open-modal-button');
 const modalWrapper = document.querySelector('.modal-wrapper');
 const modal = document.querySelector('.modal');
 const modalCancelButton = document.querySelector('.modal-cancel-button');

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Account Page</title>
+</head>
+<body class="account-body">
+    <div class="modal-wrapper">
+        <div class="modal modal-update">
+            <div class="update-title">
+                Update Accreditation
+            </div>
+            <div class="update-subtitle">
+                Investments made through this platform require you to be an accredited investor.
+            </div>
+            <div class="update-suptip">
+                Please select an option below
+            </div>
+            <div class="radio-buttons-block">
+                <div class="form-check radio-button-container active-radio" id="radio-1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-1" id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        I`m an individual with income more than $200, 000 per year
+                    </label>
+                </div>
+                <div class="form-check radio-button-container" id="radio-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-2" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        I`m married with income more than $300,000 per year
+                    </label>
+                </div>
+                <div class="form-check radio-button-container" id="radio-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-3" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        My personal net worth is more than $1 Million
+                    </label>
+                </div>
+                <div class="form-check radio-button-container" id="radio-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-4" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Third party verification
+                    </label>
+                </div>
+            </div>
+            <div class="update-subtip">
+                You`ll need to provide a letter starting your accreditation status from a
+                third-party accountant, attorney, broker, or investment adviser.
+            </div>
+            <div class="modal-buttons-block buttons-block-margin">
+                <button class="modal-cancel-button">
+                    Cancel
+                </button>
+                <button class="modal-sign-button save-button">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid container">
+            <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon open burger-opened"></span>
+                <span class="btn-close close" aria-label="Close"></span>
+            </button>
+            <a class="navbar-brand d-flex" href="#">
+                <img src="../../assets/images/id-logo.svg" alt="id-logo">
+                <img src="../../assets/images/fund-logo.svg" alt="fund-logo">
+            </a>
+            <div class="my-2 my-lg-0 user-menu-mobile">
+                <div class="btn my-2 my-sm-0" id="show-dropdown">
+                    <div class="person-icon">
+                        <img src="../../assets/images/person.svg" alt="person-img">
+                    </div>
+                </div>
+                <div class="user-dropdown-mobile dropdown-opened">
+                    <ul class="dropdown-list">
+                        <li>Profile</li>
+                        <li>My Documents</li>
+                        <li>Settings</li>
+                        <hr class="hr">
+                        <li>Log Out</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-mobile" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
+                    <hr class="navbar-mobile-line">
+                    <li class="nav-item mobile-list-item">
+                        <a class="nav-link" id="active" href="#">Deals</a>
+                    </li>
+                    <hr class="navbar-mobile-line">
+                    <li class="nav-item mobile-list-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <hr class="navbar-mobile-line">
+                    <li class="nav-item mobile-list-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <hr class="navbar-mobile-line">
+                    <li class="nav-item mobile-list-item">
+                        <a class="nav-link" href="#">My Documents</a>
+                    </li>
+                    <hr class="navbar-mobile-line">
+                </ul>
+                <div class="my-2 my-lg-0 user-menu user-menu-visible">
+                    <div class="btn my-2 my-sm-0" id="show-dropdown">
+                        <div class="user-select">
+                            <img src="../../assets/images/person.svg" alt="person-img">
+                            <p class="user-name">Peter</p>
+                            <img src="../../assets/images/arrow-down.svg" id="dropdown-arrow" alt="arrow-down-img">
+                        </div>
+                    </div>
+                    <div class="user-dropdown dropdown-opened">
+                        <ul class="dropdown-list">
+                            <li>Profile</li>
+                            <li>My Documents</li>
+                            <li>Settings</li>
+                            <hr class="hr">
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="account-container">
+        <div class="account-header">
+            <div class="account-title">
+                Profile
+            </div>
+            <div class="page-select">
+                <button class="select-item active" id="onboarding-tab-button">Onboarding Status</button>
+                <button class="select-item" id="documents-tab-button">Documents</button>
+                <button class="select-item" id="settings-tab-button">Settings</button>
+            </div>
+            <hr class="hr">
+        </div>
+        <div class="onboarding-tab show-tab">
+            <div class="onboarding-tab-container">
+                <div class="onboarding-person-container">
+                    <div class="onboarding-person">
+                        <div class="onboarding-person-image">
+                            <img src="../../assets/images/person-acc.png" alt="account-person-img">
+                        </div>
+                        <div class="onboarding-person-name">
+                            Kaiya Septimus
+                        </div>
+                    </div>
+                </div>
+                <div class="onboarding-cards">
+                    <div class="onboarding-card">
+                        <div class="onboarding-card-title">
+                            <img src="../../assets/images/agreement.svg" alt="agreement-img">
+                            <span>Non-Disclosure Agreement</span>
+                        </div>
+                        <div class="onboarding-card-text">
+                            Must be executed before viewing any Deals
+                        </div>
+                        <div class="onboarding-card-button">
+                            <button>
+                                <img src="../../assets/images/payment-sent.svg" alt="">
+                                <span>Signed</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="onboarding-card">
+                        <div class="onboarding-card-title">
+                            <img src="../../assets/images/verification.svg" alt="agreement-img">
+                            <span>Identity Verification</span>
+                        </div>
+                        <div class="onboarding-card-text">
+                            The USA Patriot Act requires ID Fund to acquire the following information for identity
+                            verification and «Know Your Customer» requirements.
+                        </div>
+                        <div class="onboarding-card-button">
+                            <button id="verify-button">
+                                <span>Verify</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="onboarding-card">
+                        <div class="onboarding-card-title">
+                            <img src="../../assets/images/accreditation.svg" alt="agreement-img">
+                            <span>Accreditation</span>
+                        </div>
+                        <div class="onboarding-card-text">
+                            Must be verified before investments in Deals are allowed
+                        </div>
+                        <div class="onboarding-card-button">
+                            <button id="update-button" class="open-modal-button">
+                                <img src="../../assets/images/warning-sircle.svg" alt="warning-sircle-img">
+                                <span>Update</span>
+                            </button>
+                            <span>
+                                Will expire 09.04.2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="documents-tab">
+            Documents
+        </div>
+        <div class="settings-tab">
+            Settings
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src="../../utils/handleBurgerMenu.js"></script>
+    <script src="../../utils/handleDropdown.js"></script>
+    <script src="../../utils/accountTabsHandler.js"></script>
+    <script src="../../utils/investmentModalWindow.js"></script>
+    <script src="../../utils/modalRadioButtonshandler.js"></script>
+</body>
+</html>
