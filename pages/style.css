@@ -2015,8 +2015,24 @@ input::-webkit-inner-spin-button {
     align-items: center;
   }
 
+  .onboarding-person-image {
+    position: relative;
+  }
+
   .onboarding-person-image img {
     margin: 0 auto;
+  }
+
+  .pensil-container {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 6px;
+    box-shadow: 0px 2px 10px rgba(2, 27, 121, 0.08);
   }
 
   .onboarding-person-name {
