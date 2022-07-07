@@ -1405,8 +1405,12 @@ input::-webkit-inner-spin-button {
   }
 
   .accordion-button:focus {
-    border: none;
     outline: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button:before {
+    content: none;
   }
 
   .accordion-body {
@@ -1588,6 +1592,7 @@ input::-webkit-inner-spin-button {
 
   .investments-block {
     margin: 40px 0 0 0;
+    max-width: 960px;
   }
 
   .table-header {
@@ -1628,6 +1633,9 @@ input::-webkit-inner-spin-button {
   .status {
     width: 258px;
     text-align: left;
+  }
+
+  .status span {
     border-radius: 8px;
     font-size: 12px;
     line-height: 16px;
@@ -1635,12 +1643,12 @@ input::-webkit-inner-spin-button {
     padding: 8px 12px;
   }
 
-  .status-in-progress {
+  .status-in-progress span {
     background: #FFEBC6;
     color: #D08000;
   }
 
-  .status-completed {
+  .status-completed span {
     background: #DAF2D9;
     color: #095D14;
   }
@@ -1654,12 +1662,17 @@ input::-webkit-inner-spin-button {
   }
 
   .payment-step {
-    width: 169px;
+    width: 190px;
     border-radius: 8px;
     padding: 5px 12px;
   }
 
-  .payment-step-in-progress {
+  .payment-step span {
+    border-radius: 8px;
+    padding: 5px 12px;
+  }
+
+  .payment-step-in-progress span {
     background: #021B79;
     color: #FFFFFF;
     font-size: 14px;
@@ -1667,7 +1680,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
 
-  .payment-step-completed {
+  .payment-step-completed span {
     background: #FFFFFF;
     color: #178213;
     font-weight: 300;
@@ -1688,6 +1701,111 @@ input::-webkit-inner-spin-button {
     font-weight: 400;
   }
 
+  .investment-accordion {
+    display: none;
+  }
+
+  .investment-accordion-item {
+    border: 1px solid #00073A !important;
+    border-radius: 10px !important;
+    padding: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .mobile-item-date {
+    width: 100px;
+  }
+
+  .mobile-item-status {
+    width: 140px;
+  }
+
+  .investment-accordion-button:after {
+    margin: 0 15px;
+  }
+
+  .investment-accordion-body {
+    margin: 0;
+  }
+
+  .accordion-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    width: 100%;
+  }
+
+  .accordion-item-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-item-button {
+    width: 100%;
+  }
+
+  .mobile-item-button span {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-item {
+    text-align: center;
+  }
+
+  .table-last-item {
+    margin-bottom: 5px;
+  }
+
+  .item-divider {
+    width: 100%;
+    background-color: #666;
+  }
+
+  @media (max-width: 956px) {
+    .investments-title {
+      margin: 0 0 20px 20px;
+    }
+    .investments-table {
+      display: none;
+    }
+    .investment-accordion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 495px) {
+    .accordion-item-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 20px 15px 20px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 428px) {
+    .accordion-item-header {
+      margin: 15px 7px;
+    }
+    .investment-accordion-button:after {
+      margin: 0 7px 0 0;
+    }
+  }
+
+  .carousel-toggle-stuff {
+    display: none;
+  }
+
+  .slides-count {
+    display: none;
+    margin: 4px 0 0 0;
+  }
+
   @media (max-width: 1180px) {
     .deal-main {
       flex-direction: column;
@@ -1701,6 +1819,11 @@ input::-webkit-inner-spin-button {
     }
   }
   @media (max-width: 991px) {
+    .human-cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
     .text-wrapper {
       flex-direction: column;
       align-items: center;
@@ -1760,6 +1883,9 @@ input::-webkit-inner-spin-button {
       padding: 0 20px;
     }
     .documents-block {
+      padding: 0 20px;
+    }
+    .investments-block {
       padding: 0 20px;
     }
   }
@@ -1842,6 +1968,67 @@ input::-webkit-inner-spin-button {
       width: 320px;
       height: 169px;
     }
+  }
+  @media (max-width: 415px) {
+    .accordion-body-centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .human-cards {
+      display: none;
+    }
+    .human-card {
+      width: 230px;
+      height: 290px;
+    }
+    .human-image {
+      margin: 0 0 30px 0;
+    }
+    .human-image img {
+      width: 180px;
+      height: 180px;
+    }
+    .carousel-toggle-stuff {
+      display: block;
+      margin: 0 0 0 30px;
+      width: 370px;
+      height: 300px;
+    }
+    .slides-count {
+      display: block;
+    }
+  }
+
+  .item-flex-container {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    width: 150%;
+  }
+
+  .control-prev-bottom {
+    margin-bottom: -330px;
+    margin-left: -20px;
+  }
+
+  .control-next-bottom {
+    margin-bottom: -330px;
+    margin-right: 16px;
+  }
+
+  .control-prev-bottom .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .control-next-bottom .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carousel-item {
+    background: #fff;
   }
 
   .scroll-lock {
