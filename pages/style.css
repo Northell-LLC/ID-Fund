@@ -1943,9 +1943,9 @@ input::-webkit-inner-spin-button {
   }
 
   @media (max-width: 690px) {
-    .modal {
+    .modal-address{
       width: 300px;
-      height: 280px;
+      height: 600px;
       margin: -170px 0 0 -150px;
       padding: 12px;
     }
@@ -2033,6 +2033,11 @@ input::-webkit-inner-spin-button {
     background: #FFFFFF;
     padding: 6px;
     box-shadow: 0px 2px 10px rgba(2, 27, 121, 0.08);
+  }
+
+  .person-image-settings > .pensil-container {
+    bottom: 0;
+    right: -12px;
   }
 
   .onboarding-person-name {
@@ -2259,6 +2264,509 @@ input::-webkit-inner-spin-button {
     .save-button {
       width: 135px;
     }
+  }
+
+  .settings-container {
+    display: flex;
+    margin: 24px 0 0 0;
+  }
+
+  .settings-nav {
+    width: 250px;
+    margin: 0 58px 0 0;
+  }
+
+  .nav-list {
+    margin: 14px 0 34px 0;
+  }
+
+  .nav-list-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 0;
+    width: 200px;
+  }
+
+  .nav-list-item img {
+    width: 21px;
+  }
+
+  .nav-list-item div {
+    margin: 0 0 0 18px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #848899;
+  }
+
+  .nav-list-item .active-settings-tab {
+    color: #021B79;
+  }
+
+  .settings-nav-mobile {
+     margin: 0 0 16px 0;
+  }
+
+  .nav-list-item-mobile {
+    margin: 0;
+  }
+
+  .settings-main {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .account-header {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .account-image-container {
+    display: flex;
+    margin: 28px 0 0 0;
+  }
+
+  .account-image-container img {
+    border-radius: 10px;
+  }
+
+  .image-block {
+    position: relative;
+  }
+
+  .image-block img {
+    position: absolute;
+  }
+
+  .img-settings-block {
+    display: flex;
+  }
+
+  .change-img-button {
+    margin: 0 0 0 24px;
+    width: 130px;
+    height: 40px;
+    background: #021B79;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .delete-img-button {
+    margin: 0 0 0 16px;
+    width: 78px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #021B79;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #021B79;
+  }
+
+  .account-form {
+    margin: 24px 0 0 0;
+  }
+
+  .form-name {
+    display: flex;
+    margin: 0 0 24px 0;
+  }
+
+  .form-name-field {
+
+  }
+
+  .form-surname-field {
+    margin: 0 0 0 16px;
+  }
+
+  .form-person-field input {
+    margin-top: 0;
+    margin: 6px 0 0 0;
+    width: 196px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+    padding: 13px 16px;
+  }
+
+  .form-label {
+    font-size: 14px;
+    line-height: 22px;
+    color: #021B79;
+  }
+
+  .email-address {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #848899;
+  }
+
+  .form-number {
+    margin: 24px 0 0 0;
+  }
+
+  .form-number input {
+    width: 408px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+    padding: 13px 16px;
+  }
+
+  .form-notifications {
+    margin: 24px 0 0 0;
+  }
+
+  .form-notifications .form-check label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+    margin: 0;
+  }
+
+  .form-address-block {
+    margin: 24px 0 0 0;
+  }
+
+  .form-flex-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .address-edit-button {
+    margin: 0 0 0 12px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0575E6;
+  }
+
+  .form-address {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+  }
+
+  .form-save-changes {
+    margin: 24px 0 0 0;
+    padding: 13px 20px;
+    width: 138px;
+    height: 48px;
+    background: #021B79;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .settings-nav-select {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    margin: 0 0 16px 0;
+  }
+
+  .settings-nav-select:focus {
+    border: 1px solid #021B79;
+  }
+
+  .settings-nav-select option {
+    background-color: #178213;
+  }
+
+  .settings-nav-mobile {
+    width: 100%;
+    display: none;
+  }
+
+  .modal-address {
+    height: 600px;
+    margin: -300px 0 0 -300px;
+  }
+
+  .change-password-main {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .change-password-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0 0 24px 0;
+  }
+
+  .form-field {
+    margin: 0 0 16px 0;
+  }
+
+  .form-field input {
+    width: 408px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+    padding: 13px 16px;
+  }
+
+  .change-password-button {
+    margin: 18px 0 0 0;
+    padding: 13px 20px;
+    background: #021B79;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .settings-tab-hidden {
+    display: none;
+  }
+
+  .edit-address-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #00073A;
+    margin: 0 0 40px 0;
+  }
+
+  .form-field >.address-form-input {
+    width: 100%;
+  }
+
+  .edit-address-select {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #EFEFEF;
+    margin: 0 0 16px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00073A;
+  }
+
+  .form-city-block {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .form-city-block > .form-field {
+    width: 100%;
+  }
+
+  .address-form-buttons-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px 0 0 0;
+  }
+
+  .save-address-changes {
+    margin: 0;
+  }
+
+  @media(max-width: 772px) {
+    .settings-nav {
+      display: none;
+    }
+    .settings-nav-mobile {
+      display: block;
+    }
+    .settings-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media(max-width: 690px) {
+    .modal-address {
+      width: 375px;
+      max-height: 620px;
+      margin: -300px 0 0 -185px;
+      padding: 12px;
+    }
+    .form-city-block {
+      flex-direction: column;
+      gap: 0;
+    }
+    .form-city-block > .form-field > .edit-address-select {
+      margin: 0;
+    }
+    .address-form-buttons-block {
+      gap: 10px;
+    }
+    .address-form-buttons-block > .modal-cancel-button {
+      width: 100%;
+    }
+    .address-form-buttons-block > .save-address-changes {
+      width: 100%;
+    }
+  }
+  @media(max-width: 500px) {
+    .settings-main {
+      padding: 15px 10px;
+    }
+    .change-password-main {
+      padding: 15px 10px;
+    }
+    .form-field input {
+      width: 100%;
+    }
+  }
+  @media(max-width: 460px) {
+    .form-name {
+      width: 100%;
+    }
+    .form-person-field input {
+      width: 100%;
+    }
+    .form-number input {
+      width: 100%;
+    }
+    .img-settings-block {
+      flex-direction: column;
+    }
+    .delete-img-button {
+      margin: 12px 0 0 24px;
+    }
+  }
+
+  .form-group-title {
+    font-style: 22px;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .form-group + .form-group {
+    margin-top: 10px;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #FFFFFF;
+    border: 1px solid #7E9BBD;
+    border-radius: 6px;
+    height: 46px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .dropdown-button:focus, .dropdown-button-active {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(176, 198, 225, 0.6);
+  }
+
+  .dropdown-button::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #021B79;
+    border-right: 1.5px solid #021B79;
+    margin-right: 10px;
+    transform: rotate(135deg);
+    pointer-events: none;
+  }
+
+  .dropdown-list {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 52px;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(176, 198, 225, 0.6);
+    overflow: hidden;
+
+    border-radius: 6px;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  .dropdown-list-visible {
+    display: block;
+  }
+
+  .dropdown-list-item {
+    margin: 0;
+    padding: 0;
+    padding: 13px 20px;
+    cursor: pointer;
+  }
+
+  .dropdown-list-item:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .dropdown-list-item:last-child {
+    border-radius: 0 0 6px 6px;
+    border-bottom: 1px solid #7E9BBD;
+  }
+
+  .dropdown-list-item:hover {
+    background: rgba(176, 198, 225, 0.26);
+  }
+
+  .dropdown-input-hidden {
+    display: none;
   }
 
 /*# sourceMappingURL=style.css.map */

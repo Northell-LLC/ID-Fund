@@ -12,57 +12,6 @@
     <title>Account Page</title>
 </head>
 <body class="account-body">
-    <div class="modal-wrapper">
-        <div class="modal modal-update">
-            <div class="update-title">
-                Update Accreditation
-            </div>
-            <div class="update-subtitle">
-                Investments made through this platform require you to be an accredited investor.
-            </div>
-            <div class="update-suptip">
-                Please select an option below
-            </div>
-            <div class="radio-buttons-block">
-                <div class="form-check radio-button-container active-radio" id="radio-1">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-1" id="flexRadioDefault1" checked>
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        I`m an individual with income more than $200, 000 per year
-                    </label>
-                </div>
-                <div class="form-check radio-button-container" id="radio-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-2" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        I`m married with income more than $300,000 per year
-                    </label>
-                </div>
-                <div class="form-check radio-button-container" id="radio-3">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-3" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        My personal net worth is more than $1 Million
-                    </label>
-                </div>
-                <div class="form-check radio-button-container" id="radio-4">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-4" id="flexRadioDefault4">
-                    <label class="form-check-label" for="flexRadioDefault4">
-                        Third party verification
-                    </label>
-                </div>
-            </div>
-            <div class="update-subtip">
-                You`ll need to provide a letter starting your accreditation status from a
-                third-party accountant, attorney, broker, or investment adviser.
-            </div>
-            <div class="modal-buttons-block buttons-block-margin">
-                <button class="modal-cancel-button">
-                    Cancel
-                </button>
-                <button class="modal-sign-button save-button">
-                    Save
-                </button>
-            </div>
-        </div>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid container">
             <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,6 +92,57 @@
             <hr class="hr">
         </div>
         <div class="onboarding-tab show-tab">
+            <div class="modal-wrapper">
+                <div class="modal modal-update">
+                    <div class="update-title">
+                        Update Accreditation
+                    </div>
+                    <div class="update-subtitle">
+                        Investments made through this platform require you to be an accredited investor.
+                    </div>
+                    <div class="update-suptip">
+                        Please select an option below
+                    </div>
+                    <div class="radio-buttons-block">
+                        <div class="form-check radio-button-container active-radio" id="radio-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-1" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                I`m an individual with income more than $200, 000 per year
+                            </label>
+                        </div>
+                        <div class="form-check radio-button-container" id="radio-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-2" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                I`m married with income more than $300,000 per year
+                            </label>
+                        </div>
+                        <div class="form-check radio-button-container" id="radio-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-3" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                My personal net worth is more than $1 Million
+                            </label>
+                        </div>
+                        <div class="form-check radio-button-container" id="radio-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-4" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Third party verification
+                            </label>
+                        </div>
+                    </div>
+                    <div class="update-subtip">
+                        You`ll need to provide a letter starting your accreditation status from a
+                        third-party accountant, attorney, broker, or investment adviser.
+                    </div>
+                    <div class="modal-buttons-block buttons-block-margin">
+                        <button class="modal-cancel-button">
+                            Cancel
+                        </button>
+                        <button class="modal-sign-button save-button">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="onboarding-tab-container">
                 <div class="onboarding-person-container">
                     <div class="onboarding-person">
@@ -213,7 +213,226 @@
             Documents
         </div>
         <div class="settings-tab">
-            Settings
+            <div class="settings-container">
+                <div class="settings-nav">
+                    <div class="nav-list">
+                        <button class="nav-list-item active-settings-tab" id="settings-acc-button">
+                            <img src="../../assets/images/verification.svg" alt="account-img">
+                            <div class="active-settings-tab">Account</div>
+                        </button>
+                        <button class="nav-list-item" id="settings-password-button">
+                            <img src="../../assets/images/lock-grey.svg" alt="lock-grey-img">
+                            <div class="">Change Password</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="settings-nav-mobile">
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <button class="dropdown-button">
+                                <div class="nav-list-item nav-list-item-mobile">
+                                    <img src="../../assets/images/verification.svg" alt="account-img">
+                                    <div class="active-settings-tab">Account</div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list-item" data-value="account">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/verification.svg" alt="account-img">
+                                        <div class="active-settings-tab">Account</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-list-item" data-value="changePassword">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/lock-grey.svg" alt="lock-grey-img">
+                                        <div class="">Change Password</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown-input-hidden" >
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-main">
+                    <div class="modal-wrapper modal-address-wrapper">
+                        <div class="modal modal-address">
+                            <div class="edit-address-title">
+                                Edit Address
+                            </div>
+                            <form class="edit-address-form">
+                                <div class="form-field">
+                                    <div class="form-label">
+                                        Country
+                                    </div>
+                                    <input type="text" class="number-input address-form-input" value="3677 Briarwood Road">
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-label">
+                                        Address
+                                    </div>
+                                    <select class="form-select edit-address-select" aria-label="Default select example">
+                                        <option value="1" selected>
+                                            United States
+                                        </option>
+                                        <option value="2">
+                                            France
+                                        </option>
+                                        <option value="3">
+                                            Canada
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <div class="form-label">
+                                        State / Province
+                                    </div>
+                                    <select class="form-select edit-address-select" aria-label="Default select example">
+                                        <option value="1" selected>
+                                            MO
+                                        </option>
+                                        <option value="2">
+                                            Texas
+                                        </option>
+                                        <option value="3">
+                                            Nevada
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-city-block">
+                                    <div class="form-field">
+                                        <div class="form-label">
+                                            City
+                                        </div>
+                                        <select class="form-select edit-address-select" aria-label="Default select example">
+                                            <option value="1" selected>
+                                                New York
+                                            </option>
+                                            <option value="2">
+                                                Dallas
+                                            </option>
+                                            <option value="3">
+                                                Washington
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field">
+                                        <div class="form-label">
+                                            Zip Code
+                                        </div>
+                                        <input type="text" class="number-input address-form-input" value="64804">
+                                    </div>
+                                </div>
+                                <div class="address-form-buttons-block">
+                                    <button class="modal-cancel-button modal-address-cancel-button">
+                                        Cancel
+                                    </button>
+                                    <button class="form-save-changes save-address-changes">
+                                        Save Changes
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="account-header">
+                        Account
+                    </div>
+                    <div class="account-image-container">
+                        <div class="onboarding-person-image person-image-settings">
+                            <div class="pensil-container">
+                                <img src="../../assets/images/upload-photo.svg" alt="pensil-img" class="pensil">
+                            </div>
+                            <img src="../../assets/images/person-acc.png" alt="account-person-img">
+                        </div>
+                        <div class="img-settings-block">
+                            <button class="change-img-button">
+                                Upload Image
+                            </button>
+                            <button class="delete-img-button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="account-form">
+                        <div class="form-name">
+                            <div class="form-name-field form-person-field">
+                                <div class="form-label">First Name</div>
+                                <input type="text" value="Peter">
+                            </div>
+                            <div class="form-surname-field form-person-field">
+                                <div class="form-label">Last Name</div>
+                                <input type="text" value="Brooks">
+                            </div>
+                        </div>
+                        <div class="form-email">
+                            <div class="form-label">
+                                Email ID
+                            </div>
+                            <div class="email-address">
+                                rjbktaylor@yahoo.com
+                            </div>
+                        </div>
+                        <div class="form-number">
+                            <div class="form-label">
+                                Mobile Number
+                            </div>
+                            <input type="text" class="number-input" value="+1 987 654 3210">
+                        </div>
+                        <div class="form-notifications">
+                            <div class="form-label">
+                                Notifications
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Receive notifications via mobile number</label>
+                            </div>
+                        </div>
+                        <div class="form-address-block">
+                            <div class="form-flex-container">
+                                <div class="form-label">
+                                    Address
+                                </div>
+                                <button class="address-edit-button open-address-modal-button">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="form-address">
+                                3677 Briarwood Road, Joplin, MO, USA, 64804
+                            </div>
+                        </div>
+                        <button class="form-save-changes">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+                <div class="change-password-main settings-tab-hidden">
+                    <div class="change-password-title">
+                        Change Password
+                    </div>
+                    <form class="change-password-form">
+                        <div class="form-field">
+                            <div class="form-label">
+                                Mobile Number
+                            </div>
+                            <input type="text" class="number-input" placeholder="Enter current password">
+                        </div>
+                        <div class="form-field">
+                            <div class="form-label">
+                                New Password
+                            </div>
+                            <input type="text" class="number-input" placeholder="Enter new password">
+                        </div>
+                        <div class="form-field">
+                            <div class="form-label">
+                                Repeat New Password
+                            </div>
+                            <input type="text" class="number-input" placeholder="Repeat new password">
+                        </div>
+                        <button class="change-password-button">
+                            Change Password
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script
@@ -224,7 +443,8 @@
     <script src="../../utils/handleBurgerMenu.js"></script>
     <script src="../../utils/handleDropdown.js"></script>
     <script src="../../utils/accountTabsHandler.js"></script>
-    <script src="../../utils/investmentModalWindow.js"></script>
+    <script src="../../utils/modalWindow.js"></script>
     <script src="../../utils/modalRadioButtonshandler.js"></script>
+    <script src="../../utils/settingsTabHandler.js"></script>
 </body>
 </html>
