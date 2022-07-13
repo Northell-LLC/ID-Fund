@@ -2,7 +2,7 @@ const openModalButton = document.querySelector('.investment-button');
 const modalWrapper = document.querySelector('.modal-wrapper');
 const modal = document.querySelector('.modal');
 const modalCancelButton = document.querySelector('.modal-cancel-button');
-const body = document.querySelector('body');
+const body = document.querySelector('.body');
 
 
 openModalButton.addEventListener('click', () => {
