@@ -1140,6 +1140,10 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  .navbar-light .navbar-nav .nav-link {
+    color: #848899;
+  }
+
   .breadcrump-container {
     display: flex;
     align-items: center;
