@@ -713,6 +713,10 @@ input::-webkit-inner-spin-button {
     color: #021B79;
   }
 
+  .user-name-active {
+    color: #0575E6;
+  }
+
   .user-menu {
     position: relative;
   }
@@ -1010,6 +1014,10 @@ input::-webkit-inner-spin-button {
     align-items: center;
   }
 
+  .play-pause-hide {
+    display: none;
+  }
+
   .prev,
   .next {
     position: absolute;
@@ -1023,6 +1031,20 @@ input::-webkit-inner-spin-button {
 
   .next {
     right: 0;
+  }
+
+  .carousel-arrow-left-wrapper {
+    padding: 7px 9px 5px 5px;
+    height: 46px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+  }
+
+  .carousel-arrow-right-wrapper {
+    padding: 7px 5px 5px 9px;
+    height: 46px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
   }
 
   @media (max-width: 1132px) {
@@ -1151,7 +1173,7 @@ input::-webkit-inner-spin-button {
     margin: 16px 0 0 0;
   }
 
-  .breadcrump-container button {
+  .breadcrump-container a {
     font-weight: 300;
     font-size: 12px;
     line-height: 16px;
