@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Credit Sesame Company IV</title>
 </head>
-<body>
+<body  class="body">
     <div class="deals">
         <div class="modal-window">
             <div class="modal-wrapper">
@@ -49,7 +49,7 @@
                 <div class="my-2 my-lg-0 user-menu-mobile">
                     <div class="btn my-2 my-sm-0" id="show-dropdown">
                         <div class="person-icon">
-                            <img src="../../assets/images/person.svg" alt="person-img">
+                            <img src="../../assets/images/person.svg" class="user-icon-mobile" alt="person-img">
                         </div>
                     </div>
                     <div class="user-dropdown-mobile dropdown-opened">
@@ -85,7 +85,7 @@
                     <div class="my-2 my-lg-0 user-menu user-menu-visible">
                         <div class="btn my-2 my-sm-0" id="show-dropdown">
                             <div class="user-select">
-                                <img src="../../assets/images/person.svg" alt="person-img">
+                                <img src="../../assets/images/person.svg" class="user-icon" alt="person-img">
                                 <p class="user-name">Peter</p>
                                 <img src="../../assets/images/arrow-down.svg" id="dropdown-arrow" alt="arrow-down-img">
                             </div>
@@ -109,7 +109,7 @@
                 <div class="breadcrump-container">
                     <div class="back-button-container">
                         <img src="../../assets/images/back-arrow.svg" alt="back-arrow-img">
-                        <button class="back-button">Back</button>
+                        <a href="./deals-main-page.html" class="back-button">Back</a>
                     </div>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -164,7 +164,7 @@
                                     Min. Investment
                                 </div>
                             </div>
-                            <button class="investment-button">
+                            <button class="investment-button open-modal-button">
                                 Invest Now
                             </button>
                         </div>
@@ -267,12 +267,16 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <div class="carousel-arrow-left-wrapper">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <div class="carousel-arrow-right-wrapper">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
                 </button>
             </div>
             <div class="text-wrapper decrease-margin">
