@@ -125,7 +125,10 @@ body, button, input, optgroup, select, textarea {
   color: unset;
   font-family: sans-serif;
   font-size: 1rem; }
-
+  
+body{
+  font-weight: 500;
+  }
 select::-ms-expand {
   display: none; }
 
