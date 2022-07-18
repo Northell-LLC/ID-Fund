@@ -343,12 +343,12 @@ input::-webkit-search-cancel-button {
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Regular.ttf");
+  src: url("../assets//fonts/Inter-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Medium.ttf");
+  src: url("../assets/fonts/Inter-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
@@ -452,6 +452,11 @@ input::-webkit-inner-spin-button {
   height: 1rem;
   padding: 0;
 }
+
+.form-switch .form-check-input{
+  width: 2rem;
+}
+
 .form-check .form-check-input:checked {
   background-color: #021b79;
   border-color: #021b79;
@@ -768,7 +773,9 @@ input::-webkit-inner-spin-button {
   .registration-form {
     padding: 0;
   }
-
+  .user-menu-mobile {
+   display: none;
+  }
   .registration .confirm-number-form {
     grid-gap: 10px;
   }
@@ -2000,6 +2007,11 @@ input::-webkit-inner-spin-button {
   color: #848899;
   font-weight: 400;
 }
+.row-name  {
+  width: 186px;
+
+}
+
 
 .investment-accordion {
   display: none;
@@ -2862,6 +2874,7 @@ input::-webkit-inner-spin-button {
 .account-image-container {
   display: flex;
   margin: 28px 0 0 0;
+  align-items: center;
 }
 
 .account-image-container img {
@@ -2882,7 +2895,7 @@ input::-webkit-inner-spin-button {
 
 .change-img-button {
   margin: 0 0 0 24px;
-  width: 130px;
+  width: 135px;
   height: 40px;
   background: #021b79;
   border-radius: 8px;
@@ -2924,9 +2937,6 @@ input::-webkit-inner-spin-button {
 .form-name {
   display: flex;
   margin: 0 0 24px 0;
-}
-
-.form-name-field {
 }
 
 .form-surname-field {
@@ -3605,7 +3615,7 @@ label {
 
 .change-img-button {
   margin: 0 0 0 24px;
-  width: 130px;
+  width: 135px;
   height: 40px;
   background: #021b79;
   border-radius: 8px;
@@ -3634,9 +3644,12 @@ label {
   display: none;
 }
 
-.settings-main,
 .subscriptions-main {
   padding: 15px 10px;
+}
+
+.settings-main {
+  padding: 40px
 }
 
 .account-sub-header {
@@ -3807,6 +3820,15 @@ label {
   height: 19.5px;
   margin: 0 6px 4px 0;
 }
+.documents-table-dates, .documents-table-deal, .documents-table-company, .documents-table-breakdowns,.documents-table-amount {
+  width: 244px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
 
 .documents-table-name span {
   font-weight: 300;
@@ -4031,5 +4053,54 @@ label {
     margin: 16px 0 0 0;
   }
 }
+.portfolio-main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.portfolio-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0px 24px 0px;
+}
 
+.portfolio-text-title {
+  font-size: 30px;
+  color: #021b79;
+  font-weight: 500;
+}
+.investments-container {
+display: flex;
+}
+.total-investments, .last-investments{
+  background-color: white;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 7%);
+  border-radius: 10px;
+  height: 138px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.total-investments{
+  margin-right:24px
+}
+.total-investments div, .last-investments div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total-investments div span:first-child, .last-investments div span:first-child{
+  font-size: 26px;
+  margin-right: 40px;
+}
+.total-investments div span:nth-child(2), .last-investments div span:nth-child(2){
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 16px;
+   color: #848899;
+   margin-top: 2px;
+}
 /*# sourceMappingURL=style.css.map */
