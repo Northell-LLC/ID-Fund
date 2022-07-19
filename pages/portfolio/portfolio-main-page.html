@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
   </head>
 
-  <body>
+  <body style="background-color: #f7f8fa; color: #021b79">
     <div class="portfolio-container">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid container">
@@ -92,7 +92,6 @@
       <hr class="hr" />
       <div
         class="portfolio-main-container"
-        style="background-color: #f7f8fa; color: #021b79"
       >
         <div class="portfolio-header-container">
           <div class="portfolio-text-title">Portfolio</div>
@@ -129,41 +128,46 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-graphics"></div>
-        <div>
-          <span class="portfolio-graphics-title"> Portfolio Value </span>
+        <div class="portfolio-graphic">
+        <div class="portfolio-graphic-value">
+          <span class="portfolio-graphic-title"> Portfolio Value </span>
           <img src="../../assets/images/graph.svg" alt="id-logo" />
         </div>
-        <div>
-          <span class="portfolio-graphics-title"> Portfolio Allocation </span>
+        <div class="portfolio-graphic-allocation">
+          <span class="portfolio-graphic-title"> Portfolio Allocation </span>
+          <div class="portfolio-graphic-allocation-container">
           <img src="../../assets/images/allocation.svg" alt="id-logo" />
-          <div class="portfolio-grapchic-categories">
+        
+          <div class="portfolio-graphic-categories-container">
+          <div class="portfolio-graphic-categories-item">
             <img src="../../assets/images/point-blue.svg" alt="id-logo" />
-            <span>Credit Sesame Gro…</span>
-            <span>30%</span>
+            <span class="portfolio-graphic-categories-item-name">Credit Sesame Gro…</span>
+            <span class="portfolio-graphic-categories-item-percent">30%</span>
           </div>
-          <div class="portfolio-grapchic-categories">
+          <div class="portfolio-graphic-categories-item">
             <img src="../../assets/images/point-red.svg" alt="id-logo" />
-            <span>Datamir Series IV</span>
-            <span>20%</span>
+            <span class="portfolio-graphic-categories-item-name">Datamir Series IV</span>
+            <span class="portfolio-graphic-categories-item-percent">20%</span>
           </div>
-          <div class="portfolio-grapchic-categories">
+          <div class="portfolio-graphic-categories-item">
             <img src="../../assets/images/point-orange.svg" alt="id-logo" />
-            <span>Datamir Series III</span>
-            <span>20%</span>
+            <span class="portfolio-graphic-categories-item-name">Datamir Series III</span>
+            <span class="portfolio-graphic-categories-item-percent">20%</span>
           </div>
-          <div class="portfolio-grapchic-categories">
+          <div class="portfolio-graphic-categories-item">
             <img src="../../assets/images/point-green.svg" alt="id-logo" />
-            <span>Zipline Series Grou…</span>
-            <span>20%</span>
+            <span class="portfolio-graphic-categories-item-name" >Zipline Series Grou…</span>
+            <span class="portfolio-graphic-categories-item-percent">20%</span>
           </div>
-          <div class="portfolio-grapchic-categories">
+          <div class="portfolio-graphic-categories-item">
             <img src="../../assets/images/point-grey.svg" alt="id-logo" />
-            <span>Other</span>
-            <span>10%</span>
+            <span class="portfolio-graphic-categories-item-name">Other</span>
+            <span class="portfolio-graphic-categories-item-percent">10%</span>
           </div>
         </div>
-        <div></div>
+        </div>
+      </div>
+      </div>
 
         <div class="portfolio-deals">
           <div class="page-select">
@@ -179,7 +183,7 @@
           </div>
           <hr class="hr" />
           <div class="subscriptions-table-container">
-            <div class="subscriptions-search-bar-container">
+            <div class="subscriptions-search-bar-container portfolio-search">
               <button class="subscriptions-search-bar-button">
                 <img
                   src="../../assets/images/search-icon.svg"

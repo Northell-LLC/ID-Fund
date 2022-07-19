@@ -1934,7 +1934,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #00073a;
+  color: #021B79;
 }
 
 .amount {
@@ -2030,11 +2030,12 @@ input::-webkit-inner-spin-button {
 }
 
 .investment-accordion-item {
-  border: 1px solid #00073a !important;
+  border: 1px solid #efefef !important;
   border-radius: 10px !important;
   padding: 5px;
   margin-bottom: 15px;
   padding: 10px;
+  /* width: 100%; */
 }
 
 .mobile-item-date {
@@ -2111,10 +2112,16 @@ input::-webkit-inner-spin-button {
     margin: 15px 20px 15px 20px;
     width: 100%;
   }
+  .news-main-container{
+    padding: 16px;
+  }
 }
 @media (max-width: 428px) {
   .accordion-item-header {
     margin: 15px 7px;
+  }
+  .news-main-container{
+    padding: 16px;
   }
   .investment-accordion-button:after {
     margin: 0 7px 0 0;
@@ -4123,16 +4130,84 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 48px 0px 24px 0px;
+  padding: 48px 0px 24px 0px;
 }
 
 .portfolio-text-title {
   font-size: 30px;
   color: #021b79;
-  font-weight: 500;
+  font-weight: 600;
+}
+.portfolio-graphic {
+  padding: 24px 0px 24px 0px;
+  display:flex
+}
+.portfolio-graphic-title{
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00073A;
+}
+.portfolio-graphic-value, .portfolio-graphic-allocation{
+  width: 573px;
+  height: 335px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 40px;
+}
+.portfolio-graphic-allocation{
+  display:flex;
+  flex-direction: column;
+}
+.portfolio-graphic-allocation-container{
+  display:flex;
+  align-items: flex-start;
+}
+.portfolio-graphic-allocation-container img{
+margin-right: 20px;
+}
+.portfolio-graphic-value{
+  margin-right: 24px;
+}
+.portfolio-graphic-value img{
+  margin-top: 40px;
 }
 .investments-container {
-display: flex;
+   display: flex;
+}
+.portfolio-graphic-categories-item{
+  display: flex;
+}
+.portfolio-graphic-categories-item-name{
+  flex:13
+}
+.portfolio-graphic-categories-item img{
+ margin-right: 10px;
+  
+}
+.portfolio-graphic-categories-item-name{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #00073A;
+}
+.portfolio-graphic-categories-item-percent{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848899;
+
+}
+.portfolio-deals{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 24px;
+}
+.portfolio-search{
+  margin-top:24px
 }
 .total-investments, .last-investments{
   background-color: white;
@@ -4145,6 +4220,9 @@ display: flex;
   justify-content: space-around;
   padding: 40px;
 }
+.last-investments{
+  width: 710px;
+}
 .total-investments{
   margin-right:24px
 }
@@ -4153,9 +4231,15 @@ display: flex;
   flex-direction: column;
   align-items: center;
 }
+.total-investments div:first-child{
+  margin-right: 40px;
+}
+.last-investments div:first-child, .last-investments div:nth-child(2){
+  margin-right: 40px;
+}
 .total-investments div span:first-child, .last-investments div span:first-child{
   font-size: 26px;
-  margin-right: 40px;
+  font-weight: 600;
 }
 .total-investments div span:nth-child(2), .last-investments div span:nth-child(2){
    font-weight: 400;
@@ -4163,6 +4247,7 @@ display: flex;
    line-height: 16px;
    color: #848899;
    margin-top: 2px;
+   font-weight: 400;
 }
 .change-img-button-mobile{
   font-weight: 600;
