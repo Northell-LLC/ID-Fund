@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Account Page</title>
 </head>
-<body class="account-body">
+<div class="account-body">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid container">
             <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -245,20 +245,44 @@
                             <button class="dropdown-button">
                                 <div class="nav-list-item nav-list-item-mobile">
                                     <img src="../../assets/images/verification.svg" alt="account-img">
-                                    <div class="active-settings-tab">Account</div>
+                                    <div class="active-settings-tab">>Subscriptions (3)</div>
                                 </div>
                             </button>
                             <ul class="dropdown-list">
                                 <li class="dropdown-list-item" data-value="account">
                                     <div class="nav-list-item nav-list-item-mobile">
                                         <img src="../../assets/images/verification.svg" alt="account-img">
-                                        <div class="active-settings-tab">Account</div>
+                                        <div class="active-settings-tab">Subscriptions (3)</div>
                                     </div>
                                 </li>
                                 <li class="dropdown-list-item" data-value="changePassword">
                                     <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/lock-grey.svg" alt="lock-grey-img">
-                                        <div class="">Change Password</div>
+                                        <img src="../../assets/images/confirms-gray-icon.svg" alt="lock-grey-img">
+                                        <div class="">Confirms (3)</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-list-item" data-value="changePassword">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/statements-gray-icon.svg" alt="lock-grey-img">
+                                        <div class="">Statements (15)</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-list-item" data-value="changePassword">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/k-docs-gray-icon.svg" alt="lock-grey-img">
+                                        <div class="">K-1 Docs (29)</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-list-item" data-value="changePassword">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/miscell-gray-icon.svg" alt="lock-grey-img">
+                                        <div class="">Miscellaneous (8)</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-list-item" data-value="changePassword">
+                                    <div class="nav-list-item nav-list-item-mobile">
+                                        <img src="../../assets/images/private-gray-icon.svg" alt="lock-grey-img">
+                                        <div class="">Private (3)</div>
                                     </div>
                                 </li>
                             </ul>
@@ -594,12 +618,6 @@
                                     <div class="form-label">
                                         Country
                                     </div>
-                                    <input type="text" class="number-input address-form-input" value="3677 Briarwood Road">
-                                </div>
-                                <div class="form-field">
-                                    <div class="form-label">
-                                        Address
-                                    </div>
                                     <select class="form-select edit-address-select" aria-label="Default select example">
                                         <option value="1" selected>
                                             United States
@@ -611,6 +629,13 @@
                                             Canada
                                         </option>
                                     </select>
+                                   
+                                <div class="form-field">
+                                    <div class="form-label">
+                                        Address
+                                    </div>
+                                    <input type="text" class="number-input address-form-input" value="3677 Briarwood Road">
+                                </div>
                                 </div>
                                 <div class="form-field">
                                     <div class="form-label">
@@ -679,6 +704,17 @@
                             </label>
                             <input id="upload-image" type="file" onchange="changeImage(this)">
                             <button class="delete-img-button img-element-hidden">
+                                Delete
+                            </button>
+                        </div>
+                        <div class="img-settings-block-mobile">
+                            <button class="change-img-button-mobile">
+                                <img src="../../assets/images/blue-plus.png" alt="plus-img">
+                                Upload Image
+                            </button>
+                            <input id="upload-image" type="file" onchange="changeImage(this)">
+                            <button class="delete-img-button-mobile img-element-hidden">                  
+                                <img src="../../assets/images/delete-btn.png" alt="delete-img">
                                 Delete
                             </button>
                         </div>
@@ -779,5 +815,5 @@
     <script src="../../utils/settingsTabHandler.js"></script>
     <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/uploadImage.js"></script>
-</body>
+</div>
 </html>

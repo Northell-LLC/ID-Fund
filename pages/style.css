@@ -217,9 +217,6 @@ textarea {
   font-family: sans-serif;
   font-size: 1rem;
 }
-body{
-   font-weight: 500;
-}
 select::-ms-expand {
   display: none;
 }
@@ -356,9 +353,9 @@ input::-webkit-search-cancel-button {
   src: url("../assets/fonts/Inter-Regular.ttf");
   font-weight: 700;
 }
-body {
+/* body {
   font-family: "Inter", sans-serif;
-}
+} */
 
 .registration-input {
   display: grid;
@@ -955,6 +952,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
+  font-weight: 500;
 }
 
 .nav-link:hover {
@@ -972,7 +970,7 @@ input::-webkit-inner-spin-button {
 }
 
 .user-name {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
@@ -1059,7 +1057,7 @@ input::-webkit-inner-spin-button {
 }
 
 .deals-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 34px;
   line-height: 48px;
   color: #00073a;
@@ -1090,6 +1088,7 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   color: #021b79;
   opacity: 0.7;
+  font-weight: 600;
 }
 
 .active {
@@ -1158,6 +1157,7 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 30px;
   margin: 0 0 4px 0;
+  font-weight: 600;
 }
 
 .info-desc {
@@ -1441,7 +1441,7 @@ input::-webkit-inner-spin-button {
 }
 
 .breadcrump-container a {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: #021b79;
@@ -1453,6 +1453,7 @@ input::-webkit-inner-spin-button {
 
 .back-button {
   margin: 0 0 0 12px;
+  font-weight: 500;
 }
 
 .breadcrumb {
@@ -1460,7 +1461,7 @@ input::-webkit-inner-spin-button {
 }
 
 .breadcrumb-item {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: #021b79;
@@ -1534,10 +1535,11 @@ input::-webkit-inner-spin-button {
   font-size: 26px;
   line-height: 40px;
   color: #021b79;
+  font-weight: 600;
 }
 
 .investment-score span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1560,7 +1562,7 @@ input::-webkit-inner-spin-button {
   height: 48px;
   background: #178213;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -1629,11 +1631,12 @@ input::-webkit-inner-spin-button {
   line-height: 30px;
   color: #00073a;
   margin: 0 0 20px 0;
+  font-weight: 600;
 }
 
 .main-text-part {
   margin: 0 0 20px 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1677,6 +1680,7 @@ input::-webkit-inner-spin-button {
   padding: 8px 12px;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 600;
   color: #021b79;
 }
 
@@ -1755,6 +1759,7 @@ input::-webkit-inner-spin-button {
 .date-block {
   font-size: 12px;
   line-height: 16px;
+  font-weight: 600;
   background: #f7f8fa;
   color: #021b79;
   padding: 8px 12px;
@@ -1766,6 +1771,7 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   color: #00073a;
   margin: 12px 0 0 0;
+  font-weight: 600;
 }
 
 .news-main {
@@ -1779,12 +1785,14 @@ input::-webkit-inner-spin-button {
 }
 .link-button {
   margin: 10px 0 0 0;
+  font-weight: 600;
 }
 
 .link-button button {
   font-size: 14px;
   line-height: 22px;
   color: #0575e6;
+  font-weight: 600;
 }
 
 .link-button button img {
@@ -1824,7 +1832,7 @@ input::-webkit-inner-spin-button {
 
 .block-name {
   min-width: 120px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   margin: 0 40px 0 0;
@@ -1836,6 +1844,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .documents-block {
@@ -1871,7 +1880,7 @@ input::-webkit-inner-spin-button {
 }
 
 .agreement-name span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1922,7 +1931,7 @@ input::-webkit-inner-spin-button {
 
 .investment-date {
   width: 189px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1931,7 +1940,7 @@ input::-webkit-inner-spin-button {
 .amount {
   width: 184px;
   text-align: right;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1948,21 +1957,24 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   text-align: center;
   padding: 8px 12px;
+  font-weight: 600;
 }
 
 .status-in-progress span {
   background: #ffebc6;
   color: #d08000;
+  font-weight: 600;
 }
 
 .status-completed span {
   background: #daf2d9;
   color: #095d14;
+  font-weight: 600;
 }
 
 .payment-date {
   width: 160px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1990,7 +2002,7 @@ input::-webkit-inner-spin-button {
 .payment-step-completed span {
   background: #ffffff;
   color: #178213;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   display: flex;
@@ -2005,7 +2017,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #848899;
-  font-weight: 400;
+  font-weight: 600;
 }
 .row-name  {
   width: 186px;
@@ -2480,7 +2492,7 @@ input::-webkit-inner-spin-button {
 }
 
 .account-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 34px;
   line-height: 48px;
   color: #00073a;
@@ -2566,6 +2578,7 @@ input::-webkit-inner-spin-button {
   line-height: 30px;
   color: #00073a;
   margin: 16px auto;
+  font-weight: 600;
 }
 
 .onboarding-cards {
@@ -2590,13 +2603,14 @@ input::-webkit-inner-spin-button {
 
 .onboarding-card-title span {
   margin: 0 0 0 12px;
+  font-weight: 600 !important;
   font-size: 20px;
   line-height: 30px;
   color: #021b79;
 }
 
 .onboarding-card-text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -2624,15 +2638,18 @@ input::-webkit-inner-spin-button {
 .onboarding-card-button button span {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   color: #095d14;
+  padding-left: 5px;
+  font-weight: 600;
 }
 
 .onboarding-card-button span {
   font-size: 12px;
   line-height: 16px;
   color: #848899;
+  font-weight: 600;
 }
 
 #verify-button {
@@ -2644,7 +2661,7 @@ input::-webkit-inner-spin-button {
 }
 
 #verify-button span {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
@@ -2660,7 +2677,7 @@ input::-webkit-inner-spin-button {
 }
 
 #update-button span {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   color: #d08000;
@@ -2820,7 +2837,7 @@ input::-webkit-inner-spin-button {
 .nav-list-item div,
 .documents-nav-list-item {
   margin: 0 0 0 18px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #848899;
@@ -2869,6 +2886,7 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
+  font-weight: 600;
 }
 
 .account-image-container {
@@ -2889,9 +2907,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
 }
 
-.img-settings-block {
-  display: flex;
-}
+
 
 .change-img-button {
   margin: 0 0 0 24px;
@@ -2962,10 +2978,11 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
+  font-weight: 600;
 }
 
 .email-address {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -2993,7 +3010,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form-notifications .form-check label {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3017,7 +3034,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form-address {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3030,7 +3047,7 @@ input::-webkit-inner-spin-button {
   height: 48px;
   background: #021b79;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
@@ -3202,7 +3219,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
   .img-settings-block {
-    flex-direction: column;
+   display: none;
   }
   .delete-img-button {
     margin: 12px 0 0 24px;
@@ -3269,7 +3286,6 @@ label {
 }
 
 .dropdown-list {
-  position: absolute;
   left: 0;
   top: 5px;
   margin: 0;
@@ -3315,7 +3331,7 @@ label {
 }
 
 .account-sub-header {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3409,7 +3425,7 @@ label {
 
 .item-main-text {
   max-width: 402px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3449,7 +3465,7 @@ label {
 .news-text-title {
   font-size: 30px;
   color: #021b79;
-  font-weight: 500;
+  font-weight: 600;
 }
 .show-more-button-container {
   display: flex;
@@ -3464,7 +3480,7 @@ label {
   height: 48px;
   background: #021b79;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -3490,7 +3506,7 @@ label {
 
 .inner-list-item span {
   margin: 0 0 0 12px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3617,6 +3633,7 @@ label {
   margin: 0 0 0 24px;
   width: 135px;
   height: 40px;
+  font-weight: 700;
   background: #021b79;
   border-radius: 8px;
   font-size: 14px;
@@ -3653,7 +3670,7 @@ label {
 }
 
 .account-sub-header {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3707,6 +3724,7 @@ label {
   padding: 0 0 0 5px;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 600;
   color: #00073a;
 }
 
@@ -3831,7 +3849,7 @@ label {
 
 
 .documents-table-name span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3856,7 +3874,7 @@ label {
 }
 
 .documents-table-size div {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3919,6 +3937,12 @@ label {
   .documents-table-header {
     min-width: 100%;
   }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block {
+    display: flex;
+  }
   .documents-table-body {
     min-width: 100%;
   }
@@ -3933,6 +3957,12 @@ label {
   }
   .settings-container {
     display: block;
+  }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block {
+    display: flex;
   }
   .documents-container {
     display: block;
@@ -3980,6 +4010,14 @@ label {
   .documents-table-body {
     min-width: 570px;
   }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
 }
 
 @media (max-width: 925px) {
@@ -4016,6 +4054,14 @@ label {
   .search-results-number {
     margin: 0 0 10px 0;
   }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
 }
 @media (max-width: 580px) {
   .news-inner-text-title {
@@ -4031,7 +4077,14 @@ label {
     white-space: nowrap;
     overflow-x: auto;
   }
-
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
   .search-bar-container,
   .search-bar,
   .show-more-button {
@@ -4051,6 +4104,14 @@ label {
   .reports-item-main {
     padding: 0;
     margin: 16px 0 0 0;
+  }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
   }
 }
 .portfolio-main-container {
@@ -4102,5 +4163,30 @@ display: flex;
    line-height: 16px;
    color: #848899;
    margin-top: 2px;
+}
+.change-img-button-mobile{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #021B79;
+  margin-bottom: 10px;
+}
+.delete-img-button-mobile {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: red;
+
+}
+
+.change-img-button-mobile img, .delete-img-button-mobile img{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
 }
 /*# sourceMappingURL=style.css.map */
