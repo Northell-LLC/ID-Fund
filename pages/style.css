@@ -776,6 +776,12 @@ input::-webkit-inner-spin-button {
   .registration .confirm-number-form {
     grid-gap: 10px;
   }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
+  }
   .registration .confirm-number-form input {
     width: 48px;
     height: 48px;
@@ -785,11 +791,28 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
   }
 }
+@media (max-width: 1440px) {
+ 
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
+  }
+}
+@media (max-width: 2560px) {
+ 
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
+  }
+}
 @media (max-width: 992px) {
   .registration-links {
     padding: 40px 40px 0;
   }
-
   .registration-right-section {
     padding: 40px 40px;
   }
@@ -1161,7 +1184,7 @@ input::-webkit-inner-spin-button {
 }
 
 .info-desc {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1186,23 +1209,25 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 26px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .investment-amount-completed {
   font-size: 26px;
   line-height: 40px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .investment-desc {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #848899;
 }
 
 .investment-desc-completed {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1227,6 +1252,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .item-video {
@@ -1337,6 +1363,7 @@ input::-webkit-inner-spin-button {
   }
   .investment-amount {
     text-align: center;
+    font-weight: 600;
   }
   .investment-desc {
     text-align: center;
@@ -1517,9 +1544,10 @@ input::-webkit-inner-spin-button {
 }
 
 .info-title {
-  font-size: 14px;
-  line-height: 22px;
-  color: #00073a;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
 }
 
 .info-investments {
@@ -1899,6 +1927,7 @@ input::-webkit-inner-spin-button {
   width: 60px;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 600;
   color: #0575e6;
 }
 
@@ -1996,6 +2025,7 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -2007,6 +2037,7 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   display: flex;
   align-items: center;
+  font-weight: 700;
   padding: 5px 0;
   gap: 10px;
 }
@@ -3308,6 +3339,9 @@ label {
 
   z-index: 1;
 }
+.profile-mobile{
+  display: none;
+}
 
 .dropdown-list-visible {
   display: block;
@@ -4155,7 +4189,7 @@ label {
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-  padding: 40px;
+  padding: 30px;
 }
 .portfolio-graphic-allocation{
   display:flex;
@@ -4198,6 +4232,7 @@ margin-right: 20px;
   font-size: 12px;
   line-height: 16px;
   color: #848899;
+  padding-left: 10px
 
 }
 .portfolio-deals{
@@ -4250,13 +4285,16 @@ margin-right: 20px;
    font-weight: 400;
 }
 .change-img-button-mobile{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.change-img-button-mobile label {
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  display: flex;
-  align-items: center;
+  
   color: #021B79;
-  margin-bottom: 10px;
 }
 .delete-img-button-mobile {
   font-weight: 600;
