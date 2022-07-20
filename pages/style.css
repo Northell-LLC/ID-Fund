@@ -217,9 +217,6 @@ textarea {
   font-family: sans-serif;
   font-size: 1rem;
 }
-body{
-   font-weight: 500;
-}
 select::-ms-expand {
   display: none;
 }
@@ -343,12 +340,12 @@ input::-webkit-search-cancel-button {
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Regular.ttf");
+  src: url("../assets//fonts/Inter-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Medium.ttf");
+  src: url("../assets/fonts/Inter-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
@@ -356,9 +353,9 @@ input::-webkit-search-cancel-button {
   src: url("../assets/fonts/Inter-Regular.ttf");
   font-weight: 700;
 }
-body {
+/* body {
   font-family: "Inter", sans-serif;
-}
+} */
 
 .registration-input {
   display: grid;
@@ -452,6 +449,11 @@ input::-webkit-inner-spin-button {
   height: 1rem;
   padding: 0;
 }
+
+.form-switch .form-check-input{
+  width: 2rem;
+}
+
 .form-check .form-check-input:checked {
   background-color: #021b79;
   border-color: #021b79;
@@ -768,9 +770,17 @@ input::-webkit-inner-spin-button {
   .registration-form {
     padding: 0;
   }
-
+  .user-menu-mobile {
+   display: none;
+  }
   .registration .confirm-number-form {
     grid-gap: 10px;
+  }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
   }
   .registration .confirm-number-form input {
     width: 48px;
@@ -781,11 +791,28 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
   }
 }
+@media (max-width: 1440px) {
+ 
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
+  }
+}
+@media (max-width: 2560px) {
+ 
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block{
+    display: flex;
+  }
+}
 @media (max-width: 992px) {
   .registration-links {
     padding: 40px 40px 0;
   }
-
   .registration-right-section {
     padding: 40px 40px;
   }
@@ -948,6 +975,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
+  font-weight: 500;
 }
 
 .nav-link:hover {
@@ -965,7 +993,7 @@ input::-webkit-inner-spin-button {
 }
 
 .user-name {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
@@ -1052,7 +1080,7 @@ input::-webkit-inner-spin-button {
 }
 
 .deals-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 34px;
   line-height: 48px;
   color: #00073a;
@@ -1083,6 +1111,7 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   color: #021b79;
   opacity: 0.7;
+  font-weight: 600;
 }
 
 .active {
@@ -1151,10 +1180,11 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 30px;
   margin: 0 0 4px 0;
+  font-weight: 600;
 }
 
 .info-desc {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1179,23 +1209,25 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 26px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .investment-amount-completed {
   font-size: 26px;
   line-height: 40px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .investment-desc {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #848899;
 }
 
 .investment-desc-completed {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1220,6 +1252,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .item-video {
@@ -1330,6 +1363,7 @@ input::-webkit-inner-spin-button {
   }
   .investment-amount {
     text-align: center;
+    font-weight: 600;
   }
   .investment-desc {
     text-align: center;
@@ -1434,7 +1468,7 @@ input::-webkit-inner-spin-button {
 }
 
 .breadcrump-container a {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: #021b79;
@@ -1446,6 +1480,7 @@ input::-webkit-inner-spin-button {
 
 .back-button {
   margin: 0 0 0 12px;
+  font-weight: 500;
 }
 
 .breadcrumb {
@@ -1453,7 +1488,7 @@ input::-webkit-inner-spin-button {
 }
 
 .breadcrumb-item {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: #021b79;
@@ -1509,9 +1544,10 @@ input::-webkit-inner-spin-button {
 }
 
 .info-title {
-  font-size: 14px;
-  line-height: 22px;
-  color: #00073a;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
 }
 
 .info-investments {
@@ -1527,10 +1563,11 @@ input::-webkit-inner-spin-button {
   font-size: 26px;
   line-height: 40px;
   color: #021b79;
+  font-weight: 600;
 }
 
 .investment-score span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1553,7 +1590,7 @@ input::-webkit-inner-spin-button {
   height: 48px;
   background: #178213;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -1622,11 +1659,12 @@ input::-webkit-inner-spin-button {
   line-height: 30px;
   color: #00073a;
   margin: 0 0 20px 0;
+  font-weight: 600;
 }
 
 .main-text-part {
   margin: 0 0 20px 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -1670,6 +1708,7 @@ input::-webkit-inner-spin-button {
   padding: 8px 12px;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 600;
   color: #021b79;
 }
 
@@ -1748,6 +1787,7 @@ input::-webkit-inner-spin-button {
 .date-block {
   font-size: 12px;
   line-height: 16px;
+  font-weight: 600;
   background: #f7f8fa;
   color: #021b79;
   padding: 8px 12px;
@@ -1759,6 +1799,7 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   color: #00073a;
   margin: 12px 0 0 0;
+  font-weight: 600;
 }
 
 .news-main {
@@ -1772,12 +1813,14 @@ input::-webkit-inner-spin-button {
 }
 .link-button {
   margin: 10px 0 0 0;
+  font-weight: 600;
 }
 
 .link-button button {
   font-size: 14px;
   line-height: 22px;
   color: #0575e6;
+  font-weight: 600;
 }
 
 .link-button button img {
@@ -1817,7 +1860,7 @@ input::-webkit-inner-spin-button {
 
 .block-name {
   min-width: 120px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   margin: 0 40px 0 0;
@@ -1829,6 +1872,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .documents-block {
@@ -1864,7 +1908,7 @@ input::-webkit-inner-spin-button {
 }
 
 .agreement-name span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1883,6 +1927,7 @@ input::-webkit-inner-spin-button {
   width: 60px;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 600;
   color: #0575e6;
 }
 
@@ -1915,16 +1960,16 @@ input::-webkit-inner-spin-button {
 
 .investment-date {
   width: 189px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #00073a;
+  color: #021B79;
 }
 
 .amount {
   width: 184px;
   text-align: right;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1941,21 +1986,24 @@ input::-webkit-inner-spin-button {
   line-height: 16px;
   text-align: center;
   padding: 8px 12px;
+  font-weight: 600;
 }
 
 .status-in-progress span {
   background: #ffebc6;
   color: #d08000;
+  font-weight: 600;
 }
 
 .status-completed span {
   background: #daf2d9;
   color: #095d14;
+  font-weight: 600;
 }
 
 .payment-date {
   width: 160px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -1977,17 +2025,19 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 700;
   text-align: center;
 }
 
 .payment-step-completed span {
   background: #ffffff;
   color: #178213;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   display: flex;
   align-items: center;
+  font-weight: 700;
   padding: 5px 0;
   gap: 10px;
 }
@@ -1998,19 +2048,25 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #848899;
-  font-weight: 400;
+  font-weight: 600;
 }
+.row-name  {
+  width: 186px;
+
+}
+
 
 .investment-accordion {
   display: none;
 }
 
 .investment-accordion-item {
-  border: 1px solid #00073a !important;
+  border: 1px solid #efefef !important;
   border-radius: 10px !important;
   padding: 5px;
   margin-bottom: 15px;
   padding: 10px;
+  /* width: 100%; */
 }
 
 .mobile-item-date {
@@ -2087,10 +2143,16 @@ input::-webkit-inner-spin-button {
     margin: 15px 20px 15px 20px;
     width: 100%;
   }
+  .news-main-container{
+    padding: 16px;
+  }
 }
 @media (max-width: 428px) {
   .accordion-item-header {
     margin: 15px 7px;
+  }
+  .news-main-container{
+    padding: 16px;
   }
   .investment-accordion-button:after {
     margin: 0 7px 0 0;
@@ -2468,7 +2530,7 @@ input::-webkit-inner-spin-button {
 }
 
 .account-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 34px;
   line-height: 48px;
   color: #00073a;
@@ -2554,6 +2616,7 @@ input::-webkit-inner-spin-button {
   line-height: 30px;
   color: #00073a;
   margin: 16px auto;
+  font-weight: 600;
 }
 
 .onboarding-cards {
@@ -2578,13 +2641,14 @@ input::-webkit-inner-spin-button {
 
 .onboarding-card-title span {
   margin: 0 0 0 12px;
+  font-weight: 600 !important;
   font-size: 20px;
   line-height: 30px;
   color: #021b79;
 }
 
 .onboarding-card-text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -2612,15 +2676,18 @@ input::-webkit-inner-spin-button {
 .onboarding-card-button button span {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   color: #095d14;
+  padding-left: 5px;
+  font-weight: 600;
 }
 
 .onboarding-card-button span {
   font-size: 12px;
   line-height: 16px;
   color: #848899;
+  font-weight: 600;
 }
 
 #verify-button {
@@ -2632,7 +2699,7 @@ input::-webkit-inner-spin-button {
 }
 
 #verify-button span {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
@@ -2648,7 +2715,7 @@ input::-webkit-inner-spin-button {
 }
 
 #update-button span {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   color: #d08000;
@@ -2808,7 +2875,7 @@ input::-webkit-inner-spin-button {
 .nav-list-item div,
 .documents-nav-list-item {
   margin: 0 0 0 18px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #848899;
@@ -2857,11 +2924,13 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
+  font-weight: 600;
 }
 
 .account-image-container {
   display: flex;
   margin: 28px 0 0 0;
+  align-items: center;
 }
 
 .account-image-container img {
@@ -2876,13 +2945,11 @@ input::-webkit-inner-spin-button {
   position: absolute;
 }
 
-.img-settings-block {
-  display: flex;
-}
+
 
 .change-img-button {
   margin: 0 0 0 24px;
-  width: 130px;
+  width: 135px;
   height: 40px;
   background: #021b79;
   border-radius: 8px;
@@ -2926,9 +2993,6 @@ input::-webkit-inner-spin-button {
   margin: 0 0 24px 0;
 }
 
-.form-name-field {
-}
-
 .form-surname-field {
   margin: 0 0 0 16px;
 }
@@ -2952,10 +3016,11 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
+  font-weight: 600;
 }
 
 .email-address {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -2983,7 +3048,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form-notifications .form-check label {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3007,7 +3072,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form-address {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3020,7 +3085,7 @@ input::-webkit-inner-spin-button {
   height: 48px;
   background: #021b79;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
@@ -3192,7 +3257,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
   .img-settings-block {
-    flex-direction: column;
+   display: none;
   }
   .delete-img-button {
     margin: 12px 0 0 24px;
@@ -3259,7 +3324,6 @@ label {
 }
 
 .dropdown-list {
-  position: absolute;
   left: 0;
   top: 5px;
   margin: 0;
@@ -3274,6 +3338,9 @@ label {
   width: 100%;
 
   z-index: 1;
+}
+.profile-mobile{
+  display: none;
 }
 
 .dropdown-list-visible {
@@ -3305,7 +3372,7 @@ label {
 }
 
 .account-sub-header {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3399,7 +3466,7 @@ label {
 
 .item-main-text {
   max-width: 402px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3439,7 +3506,7 @@ label {
 .news-text-title {
   font-size: 30px;
   color: #021b79;
-  font-weight: 500;
+  font-weight: 600;
 }
 .show-more-button-container {
   display: flex;
@@ -3454,7 +3521,7 @@ label {
   height: 48px;
   background: #021b79;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -3480,7 +3547,7 @@ label {
 
 .inner-list-item span {
   margin: 0 0 0 12px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3605,8 +3672,9 @@ label {
 
 .change-img-button {
   margin: 0 0 0 24px;
-  width: 130px;
+  width: 135px;
   height: 40px;
+  font-weight: 700;
   background: #021b79;
   border-radius: 8px;
   font-size: 14px;
@@ -3634,13 +3702,16 @@ label {
   display: none;
 }
 
-.settings-main,
 .subscriptions-main {
   padding: 15px 10px;
 }
 
+.settings-main {
+  padding: 40px
+}
+
 .account-sub-header {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #848899;
@@ -3694,6 +3765,7 @@ label {
   padding: 0 0 0 5px;
   font-size: 14px;
   line-height: 22px;
+  font-weight: 600;
   color: #00073a;
 }
 
@@ -3807,9 +3879,18 @@ label {
   height: 19.5px;
   margin: 0 6px 4px 0;
 }
+.documents-table-dates, .documents-table-deal, .documents-table-company, .documents-table-breakdowns,.documents-table-amount {
+  width: 244px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
 
 .documents-table-name span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3834,7 +3915,7 @@ label {
 }
 
 .documents-table-size div {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3897,6 +3978,12 @@ label {
   .documents-table-header {
     min-width: 100%;
   }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block {
+    display: flex;
+  }
   .documents-table-body {
     min-width: 100%;
   }
@@ -3911,6 +3998,12 @@ label {
   }
   .settings-container {
     display: block;
+  }
+  .img-settings-block-mobile{
+    display: none;
+  }
+  .img-settings-block {
+    display: flex;
   }
   .documents-container {
     display: block;
@@ -3958,6 +4051,14 @@ label {
   .documents-table-body {
     min-width: 570px;
   }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
 }
 
 @media (max-width: 925px) {
@@ -3994,6 +4095,14 @@ label {
   .search-results-number {
     margin: 0 0 10px 0;
   }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
 }
 @media (max-width: 580px) {
   .news-inner-text-title {
@@ -4009,7 +4118,14 @@ label {
     white-space: nowrap;
     overflow-x: auto;
   }
-
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
   .search-bar-container,
   .search-bar,
   .show-more-button {
@@ -4030,6 +4146,170 @@ label {
     padding: 0;
     margin: 16px 0 0 0;
   }
+  .img-settings-block-mobile {
+    display: flex;
+    margin-left: 24px;
+    flex-direction: column;
+  }
+  .img-settings-block{
+    display:none
+  }
+}
+.portfolio-main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.portfolio-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0px 24px 0px;
 }
 
+.portfolio-text-title {
+  font-size: 30px;
+  color: #021b79;
+  font-weight: 600;
+}
+.portfolio-graphic {
+  padding: 24px 0px 24px 0px;
+  display:flex
+}
+.portfolio-graphic-title{
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00073A;
+}
+.portfolio-graphic-value, .portfolio-graphic-allocation{
+  width: 573px;
+  height: 335px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 30px;
+}
+.portfolio-graphic-allocation{
+  display:flex;
+  flex-direction: column;
+}
+.portfolio-graphic-allocation-container{
+  display:flex;
+  align-items: flex-start;
+}
+.portfolio-graphic-allocation-container img{
+margin-right: 20px;
+}
+.portfolio-graphic-value{
+  margin-right: 24px;
+}
+.portfolio-graphic-value img{
+  margin-top: 40px;
+}
+.investments-container {
+   display: flex;
+}
+.portfolio-graphic-categories-item{
+  display: flex;
+}
+.portfolio-graphic-categories-item-name{
+  flex:13
+}
+.portfolio-graphic-categories-item img{
+ margin-right: 10px;
+  
+}
+.portfolio-graphic-categories-item-name{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #00073A;
+}
+.portfolio-graphic-categories-item-percent{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848899;
+  padding-left: 10px
+
+}
+.portfolio-deals{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 24px;
+}
+.portfolio-search{
+  margin-top:24px
+}
+.total-investments, .last-investments{
+  background-color: white;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 7%);
+  border-radius: 10px;
+  height: 138px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.last-investments{
+  width: 710px;
+}
+.total-investments{
+  margin-right:24px
+}
+.total-investments div, .last-investments div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total-investments div:first-child{
+  margin-right: 40px;
+}
+.last-investments div:first-child, .last-investments div:nth-child(2){
+  margin-right: 40px;
+}
+.total-investments div span:first-child, .last-investments div span:first-child{
+  font-size: 26px;
+  font-weight: 600;
+}
+.total-investments div span:nth-child(2), .last-investments div span:nth-child(2){
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 16px;
+   color: #848899;
+   margin-top: 2px;
+   font-weight: 400;
+}
+.change-img-button-mobile{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.change-img-button-mobile label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  
+  color: #021B79;
+}
+.delete-img-button-mobile {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: red;
+
+}
+
+.change-img-button-mobile img, .delete-img-button-mobile img{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
 /*# sourceMappingURL=style.css.map */
