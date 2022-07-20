@@ -770,7 +770,7 @@ input::-webkit-inner-spin-button {
   .registration-form {
     padding: 0;
   }
-  .user-menu-mobile {
+  .user-menu-mobile .person {
    display: none;
   }
   .registration .confirm-number-form {
@@ -1007,8 +1007,9 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-.user-menu-mobile {
+.user-menu-mobile .person{
   position: relative;
+  display:block
 }
 
 .dropdown-arrow-rotate {
@@ -2072,7 +2073,12 @@ input::-webkit-inner-spin-button {
 .mobile-item-date {
   width: 100px;
 }
-
+.mobile-item-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #848899;
+}
 .mobile-item-status {
   width: 140px;
 }
@@ -2097,7 +2103,15 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
 }
+.accordion-item-container{
+  height: 54px;
+  padding: 16px 0px;
+  width: 100%;
+}
 
+ .bolder{
+  font-weight: 600
+}
 .mobile-item-button {
   width: 100%;
 }
@@ -3005,7 +3019,7 @@ input::-webkit-inner-spin-button {
   background: #ffffff;
   border: 1px solid #efefef;
   border-radius: 8px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3036,7 +3050,7 @@ input::-webkit-inner-spin-button {
   background: #ffffff;
   border: 1px solid #efefef;
   border-radius: 8px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
@@ -3154,10 +3168,10 @@ input::-webkit-inner-spin-button {
   padding: 13px 20px;
   background: #021b79;
   border-radius: 8px;
-  font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .settings-tab-hidden {
@@ -3703,7 +3717,7 @@ label {
 }
 
 .subscriptions-main {
-  padding: 15px 10px;
+  padding: 40px;;
 }
 
 .settings-main {
@@ -4305,6 +4319,20 @@ margin-right: 20px;
   align-items: center;
   color: red;
 
+}
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    margin-right: 24px !important;
+    opacity: 0.4 !important;
+}
+.carousel-indicators button:last-child {
+  margin-right: 0;
+}
+.carousel-indicators button.active {
+  opacity: 1!important;
 }
 
 .change-img-button-mobile img, .delete-img-button-mobile img{
