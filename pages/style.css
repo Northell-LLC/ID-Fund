@@ -481,6 +481,19 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.form-save-changes {
+  margin: 24px 0 0 0;
+  padding: 13px 20px;
+  width: 138px;
+  height: 48px;
+  background: #021b79;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 .button {
   width: 100%;
   font-family: "Inter", sans-serif;
@@ -779,28 +792,34 @@ input::-webkit-inner-spin-button {
 
 .portfolio-text-title {
   font-size: 30px;
-  color: #021b79;
+  color: #00073a;
   font-weight: 600;
 }
 .portfolio-graphic {
   padding: 24px 0px 24px 0px;
   display: flex;
+  justify-content: space-between;
 }
 .portfolio-graphic-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   color: #00073a;
 }
-.portfolio-graphic-value,.portfolio-graphic-value-mobile,
+.portfolio-graphic-value,
+.portfolio-graphic-value-mobile,
 .portfolio-graphic-allocation {
   max-width: 573px;
-  height: 335px;
+  max-height: 335px;
   background: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   padding: 30px;
+}
+.portfolio-graphic-value,
+.portfolio-graphic-allocation {
+  padding: 30px 50px;
 }
 .portfolio-graphic-allocation {
   display: flex;
@@ -821,6 +840,7 @@ input::-webkit-inner-spin-button {
 }
 .investments-container {
   display: flex;
+  justify-content: space-between;
 }
 .portfolio-graphic-categories-item {
   display: flex;
@@ -858,12 +878,16 @@ input::-webkit-inner-spin-button {
   height: 17px;
   margin-right: 18px;
 }
-.last-investments-mobile{
-display: none;
+.last-investments-mobile {
+  display: none;
+}
+.portfolio-graphic-value-mobile {
+  display: none;
 }
 
 .total-investments,
-.last-investments, .last-investments-mobile {
+.last-investments,
+.last-investments-mobile {
   background-color: white;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 7%);
   border-radius: 10px;
@@ -873,17 +897,24 @@ display: none;
   align-items: center;
   justify-content: space-around;
   padding: 40px;
+  color: #00073a;
 }
 
-.last-investments, .last-investments-mobile {
+.last-investments,
+.last-investments-mobile {
   max-width: 710px;
+}
+.total-investments,
+.last-investments {
+  padding: 40px 100px;
 }
 .total-investments {
   margin-right: 24px;
   max-width: 436px;
 }
 .total-investments div,
-.last-investments div, .last-investments-mobile div {
+.last-investments div,
+.last-investments-mobile div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -891,17 +922,21 @@ display: none;
 .total-investments div:first-child {
   margin-right: 40px;
 }
-.last-investments div:first-child,.last-investments-mobile div:first-child, .last-investments-mobile div:nth-child(2),
+.last-investments div:first-child,
+.last-investments-mobile div:first-child,
+.last-investments-mobile div:nth-child(2),
 .last-investments div:nth-child(2) {
   margin-right: 40px;
 }
 .total-investments div span:first-child,
-.last-investments div span:first-child, .last-investments-mobile div span:first-child {
+.last-investments div span:first-child,
+.last-investments-mobile div span:first-child {
   font-size: 26px;
   font-weight: 600;
 }
 .total-investments div span:nth-child(2),
-.last-investments div span:nth-child(2), .last-investments-mobile div span:nth-child(2){
+.last-investments div span:nth-child(2),
+.last-investments-mobile div span:nth-child(2) {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -956,9 +991,9 @@ display: none;
   .registration-form {
     padding: 0;
   }
-.last-investments-mobile{
-  display: none;
-}
+  .last-investments-mobile {
+    display: none;
+  }
   .user-menu-mobile .person {
     display: none;
   }
@@ -984,6 +1019,9 @@ display: none;
   .img-settings-block-mobile {
     display: none;
   }
+  .last-investments-mobile {
+    display: none;
+  }
   .img-settings-block {
     display: flex;
   }
@@ -995,6 +1033,9 @@ display: none;
   .img-settings-block {
     display: flex;
   }
+  .last-investments-mobile {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   .registration-links {
@@ -1003,7 +1044,10 @@ display: none;
   .registration-right-section {
     padding: 40px 40px;
   }
-
+  .last-investments-mobile {
+    margin-top: 16px;
+    display: flex;
+  }
   .registration-steps {
     padding-left: 40px;
   }
@@ -1012,39 +1056,89 @@ display: none;
   .registration {
     flex-direction: column;
   }
+  .form-save-changes,
+  .change-password-button {
+    width: 100%;
+  }
+
+  .portfolio-graphic-value {
+    display: none;
+  }
+  .portfolio-graphic-allocation {
+    padding: 16px;
+    max-height: none;
+  }
+  .portfolio-graphic-allocation-container > *:first-child {
+    align-self: center;
+  }
+  .portfolio-graphic-allocation-container {
+    flex-direction: column;
+    align-items: revert;
+  }
+  .allocation-img {
+    width: 128px;
+    height: 128px;
+  }
+  .portfolio-graphic-categories-container {
+    margin-top: 24px;
+  }
+  .portfolio-graphic-value-mobile {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    max-height: none;
+  }
+  .portfolio-graphic-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    color: #00073a;
+  }
   .portfolio-graphic {
     flex-direction: column;
   }
   .investments-container {
     flex-direction: column;
   }
-  .last-investments{
+  .last-investments {
     display: none;
   }
-  .last-investments-mobile{
+  .last-investments-mobile {
     margin-top: 16px;
     display: flex;
+    color: #00073a;
   }
-  .total-investments{
-   margin-right: 0;
+  .total-investments {
+    margin-right: 0;
+    color: #00073a;
   }
-  .last-investments-mobile div span:nth-child(2), .total-investments div span:nth-child(2){
+  .documents-table-dates,
+  .documents-table-deal,
+  .documents-table-company,
+  .documents-table-breakdowns,
+  .documents-table-amount {
+    color: #00073a;
+  }
+  .last-investments-mobile div span:nth-child(2),
+  .total-investments div span:nth-child(2) {
     font-weight: 500;
     font-size: 10px;
     line-height: 14px;
     text-align: center;
   }
-  .portfolio-graphic{
+  .portfolio-graphic-value-mobile {
+    margin-right: 0;
+    margin-bottom: 16px;
     padding: 16px;
   }
-  .portfolio-graphic-value-mobile{
-    margin-right: 0;
-    margin-bottom:16px;
-  }
-  .portfolio-text-title{
+  .portfolio-text-title {
     font-weight: 600;
     font-size: 34px;
-    line-height: 48px
+    line-height: 48px;
+    color: #00073a;
   }
   .portfolio-header-container {
     flex-direction: column;
@@ -2793,6 +2887,7 @@ display: none;
   background: #fff;
   color: #021b79;
   border-radius: 8px;
+  font-weight: 700;
 }
 
 .modal-sign-button {
@@ -2801,6 +2896,7 @@ display: none;
   background: #021b79;
   color: #fff;
   border-radius: 8px;
+  font-weight: 700;
 }
 
 @media (max-width: 690px) {
@@ -2837,6 +2933,7 @@ display: none;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+  padding-bottom: 12px;
 }
 .account-container {
   max-width: 1170px;
@@ -3086,6 +3183,7 @@ display: none;
   font-size: 20px;
   line-height: 30px;
   color: #00073a;
+  font-weight: 600;
 }
 
 .update-subtitle {
@@ -3097,7 +3195,7 @@ display: none;
 }
 
 .update-suptip {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #5b6ba6;
@@ -3125,7 +3223,7 @@ display: none;
 }
 
 .form-check .form-check-label {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: inherit;
@@ -3134,7 +3232,7 @@ display: none;
 }
 
 .update-subtip {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #5b6ba6;
@@ -3336,6 +3434,10 @@ display: none;
   line-height: 22px;
   color: #021b79;
   font-weight: 600;
+  display: flex;
+}
+.form-label img {
+  margin-left: 4px;
 }
 
 .email-address {
@@ -3397,19 +3499,6 @@ display: none;
   color: #00073a;
 }
 
-.form-save-changes {
-  margin: 24px 0 0 0;
-  padding: 13px 20px;
-  width: 138px;
-  height: 48px;
-  background: #021b79;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
 .settings-nav-select {
   width: 100%;
   height: 48px;
@@ -3449,6 +3538,7 @@ display: none;
   line-height: 30px;
   color: #000000;
   margin: 0 0 24px 0;
+  font-weight: 600;
 }
 
 .form-field {
@@ -3461,13 +3551,22 @@ display: none;
   background: #ffffff;
   border: 1px solid #efefef;
   border-radius: 8px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
   padding: 13px 16px;
 }
-
+.form-field input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #848899;
+}
+.add-investment {
+  width: 149px;
+  margin: 0;
+}
 .change-password-button {
   margin: 18px 0 0 0;
   padding: 13px 20px;
@@ -3488,6 +3587,7 @@ display: none;
   line-height: 30px;
   color: #00073a;
   margin: 0 0 40px 0;
+  font-weight: 600;
 }
 
 .form-field > .address-form-input {
@@ -3523,6 +3623,9 @@ display: none;
   justify-content: space-between;
   align-items: flex-start;
   margin: 5px 0 0 0;
+}
+.investment-modal {
+  margin: 40px 0 0 0;
 }
 
 .save-address-changes {
@@ -3824,7 +3927,7 @@ label {
 
 .news-text-title {
   font-size: 30px;
-  color: #021b79;
+  color: #00073a;
   font-weight: 600;
 }
 .show-more-button-container {
@@ -4290,6 +4393,16 @@ label {
   .documents-nav {
     display: none;
   }
+  .last-investments-mobile {
+    display: flex;
+  }
+  .last-investments {
+    display: none;
+  }
+  .total-investments,
+  .last-investments {
+    padding: 40px 60px;
+  }
   .documents-nav-mobile {
     display: block;
   }
@@ -4386,6 +4499,13 @@ label {
   .inner-back-button-container {
     display: flex;
   }
+  .last-investments-mobile {
+    display: flex;
+  }
+  .last-investments {
+    display: none;
+  }
+
   .news-list-item {
     flex-direction: column-reverse;
     align-items: center;
