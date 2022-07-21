@@ -151,7 +151,7 @@
             <span>Last Investment</span>
           </div>
         </div>
-      </div>
+   
         <div class="portfolio-graphic">
           <div class="portfolio-graphic-value">
             <span class="portfolio-graphic-title"> Portfolio Value </span>
@@ -164,7 +164,9 @@
           <div class="portfolio-graphic-allocation">
             <span class="portfolio-graphic-title"> Portfolio Allocation </span>
             <div class="portfolio-graphic-allocation-container">
-              <img src="../../assets/images/allocation.svg" alt="id-logo" />
+              <div class="allocation-img">
+              <img  src="../../assets/images/allocation.svg" alt="id-logo" />
+            </div>
               <div class="portfolio-graphic-categories-container">
                 <div class="portfolio-graphic-categories-item">
                   <img src="../../assets/images/point-blue.svg" alt="id-logo" />
@@ -251,7 +253,6 @@
                 />
               </div>
               <div class="subscriptions-item-counter">5 Items</div>
-              <div class="button-add-investment"></div>
             </div>
             <div class="table-wrapper">
               <div class="documents-table documents-table-scroll">
@@ -396,6 +397,12 @@
                 />
               </div>
               <div class="subscriptions-item-counter">5 Items</div>
+              <div class="button-add-investment">
+                <button class="upload-doc-button open-modal-button open-address-modal-button">
+                  <img src="../../assets/images/plus-icon.svg" alt="plus-img">
+                  Add Investment
+              </button>
+              </div>
             </div>
             <div class="table-wrapper">
               <div class="documents-table documents-table-scroll">
@@ -475,9 +482,92 @@
                   <img src="../../assets/images/edit.svg" alt="edit" />
                   <img src="../../assets/images/trash.svg" alt="delete" />
                 </div>
-
+              </div>
                 <hr class="hr hr-table" />
               </div>
+              <div class="modal-wrapper modal-address-wrapper">
+                <div class="modal modal-address">
+                    <div class="edit-address-title">
+                      Add Investment
+                    </div>
+                    <form class="edit-address-form">
+                        <div class="form-field">
+                          <div class="form-field">
+                            <div class="form-label">
+                              Company
+                           
+                            </div>
+                            <input type="text" class="number-input address-form-input" placeholder="Enter Company Name">
+                        </div>
+                        <div class="form-field">
+                          <div class="form-label">
+                            Symbol
+                            <img src="../../assets/images/info.svg" alt="id-logo" />
+                          </div>
+                          <input type="text" class="number-input address-form-input" placeholder="Enter Company Sympol (Optional)">
+                      </div>
+                           
+                      <div class="form-field">
+                        <div class="form-label">
+                          Investment Type
+                        </div>
+                        <select class="form-select edit-address-select" aria-label="Select Type">
+                            <option value="1" selected>
+                              1 Type
+                            </option>
+                            <option value="2">
+                               2 Type
+                            </option>
+                            <option value="3">
+                              3 Type
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                      <div class="form-label">
+                        Investment Amount
+                     
+                      </div>
+                      <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+                  </div>
+                        </div>
+              
+                        <div class="form-city-block">
+                            <div class="form-field">
+                                <div class="form-label">
+                                  Share Price
+                                  <img src="../../assets/images/info.svg" alt="id-logo" />
+                                </div>
+                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+
+                            </div>
+                            <div class="form-field">
+                                <div class="form-label">
+                                  Number of Shares
+                                  <img src="../../assets/images/info.svg" alt="id-logo" />
+
+                                </div>
+                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                          <div class="form-label">
+                            Date
+                         
+                          </div>
+                          <input type="text" class="number-input address-form-input" placeholder="DD.MM.YYYY">
+                      </div>
+                        <div class="address-form-buttons-block investment-modal ">
+                            <button class="modal-cancel-button modal-address-cancel-button">
+                                Cancel
+                            </button>
+                            <button class="form-save-changes save-inve-changes add-investment">
+                              Add Investment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -491,5 +581,6 @@
   ></script>
   <script src="../../utils/portfolioTabsHandler.js"></script>
   <script src="../../utils/handleBurgerMenu.js"></script>
+  <script src="../../utils/modalWindow.js"></script>
   <script src="../../utils/handleDropdown.js"></script>
 </html>

@@ -1,815 +1,1018 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" name="viewport"content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Account Page</title>
-</head>
-<div class="account-body">
+  </head>
+  <div class="account-body">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid container">
-            <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon open burger-opened"></span>
-                <span class="btn-close close" aria-label="Close"></span>
-            </button>
-            <a class="navbar-brand d-flex" href="#">
-                <img src="../../assets/images/id-logo.svg" alt="id-logo">
-                <img src="../../assets/images/fund-logo.svg" alt="fund-logo">
-            </a>
-            <div class="my-2 my-lg-0 user-menu-mobile person" style="position: relative">
-                <div class="btn my-2 my-sm-0" id="show-dropdown">
-                    <div class="person-icon">
-                        <img src="../../assets/images/person.svg" alt="person-img">
-                    </div>
-                </div>
-                <div class="user-dropdown-mobile dropdown-opened">
-                    <ul class="dropdown-list">
-                        <li>Profile</li>
-                        <li>My Documents</li>
-                        <li>Settings</li>
-                        <hr class="hr">
-                        <li>Log Out</li>
-                    </ul>
-                </div>
-
+      <div class="container-fluid container">
+        <button
+          class="navbar-button"
+          style="border: none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon open burger-opened"></span>
+          <span class="btn-close close" aria-label="Close"></span>
+        </button>
+        <a class="navbar-brand d-flex" href="#">
+          <img src="../../assets/images/id-logo.svg" alt="id-logo" />
+          <img src="../../assets/images/fund-logo.svg" alt="fund-logo" />
+        </a>
+        <div
+          class="my-2 my-lg-0 user-menu-mobile person"
+          style="position: relative"
+        >
+          <div class="btn my-2 my-sm-0" id="show-dropdown">
+            <div class="person-icon">
+              <img src="../../assets/images/person.svg" alt="person-img" />
             </div>
-            <div class="collapse navbar-collapse navbar-mobile" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
-                    <hr class="navbar-mobile-line">
-                    <li class="nav-item mobile-list-item">
-                        <a class="nav-link" id="active" href="#">Deals</a>
-                    </li>
-                    <hr class="navbar-mobile-line">
-                    <li class="nav-item mobile-list-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <hr class="navbar-mobile-line">
-                    <li class="nav-item mobile-list-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <hr class="navbar-mobile-line">
-                    <li class="nav-item mobile-list-item">
-                        <a class="nav-link" href="#">My Documents</a>
-                    </li>
-                    <hr class="navbar-mobile-line">
-                </ul>
-                <div class="my-2 my-lg-0 user-menu user-menu-visible">
-                    <div class="btn my-2 my-sm-0" id="show-dropdown">
-                        <div class="user-select">
-                            <img src="../../assets/images/person.svg" alt="person-img">
-                            <p class="user-name">Peter</p>
-                            <img src="../../assets/images/arrow-down.svg" id="dropdown-arrow" alt="arrow-down-img">
-                        </div>
-                    </div>
-                    <div class="user-dropdown dropdown-opened">
-                        <ul class="dropdown-list">
-                            <li>Profile</li>
-                            <li>My Documents</li>
-                            <li>Settings</li>
-                            <hr class="hr">
-                            <li>Log Out</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="user-dropdown-mobile dropdown-opened">
+            <ul class="dropdown-list">
+              <li>Profile</li>
+              <li>My Documents</li>
+              <li>Settings</li>
+              <hr class="hr" />
+              <li>Log Out</li>
+            </ul>
+          </div>
         </div>
+        <div
+          class="collapse navbar-collapse navbar-mobile"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
+            <hr class="navbar-mobile-line" />
+            <li class="nav-item mobile-list-item">
+              <a class="nav-link" id="active" href="#">Deals</a>
+            </li>
+            <hr class="navbar-mobile-line" />
+            <li class="nav-item mobile-list-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <hr class="navbar-mobile-line" />
+            <li class="nav-item mobile-list-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <hr class="navbar-mobile-line" />
+            <li class="nav-item mobile-list-item">
+              <a class="nav-link" href="#">My Documents</a>
+            </li>
+            <hr class="navbar-mobile-line" />
+          </ul>
+          <div class="my-2 my-lg-0 user-menu user-menu-visible">
+            <div class="btn my-2 my-sm-0" id="show-dropdown">
+              <div class="user-select">
+                <img src="../../assets/images/person.svg" alt="person-img" />
+                <p class="user-name">Peter</p>
+                <img
+                  src="../../assets/images/arrow-down.svg"
+                  id="dropdown-arrow"
+                  alt="arrow-down-img"
+                />
+              </div>
+            </div>
+            <div class="user-dropdown dropdown-opened">
+              <ul class="dropdown-list">
+                <li>Profile</li>
+                <li>My Documents</li>
+                <li>Settings</li>
+                <hr class="hr" />
+                <li>Log Out</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <div class="account-container">
-        <div class="account-header">
-            <div class="account-title">
-                Profile
-            </div>
-            <div class="page-select">
-                <button class="select-item active" id="onboarding-tab-button">Onboarding Status</button>
-                <button class="select-item" id="documents-tab-button">Documents</button>
-                <button class="select-item" id="settings-tab-button">Settings</button>
-            </div>
-            <hr class="hr">
+      <div class="account-header">
+        <div class="account-title">Profile</div>
+        <div class="page-select">
+          <button class="select-item active" id="onboarding-tab-button">
+            Onboarding Status
+          </button>
+          <button class="select-item" id="documents-tab-button">
+            Documents
+          </button>
+          <button class="select-item" id="settings-tab-button">Settings</button>
         </div>
-        <div class="onboarding-tab show-tab">
-            <div class="modal-wrapper">
-                <div class="modal modal-update">
-                    <div class="update-title">
-                        Update Accreditation
-                    </div>
-                    <div class="update-subtitle">
-                        Investments made through this platform require you to be an accredited investor.
-                    </div>
-                    <div class="update-suptip">
-                        Please select an option below
-                    </div>
-                    <div class="radio-buttons-block">
-                        <div class="form-check radio-button-container active-radio" id="radio-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-1" id="flexRadioDefault1" checked>
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                I`m an individual with income more than $200, 000 per year
-                            </label>
-                        </div>
-                        <div class="form-check radio-button-container" id="radio-2">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-2" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                I`m married with income more than $300,000 per year
-                            </label>
-                        </div>
-                        <div class="form-check radio-button-container" id="radio-3">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-3" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                                My personal net worth is more than $1 Million
-                            </label>
-                        </div>
-                        <div class="form-check radio-button-container" id="radio-4">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-number="radio-4" id="flexRadioDefault4">
-                            <label class="form-check-label" for="flexRadioDefault4">
-                                Third party verification
-                            </label>
-                        </div>
-                    </div>
-                    <div class="update-subtip">
-                        You`ll need to provide a letter starting your accreditation status from a
-                        third-party accountant, attorney, broker, or investment adviser.
-                    </div>
-                    <div class="modal-buttons-block buttons-block-margin">
-                        <button class="modal-cancel-button">
-                            Cancel
-                        </button>
-                        <button class="modal-sign-button save-button">
-                            Save
-                        </button>
-                    </div>
-                </div>
+        <hr class="hr" />
+      </div>
+      <div class="onboarding-tab show-tab">
+        <div class="modal-wrapper">
+          <div class="modal modal-update">
+            <div class="update-title">Update Accreditation</div>
+            <div class="update-subtitle">
+              Investments made through this platform require you to be an
+              accredited investor.
             </div>
-            <div class="onboarding-tab-container">
-                <div class="onboarding-person-container">
-                    <div class="onboarding-person">
-                        <div class="onboarding-person-image">
-                            <div class="pensil-container">
-                                <img src="../../assets/images/pensil.svg" alt="pensil-img" class="pensil">
-                            </div>
-                            <img src="../../assets/images/person-acc.png" alt="account-person-img">
-                        </div>
-                        <div class="onboarding-person-name">
-                            Kaiya Septimus
-                        </div>
-                    </div>
-                </div>
-                <div class="onboarding-cards">
-                    <div class="onboarding-card">
-                        <div class="onboarding-card-title">
-                            <img src="../../assets/images/agreement.svg" alt="agreement-img">
-                            <span>Non-Disclosure Agreement</span>
-                        </div>
-                        <div class="onboarding-card-text">
-                            Must be executed before viewing any Deals
-                        </div>
-                        <div class="onboarding-card-button">
-                            <button>
-                                <img src="../../assets/images/payment-sent.svg" alt="">
-                                <span>Signed</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="onboarding-card">
-                        <div class="onboarding-card-title">
-                            <img src="../../assets/images/verification.svg" alt="agreement-img">
-                            <span>Identity Verification</span>
-                        </div>
-                        <div class="onboarding-card-text">
-                            The USA Patriot Act requires ID Fund to acquire the following information for identity
-                            verification and «Know Your Customer» requirements.
-                        </div>
-                        <div class="onboarding-card-button">
-                            <button id="verify-button">
-                                <span>Verify</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="onboarding-card">
-                        <div class="onboarding-card-title">
-                            <img src="../../assets/images/accreditation.svg" alt="agreement-img">
-                            <span>Accreditation</span>
-                        </div>
-                        <div class="onboarding-card-text">
-                            Must be verified before investments in Deals are allowed
-                        </div>
-                        <div class="onboarding-card-button">
-                            <button id="update-button" class="open-modal-button">
-                                <img src="../../assets/images/warning-sircle.svg" alt="warning-sircle-img">
-                                <span>Update</span>
-                            </button>
-                            <span>
-                                Will expire 09.04.2023
-                            </span>
-                        </div>
-                    </div>
-                </div>
+            <div class="update-suptip">Please select an option below</div>
+            <div class="radio-buttons-block">
+              <div
+                class="form-check radio-button-container active-radio"
+                id="radio-1"
+              >
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  data-number="radio-1"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I`m an individual with income more than $200, 000 per year
+                </label>
+              </div>
+              <div class="form-check radio-button-container" id="radio-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  data-number="radio-2"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I`m married with income more than $300,000 per year
+                </label>
+              </div>
+              <div class="form-check radio-button-container" id="radio-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  data-number="radio-3"
+                  id="flexRadioDefault3"
+                />
+                <label class="form-check-label" for="flexRadioDefault3">
+                  My personal net worth is more than $1 Million
+                </label>
+              </div>
+              <div class="form-check radio-button-container" id="radio-4">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  data-number="radio-4"
+                  id="flexRadioDefault4"
+                />
+                <label class="form-check-label" for="flexRadioDefault4">
+                  Third party verification
+                </label>
+              </div>
             </div>
+            <div class="update-subtip">
+              You`ll need to provide a letter starting your accreditation status
+              from a third-party accountant, attorney, broker, or investment
+              adviser.
+            </div>
+            <div class="modal-buttons-block buttons-block-margin">
+              <button class="modal-cancel-button">Cancel</button>
+              <button class="modal-sign-button save-button">Save</button>
+            </div>
+          </div>
         </div>
-        <div class="documents-tab">
-            <div class="documents-container">
-                <div class="documents-nav">
-                    <div class="documents-nav-list">
-                        <button class="documents-nav-list-item active-documents-tab" id="documents-subscriptions-button">
-                            <img src="../../assets/images/verification.svg" alt="account-img">
-                            <div class="">Subscriptions (3)</div>
-                        </button>
-                        <button class="documents-nav-list-item" id="documents-confirms-button">
-                            <img src="../../assets/images/confirms-gray-icon.svg" alt="lock-grey-img">
-                            <div class="">Confirms (3)</div>
-                        </button>
-                        <button class="documents-nav-list-item" id="documents-statements-button">
-                            <img src="../../assets/images/statements-gray-icon.svg" alt="lock-grey-img">
-                            <div class="">Statements (15)</div>
-                        </button>
-                        <button class="documents-nav-list-item" id="documents-k-docs-button">
-                            <img src="../../assets/images/k-docs-gray-icon.svg" alt="lock-grey-img">
-                            <div class="">K-1 Docs (29)</div>
-                        </button>
-                        <button class="documents-nav-list-item" id="documents-miscell-button">
-                            <img src="../../assets/images/miscell-gray-icon.svg" alt="lock-grey-img">
-                            <div class="">Miscellaneous (8)</div>
-                        </button>
-                        <button class="documents-nav-list-item" id="documents-private-button">
-                            <img src="../../assets/images/private-gray-icon.svg" alt="lock-grey-img">
-                            <div class="">Private (3)</div>
-                        </button>
-                    </div>
+        <div class="onboarding-tab-container">
+          <div class="onboarding-person-container">
+            <div class="onboarding-person">
+              <div class="onboarding-person-image">
+                <div class="pensil-container">
+                  <img
+                    src="../../assets/images/pensil.svg"
+                    alt="pensil-img"
+                    class="pensil"
+                  />
                 </div>
-                <div class="documents-nav-mobile">
-                    <div class="form-group">
-                        <div class="dropdown">
-                            <button class="dropdown-button">
-                                <div class="nav-list-item nav-list-item-mobile">
-                                    <img src="../../assets/images/verification.svg" alt="account-img">
-                                    <div class="active-settings-tab">Subscriptions (3)</div>
-                                </div>
-                            </button>
-                            <ul class="dropdown-list profile-mobile">
-                                <li class="dropdown-list-item">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/verification.svg" alt="account-img">
-                                        <div class="active-settings-tab">Subscriptions (3)</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/confirms-gray-icon.svg" alt="lock-grey-img">
-                                        <div class="active-settings-tab">Confirms (3)</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/statements-gray-icon.svg" alt="lock-grey-img">
-                                        <div class="active-settings-tab">Statements (15)</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/k-docs-gray-icon.svg" alt="lock-grey-img">
-                                        <div class="active-settings-tab">K-1 Docs (29)</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item" >
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/miscell-gray-icon.svg" alt="lock-grey-img">
-                                        <div class="active-settings-tab">Miscellaneous (8)</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item" >
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/private-gray-icon.svg" alt="lock-grey-img">
-                                        <div class="active-settings-tab">Private (3)</div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <input type="text" name="select-category" value="" class="dropdown-input-hidden" >
-                        </div>
+                <img
+                  src="../../assets/images/person-acc.png"
+                  alt="account-person-img"
+                />
+              </div>
+              <div class="onboarding-person-name">Kaiya Septimus</div>
+            </div>
+          </div>
+          <div class="onboarding-cards">
+            <div class="onboarding-card">
+              <div class="onboarding-card-title">
+                <img
+                  src="../../assets/images/agreement.svg"
+                  alt="agreement-img"
+                />
+                <span>Non-Disclosure Agreement</span>
+              </div>
+              <div class="onboarding-card-text">
+                Must be executed before viewing any Deals
+              </div>
+              <div class="onboarding-card-button">
+                <button>
+                  <img src="../../assets/images/payment-sent.svg" alt="" />
+                  <span>Signed</span>
+                </button>
+              </div>
+            </div>
+            <div class="onboarding-card">
+              <div class="onboarding-card-title">
+                <img
+                  src="../../assets/images/verification.svg"
+                  alt="agreement-img"
+                />
+                <span>Identity Verification</span>
+              </div>
+              <div class="onboarding-card-text">
+                The USA Patriot Act requires ID Fund to acquire the following
+                information for identity verification and «Know Your Customer»
+                requirements.
+              </div>
+              <div class="onboarding-card-button">
+                <button id="verify-button">
+                  <span>Verify</span>
+                </button>
+              </div>
+            </div>
+            <div class="onboarding-card">
+              <div class="onboarding-card-title">
+                <img
+                  src="../../assets/images/accreditation.svg"
+                  alt="agreement-img"
+                />
+                <span>Accreditation</span>
+              </div>
+              <div class="onboarding-card-text">
+                Must be verified before investments in Deals are allowed
+              </div>
+              <div class="onboarding-card-button">
+                <button id="update-button" class="open-modal-button">
+                  <img
+                    src="../../assets/images/warning-sircle.svg"
+                    alt="warning-sircle-img"
+                  />
+                  <span>Update</span>
+                </button>
+                <span> Will expire 09.04.2023 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="documents-tab">
+        <div class="documents-container">
+          <div class="documents-nav">
+            <div class="documents-nav-list">
+              <button
+                class="documents-nav-list-item active-documents-tab"
+                id="documents-subscriptions-button"
+              >
+                <img
+                  src="../../assets/images/verification.svg"
+                  alt="account-img"
+                />
+                <div class="">Subscriptions (3)</div>
+              </button>
+              <button
+                class="documents-nav-list-item"
+                id="documents-confirms-button"
+              >
+                <img
+                  src="../../assets/images/confirms-gray-icon.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">Confirms (3)</div>
+              </button>
+              <button
+                class="documents-nav-list-item"
+                id="documents-statements-button"
+              >
+                <img
+                  src="../../assets/images/statements-gray-icon.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">Statements (15)</div>
+              </button>
+              <button
+                class="documents-nav-list-item"
+                id="documents-k-docs-button"
+              >
+                <img
+                  src="../../assets/images/k-docs-gray-icon.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">K-1 Docs (29)</div>
+              </button>
+              <button
+                class="documents-nav-list-item"
+                id="documents-miscell-button"
+              >
+                <img
+                  src="../../assets/images/miscell-gray-icon.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">Miscellaneous (8)</div>
+              </button>
+              <button
+                class="documents-nav-list-item"
+                id="documents-private-button"
+              >
+                <img
+                  src="../../assets/images/private-gray-icon.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">Private (3)</div>
+              </button>
+            </div>
+          </div>
+          <div class="documents-nav-mobile">
+            <div class="form-group">
+              <div class="dropdown">
+                <button class="dropdown-button">
+                  <div class="nav-list-item nav-list-item-mobile">
+                    <img
+                      src="../../assets/images/verification.svg"
+                      alt="account-img"
+                    />
+                    <div class="active-settings-tab">Subscriptions (3)</div>
+                  </div>
+                </button>
+                <ul class="dropdown-list profile-mobile">
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/verification.svg"
+                        alt="account-img"
+                      />
+                      <div class="active-settings-tab">Subscriptions (3)</div>
                     </div>
+                  </li>
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/confirms-gray-icon.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="active-settings-tab">Confirms (3)</div>
+                    </div>
+                  </li>
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/statements-gray-icon.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="active-settings-tab">Statements (15)</div>
+                    </div>
+                  </li>
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/k-docs-gray-icon.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="active-settings-tab">K-1 Docs (29)</div>
+                    </div>
+                  </li>
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/miscell-gray-icon.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="active-settings-tab">Miscellaneous (8)</div>
+                    </div>
+                  </li>
+                  <li class="dropdown-list-item">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/private-gray-icon.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="active-settings-tab">Private (3)</div>
+                    </div>
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="dropdown-input-hidden"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="subscriptions-main acc-settings-tab">
+            <div class="account-header">Subscriptions</div>
+            <div class="account-sub-header">
+              Here you can find documents about subscribing for deals after you
+              invest.
+            </div>
+            <div class="subscriptions-table-controls">
+              <div class="subscriptions-table-container">
+                <div class="subscriptions-search-bar-container">
+                  <button class="subscriptions-search-bar-button">
+                    <img
+                      src="../../assets/images/search-icon.svg"
+                      alt="search-icon"
+                    />
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="Search for news"
+                    class="subscriptions-search-bar"
+                  />
                 </div>
-                <div class="subscriptions-main acc-settings-tab">
-                    <div class="account-header">
-                        Subscriptions
+                <div class="subscriptions-item-counter">3 Items</div>
+              </div>
+              <div class="subscriptions-table-container">
+                <select
+                  class="form-select subscriptions-deals-selector"
+                  aria-label="Default select example"
+                >
+                  <option selected>All Deals</option>
+                  <option value="1">Credit Sesame</option>
+                  <option value="2">Datamir Series IV</option>
+                  <option value="3">Datamir Series III</option>
+                  <option value="3">Zipline Series III</option>
+                </select>
+                <input
+                  class="form-control subscriptions-datepicker"
+                  type="date"
+                />
+                <div class="subscriptions-item-counter-mobile">3 Items</div>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <div class="documents-table documents-table-scroll">
+                <div class="documents-table-header">
+                  <div class="table-header-name">Name</div>
+                  <div class="table-header-date">
+                    Date
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
                     </div>
-                    <div class="account-sub-header">
-                        Here you can find documents about subscribing for deals after you invest.
+                  </div>
+                  <div class="table-header-size">
+                    Size
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
                     </div>
-                    <div class="subscriptions-table-controls">
-                        <div class="subscriptions-table-container">
-                            <div class="subscriptions-search-bar-container">
-                                <button class="subscriptions-search-bar-button">
-                                    <img src="../../assets/images/search-icon.svg" alt="search-icon">
-                                </button>
-                                <input type="text" placeholder="Search for news" class="subscriptions-search-bar">
-                            </div>
-                            <div class="subscriptions-item-counter">
-                                3 Items
-                            </div>
-                        </div>
-                        <div class="subscriptions-table-container">
-                            <select class="form-select subscriptions-deals-selector" aria-label="Default select example">
-                                <option selected>All Deals</option>
-                                <option value="1">Credit Sesame</option>
-                                <option value="2">Datamir Series IV</option>
-                                <option value="3">Datamir Series III</option>
-                                <option value="3">Zipline Series III</option>
-                            </select>
-                            <input class="form-control subscriptions-datepicker" type="date"/>
-                            <div class="subscriptions-item-counter-mobile">
-                                3 Items
-                            </div>
-                        </div>
+                  </div>
+                  <div class="table-header-link"></div>
+                </div>
+                <div class="documents-table-body">
+                  <div class="documents-table-name">
+                    <img
+                      src="../../assets/images/document-img.svg"
+                      alt="document-img"
+                    />
+                    <span>Operating Agreement</span>
+                  </div>
+                  <div class="documents-table-date">
+                    <span class="date-block"> July 6, 2021 </span>
+                  </div>
+                  <div class="documents-table-size">
+                    <div>78 kb</div>
+                  </div>
+                  <div class="documents-table-button">
+                    <div class="link-button mt-0">
+                      <button>
+                        View
+                        <img
+                          src="../../assets/images/read-more-arrow.svg"
+                          alt="read-more-arrow-img"
+                        />
+                      </button>
                     </div>
-                    <div class="table-wrapper">
-                        <div class="documents-table documents-table-scroll">
-                            <div class="documents-table-header">
-                                <div class="table-header-name">
-                                    Name
-                                </div>
-                                <div class="table-header-date">
-                                    Date
-                                    <div class="table-sorters">
-                                        <img src="../../assets/images/table-sorter.svg" alt="table-sorter-img">
-                                    </div>
-                                </div>
-                                <div class="table-header-size">
-                                    Size
-                                    <div class="table-sorters">
-                                        <img src="../../assets/images/table-sorter.svg" alt="table-sorter-img">
-                                    </div>
-                                </div>
-                                <div class="table-header-link">
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-name">
+                    <img
+                      src="../../assets/images/document-img.svg"
+                      alt="document-img"
+                    />
+                    <span>Cobalt Financial Model</span>
+                  </div>
+                  <div class="documents-table-date">
+                    <span class="date-block"> July 6, 2021 </span>
+                  </div>
+                  <div class="documents-table-size">
+                    <div>78 kb</div>
+                  </div>
+                  <div class="documents-table-button">
+                    <div class="link-button mt-0">
+                      <button>
+                        View
+                        <img
+                          src="../../assets/images/read-more-arrow.svg"
+                          alt="read-more-arrow-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-name">
+                    <img
+                      src="../../assets/images/document-img.svg"
+                      alt="document-img"
+                    />
+                    <span>Summary Highlights</span>
+                  </div>
+                  <div class="documents-table-date">
+                    <span class="date-block"> July 6, 2021 </span>
+                  </div>
+                  <div class="documents-table-size">
+                    <div>78 kb</div>
+                  </div>
+                  <div class="documents-table-button">
+                    <div class="link-button mt-0">
+                      <button>
+                        View
+                        <img
+                          src="../../assets/images/read-more-arrow.svg"
+                          alt="read-more-arrow-img"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+              </div>
+            </div>
+          </div>
+          <div class="confirms-main acc-settings-tab settings-tab-hidden">
+            confirms
+          </div>
+          <div class="statements-main acc-settings-tab settings-tab-hidden">
+            statements
+          </div>
+          <div class="k-docs-main acc-settings-tab settings-tab-hidden">
+            k-docs
+          </div>
+          <div class="miscell-main acc-settings-tab settings-tab-hidden">
+            miscell
+          </div>
+          <div class="private-main acc-settings-tab settings-tab-hidden">
+            <div class="account-header">Private</div>
+            <div class="account-sub-header">
+              Here you can manage your private documents
+            </div>
+            <div class="subscriptions-table-controls">
+              <div class="subscriptions-table-container">
+                <div class="subscriptions-search-bar-container">
+                  <button class="subscriptions-search-bar-button">
+                    <img
+                      src="../../assets/images/search-icon.svg"
+                      alt="search-icon"
+                    />
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="Search for news"
+                    class="subscriptions-search-bar"
+                  />
+                </div>
+                <div class="subscriptions-item-counter">3 Items</div>
+              </div>
+              <div class="subscriptions-table-container">
+                <input
+                  class="form-control subscriptions-datepicker"
+                  type="date"
+                />
+                <button class="upload-doc-button">
+                  <img src="../../assets/images/plus-icon.svg" alt="plus-img" />
+                  Upload Document
+                </button>
+              </div>
+            </div>
+            <div class="documents-table">
+              <div class="documents-table-header">
+                <div class="table-header-name">Name</div>
+                <div class="table-header-date">
+                  Date
+                  <div class="table-sorters">
+                    <img
+                      src="../../assets/images/table-sorter.svg"
+                      alt="table-sorter-img"
+                    />
+                  </div>
+                </div>
+                <div class="table-header-size">
+                  Size
+                  <div class="table-sorters">
+                    <img
+                      src="../../assets/images/table-sorter.svg"
+                      alt="table-sorter-img"
+                    />
+                  </div>
+                </div>
+                <div class="table-header-link"></div>
+              </div>
+              <div class="documents-table-body">
+                <div class="documents-table-name">
+                  <img
+                    src="../../assets/images/document-img.svg"
+                    alt="document-img"
+                  />
+                  <span>Operating Agreement</span>
+                </div>
+                <div class="documents-table-date">
+                  <span class="date-block"> July 6, 2021 </span>
+                </div>
+                <div class="documents-table-size">
+                  <div>78 kb</div>
+                </div>
+                <div class="documents-table-buttons">
+                  <button>
+                    <img
+                      src="../../assets/images/link-arrow.svg"
+                      alt="link-img"
+                    />
+                  </button>
+                  <button>
+                    <img
+                      src="../../assets/images/download-icon.svg"
+                      alt="download-img"
+                    />
+                  </button>
+                  <button>
+                    <img src="../../assets/images/bin-icon.svg" alt="bin-img" />
+                  </button>
+                </div>
+              </div>
+              <hr class="hr" />
+              <div class="documents-table-body">
+                <div class="documents-table-name">
+                  <img
+                    src="../../assets/images/document-img.svg"
+                    alt="document-img"
+                  />
+                  <span>Cobalt Financial Model</span>
+                </div>
+                <div class="documents-table-date">
+                  <span class="date-block"> July 6, 2021 </span>
+                </div>
+                <div class="documents-table-size">
+                  <div>78 kb</div>
+                </div>
+                <div class="documents-table-buttons">
+                  <button>
+                    <img
+                      src="../../assets/images/link-arrow.svg"
+                      alt="link-img"
+                    />
+                  </button>
+                  <button>
+                    <img
+                      src="../../assets/images/download-icon.svg"
+                      alt="download-img"
+                    />
+                  </button>
+                  <button>
+                    <img src="../../assets/images/bin-icon.svg" alt="bin-img" />
+                  </button>
+                </div>
+              </div>
+              <hr class="hr" />
+              <div class="documents-table-body">
+                <div class="documents-table-name">
+                  <img
+                    src="../../assets/images/document-img.svg"
+                    alt="document-img"
+                  />
+                  <span>Summary Highlights</span>
+                </div>
+                <div class="documents-table-date">
+                  <span class="date-block"> July 6, 2021 </span>
+                </div>
+                <div class="documents-table-size">
+                  <div>78 kb</div>
+                </div>
+                <div class="documents-table-buttons">
+                  <button>
+                    <img
+                      src="../../assets/images/link-arrow.svg"
+                      alt="link-img"
+                    />
+                  </button>
+                  <button>
+                    <img
+                      src="../../assets/images/download-icon.svg"
+                      alt="download-img"
+                    />
+                  </button>
+                  <button>
+                    <img src="../../assets/images/bin-icon.svg" alt="bin-img" />
+                  </button>
+                </div>
+              </div>
+              <hr class="hr" />
+            </div>
+            <div class="table-pagination-block">
+              <div class="table-pagination-counter">1 — 3 of 3</div>
+              <div class="table-pagination-buttons">
+                <img
+                  src="../../assets/images/pagination-arrow.svg"
+                  alt="pagination"
+                  class="pagination-button-left"
+                />
+                <img
+                  src="../../assets/images/pagination-arrow.svg"
+                  alt="pagination"
+                  class="pagination-button-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /////// -->
+      <div class="settings-tab">
+        <div class="settings-container">
+          <div class="settings-nav">
+            <div class="nav-list">
+              <button
+                class="nav-list-item active-settings-tab"
+                id="settings-acc-button"
+              >
+                <img
+                  src="../../assets/images/verification.svg"
+                  alt="account-img"
+                />
+                <div class="active-settings-tab">Account</div>
+              </button>
+              <button class="nav-list-item" id="settings-password-button">
+                <img
+                  src="../../assets/images/lock-grey.svg"
+                  alt="lock-grey-img"
+                />
+                <div class="">Change Password</div>
+              </button>
+            </div>
+          </div>
+          <div class="settings-nav-mobile">
+            <div class="form-group">
+              <div class="dropdown">
+                <button class="dropdown-button">
+                  <div class="nav-list-item nav-list-item-mobile">
+                    <img
+                      src="../../assets/images/verification.svg"
+                      alt="account-img"
+                    />
+                    <div class="active-settings-tab">Account</div>
+                  </div>
+                </button>
+                <ul class="dropdown-list profile-mobile">
+                  <li class="dropdown-list-item" data-value="account">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/verification.svg"
+                        alt="account-img"
+                      />
+                      <div class="active-settings-tab">Account</div>
+                    </div>
+                  </li>
+                  <li class="dropdown-list-item" data-value="changePassword">
+                    <div class="nav-list-item nav-list-item-mobile">
+                      <img
+                        src="../../assets/images/lock-grey.svg"
+                        alt="lock-grey-img"
+                      />
+                      <div class="">Change Password</div>
+                    </div>
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="dropdown-input-hidden"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="settings-main">
+            <div class="modal-wrapper modal-address-wrapper">
+              <div class="modal modal-address">
+                <div class="edit-address-title">Edit Address</div>
+                <form class="edit-address-form">
+                  <div class="form-field">
+                    <div class="form-label">Country</div>
+                    <select
+                      class="form-select edit-address-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>United States</option>
+                      <option value="2">France</option>
+                      <option value="3">Canada</option>
+                    </select>
 
-                                </div>
-                            </div>
-                            <div class="documents-table-body">
-                                <div class="documents-table-name">
-                                    <img src="../../assets/images/document-img.svg" alt="document-img">
-                                    <span>Operating Agreement</span>
-                                </div>
-                                <div class="documents-table-date">
-                                    <span class="date-block">
-                                        July 6, 2021
-                                    </span>
-                                </div>
-                                <div class="documents-table-size">
-                                    <div>78 kb</div>
-                                </div>
-                                <div class="documents-table-button">
-                                    <div class="link-button mt-0">
-                                        <button>
-                                            View <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="hr hr-table">
-                            <div class="documents-table-body">
-                                <div class="documents-table-name">
-                                    <img src="../../assets/images/document-img.svg" alt="document-img">
-                                    <span>Cobalt Financial Model</span>
-                                </div>
-                                <div class="documents-table-date">
-                                    <span class="date-block">
-                                        July 6, 2021
-                                    </span>
-                                </div>
-                                <div class="documents-table-size">
-                                    <div>78 kb</div>
-                                </div>
-                                <div class="documents-table-button">
-                                    <div class="link-button mt-0">
-                                        <button>
-                                            View <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="hr hr-table">
-                            <div class="documents-table-body">
-                                <div class="documents-table-name">
-                                    <img src="../../assets/images/document-img.svg" alt="document-img">
-                                    <span>Summary Highlights</span>
-                                </div>
-                                <div class="documents-table-date">
-                                    <span class="date-block">
-                                        July 6, 2021
-                                    </span>
-                                </div>
-                                <div class="documents-table-size">
-                                    <div>78 kb</div>
-                                </div>
-                                <div class="documents-table-button">
-                                    <div class="link-button mt-0">
-                                        <button>
-                                            View <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="hr hr-table">
-                        </div>
+                    <div class="form-field">
+                      <div class="form-label">Address</div>
+                      <input
+                        type="text"
+                        class="number-input address-form-input"
+                        value="3677 Briarwood Road"
+                      />
                     </div>
-                </div>
-                <div class="confirms-main acc-settings-tab settings-tab-hidden">
-                    confirms
-                </div>
-                <div class="statements-main acc-settings-tab settings-tab-hidden">
-                    statements
-                </div>
-                <div class="k-docs-main acc-settings-tab settings-tab-hidden">
-                    k-docs
-                </div>
-                <div class="miscell-main acc-settings-tab settings-tab-hidden">
-                    miscell
-                </div>
-                <div class="private-main acc-settings-tab settings-tab-hidden">
-                    <div class="account-header">
-                        Private
+                  </div>
+                  <div class="form-field">
+                    <div class="form-label">State / Province</div>
+                    <select
+                      class="form-select edit-address-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>MO</option>
+                      <option value="2">Texas</option>
+                      <option value="3">Nevada</option>
+                    </select>
+                  </div>
+                  <div class="form-city-block">
+                    <div class="form-field">
+                      <div class="form-label">City</div>
+                      <select
+                        class="form-select edit-address-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="1" selected>New York</option>
+                        <option value="2">Dallas</option>
+                        <option value="3">Washington</option>
+                      </select>
                     </div>
-                    <div class="account-sub-header">
-                        Here you can manage your private documents
+                    <div class="form-field">
+                      <div class="form-label">Zip Code</div>
+                      <input
+                        type="text"
+                        class="number-input address-form-input"
+                        value="64804"
+                      />
                     </div>
-                    <div class="subscriptions-table-controls">
-                        <div class="subscriptions-table-container">
-                            <div class="subscriptions-search-bar-container">
-                                <button class="subscriptions-search-bar-button">
-                                    <img src="../../assets/images/search-icon.svg" alt="search-icon">
-                                </button>
-                                <input type="text" placeholder="Search for news" class="subscriptions-search-bar">
-                            </div>
-                            <div class="subscriptions-item-counter">
-                                3 Items
-                            </div>
-                        </div>
-                        <div class="subscriptions-table-container">
-                            <input class="form-control subscriptions-datepicker" type="date"/>
-                            <button class="upload-doc-button">
-                                <img src="../../assets/images/plus-icon.svg" alt="plus-img">
-                                Upload Document
-                            </button>
-                        </div>
-                    </div>
-                    <div class="documents-table">
-                        <div class="documents-table-header">
-                            <div class="table-header-name">
-                                Name
-                            </div>
-                            <div class="table-header-date">
-                                Date
-                                <div class="table-sorters">
-                                    <img src="../../assets/images/table-sorter.svg" alt="table-sorter-img">
-                                </div>
-                            </div>
-                            <div class="table-header-size">
-                                Size
-                                <div class="table-sorters">
-                                    <img src="../../assets/images/table-sorter.svg" alt="table-sorter-img">
-                                </div>
-                            </div>
-                            <div class="table-header-link">
-
-                            </div>
-                        </div>
-                        <div class="documents-table-body">
-                            <div class="documents-table-name">
-                                <img src="../../assets/images/document-img.svg" alt="document-img">
-                                <span>Operating Agreement</span>
-                            </div>
-                            <div class="documents-table-date">
-                                <span class="date-block">
-                                    July 6, 2021
-                                </span>
-                            </div>
-                            <div class="documents-table-size">
-                                <div>78 kb</div>
-                            </div>
-                            <div class="documents-table-buttons">
-                                <button>
-                                    <img src="../../assets/images/link-arrow.svg" alt="link-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/download-icon.svg" alt="download-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/bin-icon.svg" alt="bin-img">
-                                </button>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="documents-table-body">
-                            <div class="documents-table-name">
-                                <img src="../../assets/images/document-img.svg" alt="document-img">
-                                <span>Cobalt Financial Model</span>
-                            </div>
-                            <div class="documents-table-date">
-                                <span class="date-block">
-                                    July 6, 2021
-                                </span>
-                            </div>
-                            <div class="documents-table-size">
-                                <div>78 kb</div>
-                            </div>
-                            <div class="documents-table-buttons">
-                                <button>
-                                    <img src="../../assets/images/link-arrow.svg" alt="link-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/download-icon.svg" alt="download-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/bin-icon.svg" alt="bin-img">
-                                </button>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                        <div class="documents-table-body">
-                            <div class="documents-table-name">
-                                <img src="../../assets/images/document-img.svg" alt="document-img">
-                                <span>Summary Highlights</span>
-                            </div>
-                            <div class="documents-table-date">
-                                <span class="date-block">
-                                    July 6, 2021
-                                </span>
-                            </div>
-                            <div class="documents-table-size">
-                                <div>78 kb</div>
-                            </div>
-                            <div class="documents-table-buttons">
-                                <button>
-                                    <img src="../../assets/images/link-arrow.svg" alt="link-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/download-icon.svg" alt="download-img">
-                                </button>
-                                <button>
-                                    <img src="../../assets/images/bin-icon.svg" alt="bin-img">
-                                </button>
-                            </div>
-                        </div>
-                        <hr class="hr">
-                    </div>
-                    <div class="table-pagination-block">
-                        <div class="table-pagination-counter">
-                            1 — 3 of 3
-                        </div>
-                        <div class="table-pagination-buttons">
-                            <img src="../../assets/images/pagination-arrow.svg" alt="pagination" class="pagination-button-left">
-                            <img src="../../assets/images/pagination-arrow.svg" alt="pagination" class="pagination-button-right">
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class="address-form-buttons-block">
+                    <button
+                      class="modal-cancel-button modal-address-cancel-button"
+                    >
+                      Cancel
+                    </button>
+                    <button class="form-save-changes save-address-changes">
+                      Save Changes
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-        </div>
-        <!-- /////// -->
-        <div class="settings-tab">
-            <div class="settings-container">
-                <div class="settings-nav">
-                    <div class="nav-list">
-                        <button class="nav-list-item active-settings-tab" id="settings-acc-button">
-                            <img src="../../assets/images/verification.svg" alt="account-img">
-                            <div class="active-settings-tab">Account</div>
-                        </button>
-                        <button class="nav-list-item" id="settings-password-button">
-                            <img src="../../assets/images/lock-grey.svg" alt="lock-grey-img">
-                            <div class="">Change Password</div>
-                        </button>
-                    </div>
-                </div>
-                <div class="settings-nav-mobile">
-                    <div class="form-group">
-                        <div class="dropdown">
-                            <button class="dropdown-button">
-                                <div class="nav-list-item nav-list-item-mobile">
-                                    <img src="../../assets/images/verification.svg" alt="account-img">
-                                    <div class="active-settings-tab">Account</div>
-                                </div>
-                            </button>
-                            <ul class="dropdown-list profile-mobile">
-                                <li class="dropdown-list-item" data-value="account">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/verification.svg" alt="account-img">
-                                        <div class="active-settings-tab">Account</div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-list-item" data-value="changePassword">
-                                    <div class="nav-list-item nav-list-item-mobile">
-                                        <img src="../../assets/images/lock-grey.svg" alt="lock-grey-img">
-                                        <div class="">Change Password</div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <input type="text" name="select-category" value="" class="dropdown-input-hidden" >
-                        </div>
-                    </div>
-                </div>
-                <div class="settings-main">
-                    <div class="modal-wrapper modal-address-wrapper">
-                        <div class="modal modal-address">
-                            <div class="edit-address-title">
-                                Edit Address
-                            </div>
-                            <form class="edit-address-form">
-                                <div class="form-field">
-                                    <div class="form-label">
-                                        Country
-                                    </div>
-                                    <select class="form-select edit-address-select" aria-label="Default select example">
-                                        <option value="1" selected>
-                                            United States
-                                        </option>
-                                        <option value="2">
-                                            France
-                                        </option>
-                                        <option value="3">
-                                            Canada
-                                        </option>
-                                    </select>
-                                   
-                                <div class="form-field">
-                                    <div class="form-label">
-                                        Address
-                                    </div>
-                                    <input type="text" class="number-input address-form-input" value="3677 Briarwood Road">
-                                </div>
-                                </div>
-                                <div class="form-field">
-                                    <div class="form-label">
-                                        State / Province
-                                    </div>
-                                    <select class="form-select edit-address-select" aria-label="Default select example">
-                                        <option value="1" selected>
-                                            MO
-                                        </option>
-                                        <option value="2">
-                                            Texas
-                                        </option>
-                                        <option value="3">
-                                            Nevada
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-city-block">
-                                    <div class="form-field">
-                                        <div class="form-label">
-                                            City
-                                        </div>
-                                        <select class="form-select edit-address-select" aria-label="Default select example">
-                                            <option value="1" selected>
-                                                New York
-                                            </option>
-                                            <option value="2">
-                                                Dallas
-                                            </option>
-                                            <option value="3">
-                                                Washington
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="form-field">
-                                        <div class="form-label">
-                                            Zip Code
-                                        </div>
-                                        <input type="text" class="number-input address-form-input" value="64804">
-                                    </div>
-                                </div>
-                                <div class="address-form-buttons-block">
-                                    <button class="modal-cancel-button modal-address-cancel-button">
-                                        Cancel
-                                    </button>
-                                    <button class="form-save-changes save-address-changes">
-                                        Save Changes
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="account-header">
-                        Account
-                    </div>
-                    <div class="account-image-container">
-                        <div class="onboarding-person-image person-image-settings">
-                            <div class="no-image-block">
-                                KS
-                            </div>
-                            <img class="account-img img-element-hidden">
-                        </div>
-                        <div class="img-settings-block">
-                            <label for="upload-image" class="change-img-button">
-                                Upload Image
-                            </label>
-                            <input id="upload-image" type="file" onchange="changeImage(this)">
-                            <button class="delete-img-button img-element-hidden">
-                                Delete
-                            </button>
-                        </div>
-                        <div class="img-settings-block-mobile">
-                            <button class="change-img-button-mobile">
-                                <img src="../../assets/images/blue-plus.png" alt="plus-img">
-                                <label for="upload-image">
-                                    Upload Image
-                                </label>
-                            </button>
-                            <input id="upload-image" type="file" onchange="changeImage(this)">
-                            <button class="delete-img-button-mobile img-element-hidden">                  
-                                <img src="../../assets/images/delete-btn.png" alt="delete-img">
-                                Delete
-                            </button>
-                        </div>
-                    </div>
-                    <div class="account-form">
-                        <div class="form-name">
-                            <div class="form-name-field form-person-field">
-                                <div class="form-label">First Name</div>
-                                <input type="text" value="Peter">
-                            </div>
-                            <div class="form-surname-field form-person-field">
-                                <div class="form-label">Last Name</div>
-                                <input type="text" value="Brooks">
-                            </div>
-                        </div>
-                        <div class="form-email">
-                            <div class="form-label">
-                                Email ID
-                            </div>
-                            <div class="email-address">
-                                rjbktaylor@yahoo.com
-                            </div>
-                        </div>
-                        <div class="form-number">
-                            <div class="form-label">
-                                Mobile Number
-                            </div>
-                            <input type="text" class="number-input" value="+1 987 654 3210">
-                        </div>
-                        <div class="form-notifications">
-                            <div class="form-label">
-                                Notifications
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Receive notifications via mobile number</label>
-                            </div>
-                        </div>
-                        <div class="form-address-block">
-                            <div class="form-flex-container">
-                                <div class="form-label">
-                                    Address
-                                </div>
-                                <button class="address-edit-button open-address-modal-button">
-                                    Edit
-                                </button>
-                            </div>
-                            <div class="form-address">
-                                3677 Briarwood Road, Joplin, MO, USA, 64804
-                            </div>
-                        </div>
-                        <button class="form-save-changes">
-                            Save Changes
-                        </button>
-                    </div>
-                </div>
-                <div class="change-password-main settings-tab-hidden">
-                    <div class="change-password-title">
-                        Change Password
-                    </div>
-                    <form class="change-password-form">
-                        <div class="form-field">
-                            <div class="form-label">
-                                Mobile Number
-                            </div>
-                            <input type="text" class="number-input" placeholder="Enter current password">
-                        </div>
-                        <div class="form-field">
-                            <div class="form-label">
-                                New Password
-                            </div>
-                            <input type="text" class="number-input" placeholder="Enter new password">
-                        </div>
-                        <div class="form-field">
-                            <div class="form-label">
-                                Repeat New Password
-                            </div>
-                            <input type="text" class="number-input" placeholder="Repeat new password">
-                        </div>
-                        <button class="change-password-button">
-                            Change Password
-                        </button>
-                    </form>
-                </div>
+            <div class="account-header">Account</div>
+            <div class="account-image-container">
+              <div class="onboarding-person-image person-image-settings">
+                <div class="no-image-block">KS</div>
+                <img class="account-img img-element-hidden" />
+              </div>
+              <div class="img-settings-block">
+                <label for="upload-image" class="change-img-button">
+                  Upload Image
+                </label>
+                <input
+                  id="upload-image"
+                  type="file"
+                  onchange="changeImage(this)"
+                />
+                <button class="delete-img-button img-element-hidden">
+                  Delete
+                </button>
+              </div>
+              <div class="img-settings-block-mobile">
+                <button class="change-img-button-mobile">
+                  <img src="../../assets/images/blue-plus.png" alt="plus-img" />
+                  <label for="upload-image"> Upload Image </label>
+                </button>
+                <input
+                  id="upload-image"
+                  type="file"
+                  onchange="changeImage(this)"
+                />
+                <button class="delete-img-button-mobile img-element-hidden">
+                  <img
+                    src="../../assets/images/delete-btn.png"
+                    alt="delete-img"
+                  />
+                  Delete
+                </button>
+              </div>
             </div>
+            <div class="account-form">
+              <div class="form-name">
+                <div class="form-name-field form-person-field">
+                  <div class="form-label">First Name</div>
+                  <input type="text" value="Peter" />
+                </div>
+                <div class="form-surname-field form-person-field">
+                  <div class="form-label">Last Name</div>
+                  <input type="text" value="Brooks" />
+                </div>
+              </div>
+              <div class="form-email">
+                <div class="form-label">Email ID</div>
+                <div class="email-address">rjbktaylor@yahoo.com</div>
+              </div>
+              <div class="form-number">
+                <div class="form-label">Mobile Number</div>
+                <input
+                  type="text"
+                  class="number-input"
+                  value="+1 987 654 3210"
+                />
+              </div>
+              <div class="form-notifications">
+                <div class="form-label">Notifications</div>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="flexSwitchCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >Receive notifications via mobile number</label
+                  >
+                </div>
+              </div>
+              <div class="form-address-block">
+                <div class="form-flex-container">
+                  <div class="form-label">Address</div>
+                  <button class="address-edit-button open-address-modal-button">
+                    Edit
+                  </button>
+                </div>
+                <div class="form-address">
+                  3677 Briarwood Road, Joplin, MO, USA, 64804
+                </div>
+              </div>
+              <button class="form-save-changes">Save Changes</button>
+            </div>
+          </div>
+          <div class="change-password-main settings-tab-hidden">
+            <div class="change-password-title">Change Password</div>
+            <form class="change-password-form">
+              <div class="form-field">
+                <div class="form-label">Current Password</div>
+                <input
+                  type="text"
+                  class="number-input"
+                  placeholder="Enter current password"
+                />
+              </div>
+              <div class="form-field">
+                <div class="form-label">New Password</div>
+                <input
+                  type="text"
+                  class="number-input"
+                  placeholder="Enter new password"
+                />
+              </div>
+              <div class="form-field">
+                <div class="form-label">Repeat New Password</div>
+                <input
+                  type="text"
+                  class="number-input"
+                  placeholder="Repeat new password"
+                />
+              </div>
+              <button class="change-password-button">Change Password</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="../../utils/handleBurgerMenu.js"></script>
     <script src="../../utils/handleDropdown.js"></script>
     <script src="../../utils/accountTabsHandler.js"></script>
@@ -818,5 +1021,5 @@
     <script src="../../utils/settingsTabHandler.js"></script>
     <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/uploadImage.js"></script>
-</div>
+  </div>
 </html>
