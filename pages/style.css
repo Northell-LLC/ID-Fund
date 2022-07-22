@@ -2845,18 +2845,21 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 26px;
   color: #5b6ba6;
+  font-weight: 600;
 }
 
 .modal-title {
   font-size: 34px;
   line-height: 48px;
   color: #00073a;
+  font-weight: 600;
   margin: 5px 0 0 0;
 }
 
 .input-label {
   display: block;
   margin: 16px 0 0 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   color: #021b79;
@@ -2872,7 +2875,12 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   padding: 13px 16px;
 }
-
+.input-label input ::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #848899;
+}
 .modal-buttons-block {
   display: flex;
   justify-content: space-between;
@@ -4596,6 +4604,5 @@ label {
     display: none;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
