@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Main Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+
+  <body style="background-color: #f7f8fa; color: #021b79">
+    <div class="portfolio-body">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid container">
+          <button
+            class="navbar-button"
+            style="border: none"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon open burger-opened"></span>
+            <span class="btn-close close" aria-label="Close"></span>
+          </button>
+          <a class="navbar-brand d-flex" href="#">
+            <img src="../../assets/images/id-logo.svg" alt="id-logo" />
+            <img src="../../assets/images/fund-logo.svg" alt="fund-logo" />
+          </a>
+          <div
+            class="my-2 my-lg-0 user-menu-mobile person"
+            style="position: relative"
+          >
+            <div class="btn my-2 my-sm-0" id="show-dropdown">
+              <div class="person-icon">
+                <img src="../../assets/images/person.svg" alt="person-img" />
+              </div>
+            </div>
+            <div class="user-dropdown-mobile dropdown-opened">
+              <ul class="dropdown-list">
+                <li>Profile</li>
+                <li>My Documents</li>
+                <li>Settings</li>
+                <hr class="hr" />
+                <li>Log Out</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse navbar-mobile"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
+              <hr class="navbar-mobile-line" />
+              <li class="nav-item mobile-list-item">
+                <a class="nav-link" id="active" href="#">Deals</a>
+              </li>
+              <hr class="navbar-mobile-line" />
+              <li class="nav-item mobile-list-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <hr class="navbar-mobile-line" />
+              <li class="nav-item mobile-list-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <hr class="navbar-mobile-line" />
+              <li class="nav-item mobile-list-item">
+                <a class="nav-link" href="#">My Documents</a>
+              </li>
+              <hr class="navbar-mobile-line" />
+            </ul>
+            <div class="my-2 my-lg-0 user-menu user-menu-visible">
+              <div class="btn my-2 my-sm-0" id="show-dropdown">
+                <div class="user-select">
+                  <img src="../../assets/images/person.svg" alt="person-img" />
+                  <p class="user-name">Peter</p>
+                  <img
+                    src="../../assets/images/arrow-down.svg"
+                    id="dropdown-arrow"
+                    alt="arrow-down-img"
+                  />
+                </div>
+              </div>
+              <div class="user-dropdown dropdown-opened">
+                <ul class="dropdown-list">
+                  <li>Profile</li>
+                  <li>My Documents</li>
+                  <li>Settings</li>
+                  <hr class="hr" />
+                  <li>Log Out</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="hr" />
+      <div class="portfolio-container">
+        <div class="portfolio-header-container">
+          <div class="portfolio-text-title">Portfolio</div>
+          <div class="search-bar-container">
+            <button class="search-bar-button">
+              <img src="../../assets/images/calendar.svg" alt="search-icon" />
+            </button>
+            <input type="text" placeholder="Today" class="search-bar" />
+          </div>
+        </div>
+        <div class="investments-container">
+          <div class="total-investments">
+            <div>
+              <span>$5,000,000.00</span>
+              <span>Total Invested</span>
+            </div>
+            <div>
+              <span>121</span>
+              <span>Total Deals</span>
+            </div>
+          </div>
+          <div class="last-investments">
+            <div>
+              <span>43</span>
+              <span>Open Deals</span>
+            </div>
+            <div>
+              <span>$5,000,000.00</span>
+              <span>Open Investments</span>
+            </div>
+            <div>
+              <span>$1,000,000.00</span>
+              <span>Last Investment</span>
+            </div>
+          </div>
+        </div>
+        <div class="last-investments-mobile">
+          <div>
+            <span>43</span>
+            <span>Open Deals</span>
+          </div>
+          <div>
+            <span>$5M</span>
+            <span>Open Investments</span>
+          </div>
+          <div>
+            <span>$1M</span>
+            <span>Last Investment</span>
+          </div>
+        </div>
+   
+        <div class="portfolio-graphic">
+          <div class="portfolio-graphic-value">
+            <span class="portfolio-graphic-title"> Portfolio Value </span>
+            <img src="../../assets/images/graph.svg" alt="id-logo" />
+          </div>
+          <div class="portfolio-graphic-value-mobile">
+            <span class="portfolio-graphic-title"> Portfolio Value </span>
+            <img src="../../assets/images/pie chart.svg" alt="id-logo" />
+          </div>
+          <div class="portfolio-graphic-allocation">
+            <span class="portfolio-graphic-title"> Portfolio Allocation </span>
+            <div class="portfolio-graphic-allocation-container">
+              <div class="allocation-img">
+              <img  src="../../assets/images/allocation.svg" alt="id-logo" />
+            </div>
+              <div class="portfolio-graphic-categories-container">
+                <div class="portfolio-graphic-categories-item">
+                  <img src="../../assets/images/point-blue.svg" alt="id-logo" />
+                  <span class="portfolio-graphic-categories-item-name"
+                    >Credit Sesame Gro…</span
+                  >
+                  <span class="portfolio-graphic-categories-item-percent"
+                    >30%</span
+                  >
+                </div>
+                <div class="portfolio-graphic-categories-item">
+                  <img src="../../assets/images/point-red.svg" alt="id-logo" />
+                  <span class="portfolio-graphic-categories-item-name"
+                    >Datamir Series IV</span
+                  >
+                  <span class="portfolio-graphic-categories-item-percent"
+                    >20%</span
+                  >
+                </div>
+                <div class="portfolio-graphic-categories-item">
+                  <img
+                    src="../../assets/images/point-orange.svg"
+                    alt="id-logo"
+                  />
+                  <span class="portfolio-graphic-categories-item-name"
+                    >Datamir Series III</span
+                  >
+                  <span class="portfolio-graphic-categories-item-percent"
+                    >20%</span
+                  >
+                </div>
+                <div class="portfolio-graphic-categories-item">
+                  <img
+                    src="../../assets/images/point-green.svg"
+                    alt="id-logo"
+                  />
+                  <span class="portfolio-graphic-categories-item-name"
+                    >Zipline Series Grou…</span
+                  >
+                  <span class="portfolio-graphic-categories-item-percent"
+                    >20%</span
+                  >
+                </div>
+                <div class="portfolio-graphic-categories-item">
+                  <img src="../../assets/images/point-grey.svg" alt="id-logo" />
+                  <span class="portfolio-graphic-categories-item-name"
+                    >Other</span
+                  >
+                  <span class="portfolio-graphic-categories-item-percent"
+                    >10%</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-deals">
+          <div class="page-select">
+            <button class="select-item active" id="open-deals-tab-button">
+              Open Deals
+            </button>
+            <button class="select-item" id="completed-deals-tab-button">
+              Completed Deals
+            </button>
+            <button class="select-item" id="external-deals-tab-button">
+              External Deals
+            </button>
+          </div>
+          <hr class="hr" />
+          <div class="open-deals-tab show-tab">
+            <div class="subscriptions-table-container">
+              <div class="subscriptions-search-bar-container portfolio-search">
+                <button class="subscriptions-search-bar-button">
+                  <img
+                    src="../../assets/images/search-icon.svg"
+                    alt="search-icon"
+                  />
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search for deals ir companies"
+                  class="subscriptions-search-bar"
+                />
+              </div>
+              <div class="subscriptions-item-counter">5 Items</div>
+            </div>
+            <div class="table-wrapper">
+              <div class="documents-table documents-table-scroll">
+                <div class="documents-table-header">
+                  <div class="table-header-item row-name">
+                    Date
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-header-item row-name">Deal</div>
+                  <div class="table-header-item row-name">Company</div>
+                  <div class="table-header-item row-name">
+                    Investment Breakdown
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-header-item row-name">
+                    Investment Amount
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-header-link"></div>
+                </div>
+                <div class="documents-table-body">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Credit Sesame</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>Sesame</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Credit Sesame</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>Sesame</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Credit Sesame</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>Sesame</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Credit Sesame</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>Sesame</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+                <div class="documents-table-body">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Credit Sesame</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>Sesame</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                </div>
+                <hr class="hr hr-table" />
+              </div>
+            </div>
+          </div>
+          <div class="external-deals-tab">
+            <div class="subscriptions-table-container">
+              <div class="subscriptions-search-bar-container portfolio-search">
+                <button class="subscriptions-search-bar-button">
+                  <img
+                    src="../../assets/images/search-icon.svg"
+                    alt="search-icon"
+                  />
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search for deals ir companies"
+                  class="subscriptions-search-bar"
+                />
+              </div>
+              <div class="subscriptions-item-counter">5 Items</div>
+              <div class="button-add-investment">
+                <button class="upload-doc-button open-modal-button open-address-modal-button">
+                  <img src="../../assets/images/plus-icon.svg" alt="plus-img">
+                  Add Investment
+              </button>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <div class="documents-table documents-table-scroll">
+                <div class="documents-table-header">
+                  <div class="table-header-item row-name">
+                    Date
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="table-header-item row-name">Company</div>
+                  <div class="table-header-item row-name">Symbol</div>
+                  <div class="table-header-item row-name">
+                    Type
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-header-item row-name">
+                    Shares
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="table-header-item row-name">
+                    Price Paid
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="table-header-item row-name">
+                    Investment Amount
+                    <div class="table-sorters">
+                      <img
+                        src="../../assets/images/table-sorter.svg"
+                        alt="table-sorter-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="documents-table-body portfolio-table">
+                  <div class="documents-table-dates">
+                    <span>18.04.2022</span>
+                  </div>
+                  <div class="documents-table-deal">
+                    <div>Dow Jones Indus…</div>
+                  </div>
+                  <div class="documents-table-company">
+                    <div>INDU:IND</div>
+                  </div>
+                  <div class="documents-table-breakdowns">
+                    <div>Stocks</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>3</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                  <div class="documents-table-amount">
+                    <div>$100,000.00</div>
+                  </div>
+                  <img src="../../assets/images/edit.svg" alt="edit" />
+                  <img src="../../assets/images/trash.svg" alt="delete" />
+                </div>
+              </div>
+                <hr class="hr hr-table" />
+              </div>
+              <div class="modal-wrapper modal-address-wrapper">
+                <div class="modal modal-address">
+                    <div class="edit-address-title">
+                      Add Investment
+                    </div>
+                    <form class="edit-address-form">
+                        <div class="form-field">
+                          <div class="form-field">
+                            <div class="form-label">
+                              Company
+                           
+                            </div>
+                            <input type="text" class="number-input address-form-input" placeholder="Enter Company Name">
+                        </div>
+                        <div class="form-field">
+                          <div class="form-label">
+                            Symbol
+                            <img src="../../assets/images/info.svg" alt="id-logo" />
+                          </div>
+                          <input type="text" class="number-input address-form-input" placeholder="Enter Company Sympol (Optional)">
+                      </div>
+                           
+                      <div class="form-field">
+                        <div class="form-label">
+                          Investment Type
+                        </div>
+                        <select class="form-select edit-address-select" aria-label="Select Type">
+                            <option value="1" selected>
+                              1 Type
+                            </option>
+                            <option value="2">
+                               2 Type
+                            </option>
+                            <option value="3">
+                              3 Type
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                      <div class="form-label">
+                        Investment Amount
+                     
+                      </div>
+                      <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+                  </div>
+                        </div>
+              
+                        <div class="form-city-block">
+                            <div class="form-field">
+                                <div class="form-label">
+                                  Share Price
+                                  <img src="../../assets/images/info.svg" alt="id-logo" />
+                                </div>
+                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+
+                            </div>
+                            <div class="form-field">
+                                <div class="form-label">
+                                  Number of Shares
+                                  <img src="../../assets/images/info.svg" alt="id-logo" />
+
+                                </div>
+                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                          <div class="form-label">
+                            Date
+                         
+                          </div>
+                          <input type="text" class="number-input address-form-input" placeholder="DD.MM.YYYY">
+                      </div>
+                        <div class="address-form-buttons-block investment-modal ">
+                            <button class="modal-cancel-button modal-address-cancel-button">
+                                Cancel
+                            </button>
+                            <button class="form-save-changes save-inve-changes add-investment">
+                              Add Investment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../utils/portfolioTabsHandler.js"></script>
+  <script src="../../utils/handleBurgerMenu.js"></script>
+  <script src="../../utils/modalWindow.js"></script>
+  <script src="../../utils/handleDropdown.js"></script>
+</html>

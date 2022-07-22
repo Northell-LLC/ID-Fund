@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>News Main Page</title>
+</head>
+<body>
+    <div class="news-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid container">
+                <button class="navbar-button" style="border: none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon open burger-opened"></span>
+                    <span class="btn-close close" aria-label="Close"></span>
+                </button>
+                <a class="navbar-brand d-flex" href="#">
+                    <img src="../../assets/images/id-logo.svg" alt="id-logo">
+                    <img src="../../assets/images/fund-logo.svg" alt="fund-logo">
+                </a>
+                <div class="my-2 my-lg-0 user-menu-mobile person" style="position: relative">
+                    <div class="btn my-2 my-sm-0" id="show-dropdown">
+                        <div class="person-icon">
+                            <img src="../../assets/images/person.svg" alt="person-img">
+                        </div>
+                    </div>
+                    <div class="user-dropdown-mobile dropdown-opened">
+                        <ul class="dropdown-list">
+                            <li>Profile</li>
+                            <li>My Documents</li>
+                            <li>Settings</li>
+                            <hr class="hr">
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-mobile" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile-list">
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
+                            <a class="nav-link" href="#">Deals</a>
+                        </li>
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
+                            <a class="nav-link" id="active" href="#">News</a>
+                        </li>
+                        <hr class="navbar-mobile-line">
+                        <li class="nav-item mobile-list-item">
+                            <a class="nav-link" href="#">My Documents</a>
+                        </li>
+                        <hr class="navbar-mobile-line">
+                    </ul>
+                    <div class="my-2 my-lg-0 user-menu user-menu-visible">
+                        <div class="btn my-2 my-sm-0" id="show-dropdown">
+                            <div class="user-select">
+                                <img src="../../assets/images/person.svg" alt="person-img">
+                                <p class="user-name">Peter</p>
+                                <img src="../../assets/images/arrow-down.svg" id="dropdown-arrow" alt="arrow-down-img">
+                            </div>
+                        </div>
+                        <div class="user-dropdown dropdown-opened ">
+                            <ul class="dropdown-list">
+                                <li>Profile</li>
+                                <li>My Documents</li>
+                                <li>Settings</li>
+                                <hr class="hr">
+                                <li>Log Out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr class="hr">
+        <div class="news-main-container">
+            <div class="news-header-container">
+                <div class="news-text-title">
+                    News
+                </div>
+                <div class="search-bar-container">
+                    <button class="search-bar-button">
+                        <img src="../../assets/images/search-icon.svg" alt="search-icon">
+                    </button>
+                    <input type="text" placeholder="Search for news" class="search-bar">
+                </div>
+            </div>
+            <div>
+                <div class="search-relusts-container page-select-hidden">
+                    <div class="search-results-number">
+                        4 results for «sesame»
+                    </div>
+                    <div class="page-select search-relusts-scroll" id="search-result-list">
+                        <button class="select-item active search-select">All</button>
+                        <button class="select-item search-select" id="">Company Updates</button>
+                        <button class="select-item search-select" id="">Quarterly Reports</button>
+                        <button class="select-item search-select" id="">News</button>
+                        <button class="select-item search-select" id="">Events</button>
+                    </div>
+                </div>
+            </div>
+            <div class="page-select-block">
+                <div class="page-select page-select-scroll">
+                    <button class="select-item" id="company-updates-tab-button">Company Updates</button>
+                    <button class="select-item" id="quar-reports-tab-button">Quarterly Reports</button>
+                    <button class="select-item active" id="news-tab-button">News</button>
+                    <button class="select-item" id="events-tab-button">Events</button>
+                </div>
+                <hr class="hr">
+            </div>
+            <div class="news-tabs-container">
+                <div class="company-updates-tab">
+                    company-updates
+                </div>
+                <div class="quar-reports-tab">
+                    <div class="reports-list">
+                        <div class="reports-list-item">
+                            <div class="reports-item-main">
+                                <div class="item-main-blocks mb-3">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        Quarterly reports  
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Quarterly Update
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        View Report <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reports-item-photo">
+                                <img src="../../assets/images/report-doc-img.svg" alt="report-doc-img">
+                            </div>
+                        </div>
+                        <div class="reports-list-item">
+                            <div class="reports-item-main">
+                                <div class="item-main-blocks mb-3">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        Quarterly reports
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Quarterly Update
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        View Report <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reports-item-photo">
+                                <img src="../../assets/images/report-doc-img.svg" alt="report-doc-img">
+                            </div>
+                        </div>
+                        <div class="reports-list-item">
+                            <div class="reports-item-main">
+                                <div class="item-main-blocks mb-3">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        Quarterly reports
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Quarterly Update
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        View Report <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reports-item-photo">
+                                <img src="../../assets/images/report-doc-img.svg" alt="report-doc-img">
+                            </div>
+                        </div>
+                        <div class="reports-list-item">
+                            <div class="reports-item-main">
+                                <div class="item-main-blocks mb-3">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        Quarterly reports
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Quarterly Update
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        View Report <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reports-item-photo">
+                                <img src="../../assets/images/report-doc-img.svg" alt="report-doc-img">
+                            </div>
+                        </div>
+                        <div class="reports-list-item">
+                            <div class="reports-item-main">
+                                <div class="item-main-blocks mb-3">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        Quarterly reports
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Quarterly Update
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        View Report <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reports-item-photo">
+                                <img src="../../assets/images/report-doc-img.svg" alt="report-doc-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more-button-container">
+                        <button class="show-more-button">
+                            Show More
+                        </button>
+                    </div>
+                </div>
+                <div class="news-tab show-tab">
+                    <div class="news-list">
+                        <div class="news-list-item">
+                            <div class="news-item-main">
+                                <div class="item-main-blocks">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                       News
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Update
+                                </div>
+                                <div class="item-main-text">
+                                    Credit Sesame is a data analytics and artificial intelligence company
+                                    that has already helped 15MM+ users improve th…
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        Read More <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-item-photo">
+                                <img src="../../assets/images/news-item-img.png" alt="news-item-img">
+                            </div>
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-item-main">
+                                <div class="item-main-blocks">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                       News
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Update
+                                </div>
+                                <div class="item-main-text">
+                                    Credit Sesame is a data analytics and artificial intelligence company
+                                    that has already helped 15MM+ users improve th…
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        Read More <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-item-photo">
+                                <img src="../../assets/images/news-item-img.png" alt="news-item-img">
+                            </div>
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-item-main">
+                                <div class="item-main-blocks">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        News
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Update
+                                </div>
+                                <div class="item-main-text">
+                                    Credit Sesame is a data analytics and artificial intelligence company
+                                    that has already helped 15MM+ users improve th…
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        Read More <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-item-photo">
+                                <img src="../../assets/images/news-item-img.png" alt="news-item-img">
+                            </div>
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-item-main">
+                                <div class="item-main-blocks">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        News
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Update
+                                </div>
+                                <div class="item-main-text">
+                                    Credit Sesame is a data analytics and artificial intelligence company
+                                    that has already helped 15MM+ users improve th…
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        Read More <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-item-photo">
+                                <img src="../../assets/images/news-item-img.png" alt="news-item-img">
+                            </div>
+                        </div>
+                        <div class="news-list-item">
+                            <div class="news-item-main">
+                                <div class="item-main-blocks">
+                                    <span class="card-item">
+                                        July 16, 2021
+                                    </span>
+                                    <span class="card-item">
+                                        News
+                                    </span>
+                                </div>
+                                <div class="text-title mb-1">
+                                    Credit Sesame Update
+                                </div>
+                                <div class="item-main-text">
+                                    Credit Sesame is a data analytics and artificial intelligence company
+                                    that has already helped 15MM+ users improve th…
+                                </div>
+                                <div class="link-button">
+                                    <a href="./news-inner-page.html">
+                                        Read More <img src="../../assets/images/read-more-arrow.svg" alt="read-more-arrow-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-item-photo">
+                                <img src="../../assets/images/news-item-img.png" alt="news-item-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more-button-container">
+                        <button class="show-more-button">
+                            Show More
+                        </button>
+                    </div>
+                </div>
+                <div class="events-tab">
+                    events
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src="../../utils/handleDropdown.js"></script>
+    <script src="../../utils/handleBurgerMenu.js"></script>
+    <script src="../../utils/newsTabsHandler.js"></script>
+    <script src="../../utils/searchBarControl.js"></script>
+</body>
+</html>

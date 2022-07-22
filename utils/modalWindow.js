@@ -7,6 +7,7 @@ const modalCancelButton = document.querySelector('.modal-cancel-button');
 const openAddressModalButton = document.querySelector('.open-address-modal-button');
 const addressModalWrapper = document.querySelector('.modal-address-wrapper');
 const addressModal = document.querySelector('.modal-address');
+const saveAddressChanges = document.querySelector('.save-address-changes');
 const addressModalCancelButton = document.querySelector('.modal-address-cancel-button');
 
 
@@ -50,8 +51,17 @@ addressModalWrapper.addEventListener('click', (event) => {
 	}
 });
 
-addressModalCancelButton.addEventListener('click', () => {
+addressModalCancelButton.addEventListener('click', (event) => {
+    closeModal(event);
+});
+
+saveAddressChanges.addEventListener('click', (event) => {
+    closeModal(event);
+})
+
+function closeModal(event) {
+    event.preventDefault();
     addressModalWrapper.classList.remove('modal-wrapper-visible');
     addressModal.classList.remove('modal-visible');
     body.classList.remove('scroll-lock');
-});
+}
