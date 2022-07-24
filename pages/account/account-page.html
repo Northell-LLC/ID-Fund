@@ -278,11 +278,11 @@
           <div class="documents-nav">
             <div class="documents-nav-list">
               <button
-                class="documents-nav-list-item active-documents-tab"
+                class="documents-nav-list-item"
                 id="documents-subscriptions-button"
               >
                 <img
-                  src="../../assets/images/verification.svg"
+                  src="../../assets/images/subcr-grey.svg"
                   alt="account-img"
                 />
                 <div class="">Subscriptions (3)</div>
@@ -348,62 +348,62 @@
                       src="../../assets/images/verification.svg"
                       alt="account-img"
                     />
-                    <div class="active-settings-tab">Subscriptions (3)</div>
+                    <div class="active-documents-tab">Subscriptions(3)</div>
                   </div>
                 </button>
                 <ul class="dropdown-list profile-mobile">
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="subscriptions">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
-                        src="../../assets/images/verification.svg"
+                        src="../../assets/images/subcr-grey.svg"
                         alt="account-img"
                       />
-                      <div class="active-settings-tab">Subscriptions (3)</div>
+                      <div>Subscription(3)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="confirms">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/confirms-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Confirms (3)</div>
+                      <div class="">Confirms (3)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="statements">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/statements-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Statements (15)</div>
+                      <div class="">Statements (15)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="k-1">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/k-docs-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">K-1 Docs (29)</div>
+                      <div class="">K-1 Docs (29)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="miscellaneous">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/miscell-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Miscellaneous (8)</div>
+                      <div class="">Miscellaneous (8)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="private">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/private-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Private (3)</div>
+                      <div class="">Private(3)</div>
                     </div>
                   </li>
                 </ul>
@@ -416,6 +416,7 @@
               </div>
             </div>
           </div>
+
           <div class="subscriptions-main acc-settings-tab">
             <div class="account-header">Subscriptions</div>
             <div class="account-sub-header">
@@ -454,6 +455,26 @@
                   class="form-control subscriptions-datepicker"
                   type="date"
                 />
+
+                <!-- <form>
+                  <input type="reset" class="reset" value="Clear it!" />
+                  <div class="__select" data-state="">
+                      <div class="__select__title"></div>
+                    <div class="__select__content">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Option 0"></label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Option 1"></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                      <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Option 2 (disabled)"></label>
+                      <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Option 3"></label>
+                      <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect4" tabindex="0" class="__select__label" data-value="Option 4"></label>
+                    </div>
+                  </div>
+                </form> -->
+
                 <div class="subscriptions-item-counter-mobile">3 Items</div>
               </div>
             </div>
@@ -777,8 +798,8 @@
           </div>
           <div class="settings-nav-mobile">
             <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown-button">
+              <div class="dropdown-settings">
+                <button class="dropdown-button-settings">
                   <div class="nav-list-item nav-list-item-mobile">
                     <img
                       src="../../assets/images/verification.svg"
@@ -787,8 +808,8 @@
                     <div class="active-settings-tab">Account</div>
                   </div>
                 </button>
-                <ul class="dropdown-list profile-mobile">
-                  <li class="dropdown-list-item" data-value="account">
+                <ul class="dropdown-list-settings profile-mobile">
+                  <li class="dropdown-list-item-settings" data-value="account">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/verification.svg"
@@ -797,7 +818,10 @@
                       <div class="active-settings-tab">Account</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item" data-value="changePassword">
+                  <li
+                    class="dropdown-list-item-settings"
+                    data-value="changePassword"
+                  >
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/lock-grey.svg"
@@ -811,7 +835,7 @@
                   type="text"
                   name="select-category"
                   value=""
-                  class="dropdown-input-hidden"
+                  class="dropdown-input-hidden-settings"
                 />
               </div>
             </div>
@@ -1013,13 +1037,15 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/handleBurgerMenu.js"></script>
     <script src="../../utils/handleDropdown.js"></script>
+    <script src="../../utils/ex.js"></script>
     <script src="../../utils/accountTabsHandler.js"></script>
     <script src="../../utils/modalWindow.js"></script>
     <script src="../../utils/modalRadioButtonshandler.js"></script>
     <script src="../../utils/settingsTabHandler.js"></script>
-    <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/uploadImage.js"></script>
+    <script src="../../utils/singleSelect.js"></script>
   </div>
 </html>
