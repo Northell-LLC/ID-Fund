@@ -440,44 +440,79 @@
                 </div>
                 <div class="subscriptions-item-counter">3 Items</div>
               </div>
+
               <div class="subscriptions-table-container">
-                <select
-                  class="form-select subscriptions-deals-selector"
-                  aria-label="Default select example"
-                >
-                  <option selected>All Deals</option>
-                  <option value="1">Credit Sesame</option>
-                  <option value="2">Datamir Series IV</option>
-                  <option value="3">Datamir Series III</option>
-                  <option value="3">Zipline Series III</option>
-                </select>
+                <details class="custom-select">
+                  <summary class="radios">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="default"
+                      title="All Deals"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item1"
+                      title="Credit Sesame"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item2"
+                      title="Datamir Series IV"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item3"
+                      title="Datamir Series III"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item4"
+                      title="Zipline Series III"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item5"
+                      title="Company Series G"
+                    />
+                  </summary>
+                  <ul class="list">
+                    <li>
+                      <label for="default">All Deals</label>
+                    </li>
+                    <li>
+                      <label for="item1">
+                        Credit Sesame
+                        <span></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="item2">Datamir Series IV</label>
+                    </li>
+                    <li>
+                      <label for="item3">Datamir Series III</label>
+                    </li>
+                    <li>
+                      <label for="item4">Zipline Series III</label>
+                    </li>
+                    <li>
+                      <label for="item5">Company Series G</label>
+                    </li>
+                  </ul>
+                </details>
                 <input
                   class="form-control subscriptions-datepicker"
                   type="date"
                 />
-
-                <!-- <form>
-                  <input type="reset" class="reset" value="Clear it!" />
-                  <div class="__select" data-state="">
-                      <div class="__select__title"></div>
-                    <div class="__select__content">
-                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                      <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Option 0"></label>
-                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                      <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Option 1"></label>
-                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
-                      <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Option 2 (disabled)"></label>
-                      <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                      <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Option 3"></label>
-                      <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-                      <label for="singleSelect4" tabindex="0" class="__select__label" data-value="Option 4"></label>
-                    </div>
-                  </div>
-                </form> -->
-
-                <div class="subscriptions-item-counter-mobile">3 Items</div>
               </div>
             </div>
+            <div class="subscriptions-item-counter-mobile">3 Items</div>
             <div class="table-wrapper">
               <div class="documents-table documents-table-scroll">
                 <div class="documents-table-header">
@@ -604,7 +639,7 @@
               Here you can manage your private documents
             </div>
             <div class="subscriptions-table-controls">
-              <div class="subscriptions-table-container">
+              <div class="subscriptions-table-container subscriptions-private">
                 <div class="subscriptions-search-bar-container">
                   <button class="subscriptions-search-bar-button">
                     <img
@@ -620,7 +655,7 @@
                 </div>
                 <div class="subscriptions-item-counter">3 Items</div>
               </div>
-              <div class="subscriptions-table-container">
+              <div class="subscriptions-table-container private-container">
                 <input
                   class="form-control subscriptions-datepicker"
                   type="date"
@@ -631,6 +666,7 @@
                 </button>
               </div>
             </div>
+            <div class="subscriptions-item-counter-mobile">3 Items</div>
             <div class="documents-table">
               <div class="documents-table-header">
                 <div class="table-header-name">Name</div>
