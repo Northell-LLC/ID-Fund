@@ -119,7 +119,7 @@
             </div>
             <div>
               <span>121</span>
-              <span>Total Deals</span>
+              <span style="width: 60px">Total Deals</span>
             </div>
           </div>
           <div class="last-investments">
@@ -151,7 +151,7 @@
             <span>Last Investment</span>
           </div>
         </div>
-   
+
         <div class="portfolio-graphic">
           <div class="portfolio-graphic-value">
             <span class="portfolio-graphic-title"> Portfolio Value </span>
@@ -165,8 +165,8 @@
             <span class="portfolio-graphic-title"> Portfolio Allocation </span>
             <div class="portfolio-graphic-allocation-container">
               <div class="allocation-img">
-              <img  src="../../assets/images/allocation.svg" alt="id-logo" />
-            </div>
+                <img src="../../assets/images/allocation.svg" alt="id-logo" />
+              </div>
               <div class="portfolio-graphic-categories-container">
                 <div class="portfolio-graphic-categories-item">
                   <img src="../../assets/images/point-blue.svg" alt="id-logo" />
@@ -253,11 +253,21 @@
                 />
               </div>
               <div class="subscriptions-item-counter">5 Items</div>
+              <div
+                style="margin-top: -13px"
+                class="subscriptions-item-counter-mobile"
+              >
+                3 Items
+              </div>
             </div>
-            <div class="table-wrapper">
-              <div class="documents-table documents-table-scroll">
-                <div class="documents-table-header">
-                  <div class="table-header-item row-name">
+            <!-- <div class="table-wrapper"> -->
+            <table
+              style="display: flex; flex-direction: column"
+              class="documents-table documents-table-scroll"
+            >
+              <thead style="padding: 0" class="documents-table-header">
+                <tr style="min-width: 100%" class="table-header-item">
+                  <th style="padding-left: 20px">
                     Date
                     <div class="table-sorters">
                       <img
@@ -265,10 +275,10 @@
                         alt="table-sorter-img"
                       />
                     </div>
-                  </div>
-                  <div class="table-header-item row-name">Deal</div>
-                  <div class="table-header-item row-name">Company</div>
-                  <div class="table-header-item row-name">
+                  </th>
+                  <th>Deal</th>
+                  <th>Company</th>
+                  <th>
                     Investment Breakdown
                     <div class="table-sorters">
                       <img
@@ -276,8 +286,8 @@
                         alt="table-sorter-img"
                       />
                     </div>
-                  </div>
-                  <div class="table-header-item row-name">
+                  </th>
+                  <th style="padding-right: 20px">
                     Investment Amount
                     <div class="table-sorters">
                       <img
@@ -285,105 +295,50 @@
                         alt="table-sorter-img"
                       />
                     </div>
-                  </div>
-                  <div class="table-header-link"></div>
-                </div>
-                <div class="documents-table-body">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    <div>Credit Sesame</div>
-                  </div>
-                  <div class="documents-table-company">
-                    <div>Sesame</div>
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    <div>$100,000.00</div>
-                  </div>
-                  <div class="documents-table-amount">
-                    <div>$100,000.00</div>
-                  </div>
-                </div>
-                <hr class="hr hr-table" />
-                <div class="documents-table-body">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    <div>Credit Sesame</div>
-                  </div>
-                  <div class="documents-table-company">
-                    <div>Sesame</div>
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    <div>$100,000.00</div>
-                  </div>
-                  <div class="documents-table-amount">
-                    <div>$100,000.00</div>
-                  </div>
-                </div>
-                <hr class="hr hr-table" />
-                <div class="documents-table-body">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    <div>Credit Sesame</div>
-                  </div>
-                  <div class="documents-table-company">
-                    <div>Sesame</div>
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    <div>$100,000.00</div>
-                  </div>
-                  <div class="documents-table-amount">
-                    <div>$100,000.00</div>
-                  </div>
-                </div>
-                <hr class="hr hr-table" />
-                <div class="documents-table-body">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    <div>Credit Sesame</div>
-                  </div>
-                  <div class="documents-table-company">
-                    <div>Sesame</div>
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    <div>$100,000.00</div>
-                  </div>
-                  <div class="documents-table-amount">
-                    <div>$100,000.00</div>
-                  </div>
-                </div>
-                <hr class="hr hr-table" />
-                <div class="documents-table-body">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    <div>Credit Sesame</div>
-                  </div>
-                  <div class="documents-table-company">
-                    <div>Sesame</div>
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    <div>$100,000.00</div>
-                  </div>
-                  <div class="documents-table-amount">
-                    <div>$100,000.00</div>
-                  </div>
-                </div>
-                <hr class="hr hr-table" />
-              </div>
-            </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                  <td>$100,000.00</td>
+                </tr>
+
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                  <td>$100,000.00</td>
+                </tr>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                  <td>$100,000.00</td>
+                </tr>
+
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                  <td>$100,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- </div> -->
           </div>
           <div class="external-deals-tab">
             <div class="subscriptions-table-container">
-              <div class="subscriptions-search-bar-container portfolio-search">
+              <div
+                style="margin-bottom: 0"
+                class="subscriptions-search-bar-container portfolio-search"
+              >
                 <button class="subscriptions-search-bar-button">
                   <img
                     src="../../assets/images/search-icon.svg"
@@ -397,11 +352,19 @@
                 />
               </div>
               <div class="subscriptions-item-counter">5 Items</div>
+              <div
+                style="margin-top: -13px"
+                class="subscriptions-item-counter-mobile"
+              >
+                3 Items
+              </div>
               <div class="button-add-investment">
-                <button class="upload-doc-button open-modal-button open-address-modal-button">
-                  <img src="../../assets/images/plus-icon.svg" alt="plus-img">
+                <button
+                  class="upload-doc-button open-modal-button open-address-modal-button"
+                >
+                  <img src="../../assets/images/plus-icon.svg" alt="plus-img" />
                   Add Investment
-              </button>
+                </button>
               </div>
             </div>
             <div class="table-wrapper">
@@ -479,95 +442,113 @@
                   <div class="documents-table-amount">
                     <div>$100,000.00</div>
                   </div>
-                  <img src="../../assets/images/edit.svg" alt="edit" />
-                  <img src="../../assets/images/trash.svg" alt="delete" />
                 </div>
+                <!-- <img src="../../assets/images/edit.svg" alt="edit" />
+                <img src="../../assets/images/trash.svg" alt="delete" /> -->
               </div>
-                <hr class="hr hr-table" />
-              </div>
+
               <div class="modal-wrapper modal-address-wrapper">
                 <div class="modal modal-address">
-                    <div class="edit-address-title">
-                      Add Investment
-                    </div>
-                    <form class="edit-address-form">
-                        <div class="form-field">
-                          <div class="form-field">
-                            <div class="form-label">
-                              Company
-                           
-                            </div>
-                            <input type="text" class="number-input address-form-input" placeholder="Enter Company Name">
-                        </div>
-                        <div class="form-field">
-                          <div class="form-label">
-                            Symbol
-                            <img src="../../assets/images/info.svg" alt="id-logo" />
-                          </div>
-                          <input type="text" class="number-input address-form-input" placeholder="Enter Company Sympol (Optional)">
+                  <div class="edit-address-title">Add Investment</div>
+                  <form class="edit-address-form">
+                    <div class="form-field">
+                      <div class="form-field">
+                        <div class="form-label">Company</div>
+                        <input
+                          type="text"
+                          class="number-input address-form-input"
+                          placeholder="Enter Company Name"
+                        />
                       </div>
-                           
                       <div class="form-field">
                         <div class="form-label">
-                          Investment Type
+                          Symbol
+                          <img
+                            src="../../assets/images/info.svg"
+                            alt="id-logo"
+                          />
                         </div>
-                        <select class="form-select edit-address-select" aria-label="Select Type">
-                            <option value="1" selected>
-                              1 Type
-                            </option>
-                            <option value="2">
-                               2 Type
-                            </option>
-                            <option value="3">
-                              3 Type
-                            </option>
+                        <input
+                          type="text"
+                          class="number-input address-form-input"
+                          placeholder="Enter Company Sympol (Optional)"
+                        />
+                      </div>
+
+                      <div class="form-field">
+                        <div class="form-label">Investment Type</div>
+                        <select
+                          class="form-select edit-address-select"
+                          aria-label="Select Type"
+                        >
+                          <option value="1" selected>1 Type</option>
+                          <option value="2">2 Type</option>
+                          <option value="3">3 Type</option>
                         </select>
+                      </div>
+                      <div class="form-field">
+                        <div class="form-label">Investment Amount</div>
+                        <input
+                          type="text"
+                          class="number-input address-form-input"
+                          placeholder="$ 0.00"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-city-block">
+                      <div class="form-field">
+                        <div class="form-label">
+                          Share Price
+                          <img
+                            src="../../assets/images/info.svg"
+                            alt="id-logo"
+                          />
+                        </div>
+                        <input
+                          type="text"
+                          class="number-input address-form-input"
+                          placeholder="$ 0.00"
+                        />
+                      </div>
+                      <div class="form-field">
+                        <div class="form-label">
+                          Number of Shares
+                          <img
+                            src="../../assets/images/info.svg"
+                            alt="id-logo"
+                          />
+                        </div>
+                        <input
+                          type="text"
+                          class="number-input address-form-input"
+                          placeholder="$ 0.00"
+                        />
+                      </div>
                     </div>
                     <div class="form-field">
-                      <div class="form-label">
-                        Investment Amount
-                     
-                      </div>
-                      <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
-                  </div>
-                        </div>
-              
-                        <div class="form-city-block">
-                            <div class="form-field">
-                                <div class="form-label">
-                                  Share Price
-                                  <img src="../../assets/images/info.svg" alt="id-logo" />
-                                </div>
-                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
-
-                            </div>
-                            <div class="form-field">
-                                <div class="form-label">
-                                  Number of Shares
-                                  <img src="../../assets/images/info.svg" alt="id-logo" />
-
-                                </div>
-                                <input type="text" class="number-input address-form-input" placeholder="$ 0.00">
-                            </div>
-                        </div>
-                        <div class="form-field">
-                          <div class="form-label">
-                            Date
-                         
-                          </div>
-                          <input type="text" class="number-input address-form-input" placeholder="DD.MM.YYYY">
-                      </div>
-                        <div class="address-form-buttons-block investment-modal ">
-                            <button class="modal-cancel-button modal-address-cancel-button">
-                                Cancel
-                            </button>
-                            <button class="form-save-changes save-inve-changes add-investment">
-                              Add Investment
-                            </button>
-                        </div>
-                    </form>
+                      <div class="form-label">Date</div>
+                      <input
+                        type="text"
+                        class="number-input address-form-input"
+                        placeholder="DD.MM.YYYY"
+                      />
+                    </div>
+                    <div class="address-form-buttons-block investment-modal">
+                      <button
+                        class="modal-cancel-button modal-address-cancel-button"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="form-save-changes save-inve-changes add-investment"
+                      >
+                        Add Investment
+                      </button>
+                    </div>
+                  </form>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </div>

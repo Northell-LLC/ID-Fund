@@ -278,11 +278,11 @@
           <div class="documents-nav">
             <div class="documents-nav-list">
               <button
-                class="documents-nav-list-item active-documents-tab"
+                class="documents-nav-list-item"
                 id="documents-subscriptions-button"
               >
                 <img
-                  src="../../assets/images/verification.svg"
+                  src="../../assets/images/subcr-grey.svg"
                   alt="account-img"
                 />
                 <div class="">Subscriptions (3)</div>
@@ -348,62 +348,62 @@
                       src="../../assets/images/verification.svg"
                       alt="account-img"
                     />
-                    <div class="active-settings-tab">Subscriptions (3)</div>
+                    <div class="active-documents-tab">Subscriptions(3)</div>
                   </div>
                 </button>
                 <ul class="dropdown-list profile-mobile">
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="subscriptions">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
-                        src="../../assets/images/verification.svg"
+                        src="../../assets/images/subcr-grey.svg"
                         alt="account-img"
                       />
-                      <div class="active-settings-tab">Subscriptions (3)</div>
+                      <div>Subscription(3)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="confirms">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/confirms-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Confirms (3)</div>
+                      <div class="">Confirms (3)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="statements">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/statements-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Statements (15)</div>
+                      <div class="">Statements (15)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="k-1">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/k-docs-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">K-1 Docs (29)</div>
+                      <div class="">K-1 Docs (29)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="miscellaneous">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/miscell-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Miscellaneous (8)</div>
+                      <div class="">Miscellaneous (8)</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item">
+                  <li class="dropdown-list-item" data-value="private">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/private-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="active-settings-tab">Private (3)</div>
+                      <div class="">Private(3)</div>
                     </div>
                   </li>
                 </ul>
@@ -416,6 +416,7 @@
               </div>
             </div>
           </div>
+
           <div class="subscriptions-main acc-settings-tab">
             <div class="account-header">Subscriptions</div>
             <div class="account-sub-header">
@@ -439,24 +440,79 @@
                 </div>
                 <div class="subscriptions-item-counter">3 Items</div>
               </div>
+
               <div class="subscriptions-table-container">
-                <select
-                  class="form-select subscriptions-deals-selector"
-                  aria-label="Default select example"
-                >
-                  <option selected>All Deals</option>
-                  <option value="1">Credit Sesame</option>
-                  <option value="2">Datamir Series IV</option>
-                  <option value="3">Datamir Series III</option>
-                  <option value="3">Zipline Series III</option>
-                </select>
+                <details class="custom-select">
+                  <summary class="radios">
+                    <input
+                      type="radio"
+                      name="item"
+                      id="default"
+                      title="All Deals"
+                      checked
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item1"
+                      title="Credit Sesame"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item2"
+                      title="Datamir Series IV"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item3"
+                      title="Datamir Series III"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item4"
+                      title="Zipline Series III"
+                    />
+                    <input
+                      type="radio"
+                      name="item"
+                      id="item5"
+                      title="Company Series G"
+                    />
+                  </summary>
+                  <ul class="list">
+                    <li>
+                      <label for="default">All Deals</label>
+                    </li>
+                    <li>
+                      <label for="item1">
+                        Credit Sesame
+                        <span></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="item2">Datamir Series IV</label>
+                    </li>
+                    <li>
+                      <label for="item3">Datamir Series III</label>
+                    </li>
+                    <li>
+                      <label for="item4">Zipline Series III</label>
+                    </li>
+                    <li>
+                      <label for="item5">Company Series G</label>
+                    </li>
+                  </ul>
+                </details>
                 <input
                   class="form-control subscriptions-datepicker"
                   type="date"
                 />
-                <div class="subscriptions-item-counter-mobile">3 Items</div>
               </div>
             </div>
+            <div class="subscriptions-item-counter-mobile">3 Items</div>
             <div class="table-wrapper">
               <div class="documents-table documents-table-scroll">
                 <div class="documents-table-header">
@@ -583,7 +639,7 @@
               Here you can manage your private documents
             </div>
             <div class="subscriptions-table-controls">
-              <div class="subscriptions-table-container">
+              <div class="subscriptions-table-container subscriptions-private">
                 <div class="subscriptions-search-bar-container">
                   <button class="subscriptions-search-bar-button">
                     <img
@@ -599,7 +655,7 @@
                 </div>
                 <div class="subscriptions-item-counter">3 Items</div>
               </div>
-              <div class="subscriptions-table-container">
+              <div class="subscriptions-table-container private-container">
                 <input
                   class="form-control subscriptions-datepicker"
                   type="date"
@@ -610,6 +666,7 @@
                 </button>
               </div>
             </div>
+            <div class="subscriptions-item-counter-mobile">3 Items</div>
             <div class="documents-table">
               <div class="documents-table-header">
                 <div class="table-header-name">Name</div>
@@ -777,8 +834,8 @@
           </div>
           <div class="settings-nav-mobile">
             <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown-button">
+              <div class="dropdown-settings">
+                <button class="dropdown-button-settings">
                   <div class="nav-list-item nav-list-item-mobile">
                     <img
                       src="../../assets/images/verification.svg"
@@ -787,8 +844,8 @@
                     <div class="active-settings-tab">Account</div>
                   </div>
                 </button>
-                <ul class="dropdown-list profile-mobile">
-                  <li class="dropdown-list-item" data-value="account">
+                <ul class="dropdown-list-settings profile-mobile">
+                  <li class="dropdown-list-item-settings" data-value="account">
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/verification.svg"
@@ -797,7 +854,10 @@
                       <div class="active-settings-tab">Account</div>
                     </div>
                   </li>
-                  <li class="dropdown-list-item" data-value="changePassword">
+                  <li
+                    class="dropdown-list-item-settings"
+                    data-value="changePassword"
+                  >
                     <div class="nav-list-item nav-list-item-mobile">
                       <img
                         src="../../assets/images/lock-grey.svg"
@@ -811,7 +871,7 @@
                   type="text"
                   name="select-category"
                   value=""
-                  class="dropdown-input-hidden"
+                  class="dropdown-input-hidden-settings"
                 />
               </div>
             </div>
@@ -1013,13 +1073,15 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/handleBurgerMenu.js"></script>
     <script src="../../utils/handleDropdown.js"></script>
+    <script src="../../utils/ex.js"></script>
     <script src="../../utils/accountTabsHandler.js"></script>
     <script src="../../utils/modalWindow.js"></script>
     <script src="../../utils/modalRadioButtonshandler.js"></script>
     <script src="../../utils/settingsTabHandler.js"></script>
-    <script src="../../utils/documentsTabhandler.js"></script>
     <script src="../../utils/uploadImage.js"></script>
+    <script src="../../utils/singleSelect.js"></script>
   </div>
 </html>
