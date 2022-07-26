@@ -4,7 +4,7 @@ const userMenu = document.querySelector('.user-menu');
 const userMenuMobile = document.querySelector('.user-menu-mobile');
 const dropdownArrow = document.querySelector('#dropdown-arrow');
 const userName = document.querySelector('.user-name');
-const userIcon = document.querySelector('.user-icon');
+const userIcon = document.querySelector('.person-icon');
 const userIconMobile = document.querySelector('.user-icon-mobile');
 
 userMenu.addEventListener('mouseover', () => {
