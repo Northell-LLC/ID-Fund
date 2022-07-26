@@ -1509,13 +1509,12 @@ details[open] summary:before {
 summary:after {
   content: "";
   display: inline-block;
-  float: right;
   width: 0.5rem;
   height: 0.5rem;
   border-bottom: 1px solid currentColor;
   border-left: 1px solid currentColor;
   border-bottom-left-radius: 2px;
-  transform: rotate(45deg) translate(50%, 0%);
+  transform: rotate(-45deg) translate(50%, 0%);
   transform-origin: center center;
   transition: transform ease-in-out 100ms;
 }
@@ -1525,7 +1524,7 @@ summary:focus {
 }
 
 details[open] summary:after {
-  transform: rotate(-45deg) translate(0%, 0%);
+  transform: rotate(135deg) translate(0%, 0%);
 }
 
 details ul {
@@ -2575,8 +2574,8 @@ label span {
   color: #848899;
   font-weight: 600;
 }
+
 .row-name {
-  width: 186px;
   display: flex;
 }
 
@@ -2966,6 +2965,10 @@ label span {
   overflow: hidden;
 }
 
+.table-header-item-long span {
+  width: 80px;
+}
+
 .modal-wrapper {
   position: fixed;
   left: 0;
@@ -3128,6 +3131,7 @@ label span {
 
 .account-body {
   background: #f7f8fa;
+  min-height: 100vh;
 }
 .portfolio-body {
   background: #f7f8fa;
@@ -3841,8 +3845,8 @@ label span {
 @media (max-width: 690px) {
   .modal-address {
     width: 375px;
-    max-height: 620px;
-    margin: -300px 0 0 -185px;
+    height: 620px;
+    margin: -300px 0 0 -188px;
     padding: 12px;
   }
   .form-city-block {
@@ -3863,8 +3867,7 @@ label span {
   }
 }
 @media (max-width: 500px) {
-  .settings-main,
-  .subscriptions-main {
+  .settings-main {
     padding: 15px 10px;
   }
   .change-password-main {
@@ -4051,15 +4054,20 @@ th {
 .row-name {
   flex: 1;
 }
+
+.invis-table-header {
+  width: 70px;
+}
+
 .portfolio-table div {
   flex: 1;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #00073a;
-  height: 54px;
+  /* height: 54px; */
   align-items: center;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 .documents-table th:nth-child(4),
 .documents-table th:nth-child(5) {
@@ -4637,6 +4645,16 @@ th {
   color: #021b79;
 }
 
+.form-field-date {
+  position: relative;
+}
+
+.calendar-button {
+  position: absolute;
+  bottom: 17px;
+  right: 15px;
+}
+
 .upload-doc-button {
   display: flex;
   justify-content: space-between;
@@ -4661,10 +4679,10 @@ th {
 .documents-table-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #f7f8fa;
   border-radius: 10px;
   padding: 16px 20px;
-  padding-bottom: 0;
   height: 54px;
 }
 
@@ -4706,7 +4724,12 @@ th {
 .documents-table-body {
   display: flex;
   align-items: center;
+  margin: 16px 20px 10px 20px;
   margin: 5px 20px;
+}
+
+.documents-table-body img {
+  margin: 5px 20px 5px 0;
 }
 
 .documents-table-name {
@@ -4725,7 +4748,7 @@ th {
 .documents-table-company,
 .documents-table-breakdowns,
 .documents-table-amount {
-  width: 244px;
+  /* width: 244px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -4749,6 +4772,10 @@ th {
 
 .documents-table-date {
   width: 160px;
+}
+
+.table-date-private {
+  min-width: 95px;
 }
 
 .documents-table-size {
@@ -4806,6 +4833,14 @@ th {
 
 .pagination-button-right {
   transform: rotate(180deg);
+}
+
+.portfolio-table {
+  margin: 12px 20px;
+}
+
+.table-size-private {
+  width: 100px;
 }
 
 @media (max-width: 1176px) {
@@ -4894,11 +4929,8 @@ th {
   .subscriptions-table-container {
     flex-direction: column;
     align-items: flex-end;
-  }
-  .subscriptions-table-container {
     width: 100%;
   }
-
   .subscriptions-search-bar {
     width: 100%;
     margin: 0 0 16px 0;
@@ -4945,6 +4977,15 @@ th {
   }
 }
 @media (max-width: 670px) {
+  .settings-main,
+  .subscriptions-main,
+  .confirms-main,
+  .statements-main,
+  .k-docs-main,
+  .miscell-main,
+  .private-main {
+    padding: 15px;
+  }
   .documents-table-scroll {
     white-space: nowrap;
     overflow-x: auto;
