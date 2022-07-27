@@ -1,7 +1,9 @@
 const settingsAccButtton = document.querySelector("#settings-acc-button");
+const settingsAccButtonMobile = document.querySelector("#settings-acc-button-mobile");
 const settingsPasswordButton = document.querySelector(
   "#settings-password-button"
 );
+const settingsPasswordButtonMobile = document.querySelector("#settings-password-button-mobile")
 const settingsMain = document.querySelector(".settings-main");
 const changePasswordMain = document.querySelector(".change-password-main");
 
@@ -13,11 +15,17 @@ function selectAccountTab() {
   settingsPasswordButton.lastElementChild.classList.remove(
     "active-settings-tab"
   );
+  settingsPasswordButtonMobile.lastElementChild.classList.remove("active-settings-tab");
+  settingsAccButtonMobile.lastElementChild.classList.add("active-settings-tab");
 
   settingsAccButtton.firstElementChild.src =
     "../../assets/images/verification.svg";
   settingsPasswordButton.firstElementChild.src =
     "../../assets/images/lock-grey.svg";
+  settingsPasswordButtonMobile.firstElementChild.src =
+    "../../assets/images/lock-grey.svg";
+  settingsAccButtonMobile.firstElementChild.src =
+    "../../assets/images/verification.svg";
 }
 
 function selectSettingsPasswordTab() {
@@ -25,12 +33,18 @@ function selectSettingsPasswordTab() {
   settingsMain.classList.add("settings-tab-hidden");
 
   settingsPasswordButton.lastElementChild.classList.add("active-settings-tab");
+  settingsPasswordButtonMobile.lastElementChild.classList.add("active-settings-tab");
   settingsAccButtton.lastElementChild.classList.remove("active-settings-tab");
+  settingsAccButtonMobile.lastElementChild.classList.remove("active-settings-tab");
 
   settingsPasswordButton.firstElementChild.src =
     "../../assets/images/lock-blue.svg";
   settingsAccButtton.firstElementChild.src =
     "../../assets/images/verification-grey.svg";
+  settingsPasswordButtonMobile.firstElementChild.src =
+    "../../assets/images/lock-blue.svg";
+  settingsAccButtonMobile.firstElementChild.src =
+  "../../assets/images/verification-grey.svg";
 }
 
 settingsAccButtton.addEventListener("click", () => {
@@ -66,8 +80,12 @@ document.querySelectorAll(".dropdown-settings").forEach((dropDownWrapper) => {
       dropDownInput.value = this.dataset.value;
       if (dropDownInput.value === "account") {
         selectAccountTab();
+        dropDownBtn.lastElementChild.lastElementChild.classList.add("active-settings-tab");
+        dropDownBtn.firstElementChild.firstElementChild.src = "../../assets/images/verification.svg";
       } else if (dropDownInput.value === "changePassword") {
         selectSettingsPasswordTab();
+        dropDownBtn.lastElementChild.lastElementChild.classList.add("active-settings-tab");
+        dropDownBtn.firstElementChild.firstElementChild.src = "../../assets/images/lock-blue.svg";
       }
       dropDownList.classList.remove("dropdown-list-visible-settings");
     });

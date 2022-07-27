@@ -282,10 +282,10 @@
                 id="documents-subscriptions-button"
               >
                 <img
-                  src="../../assets/images/subcr-grey.svg"
+                  src="../../assets/images/subs-icon.svg"
                   alt="account-img"
                 />
-                <div class="">Subscriptions (3)</div>
+                <div class="active-documents-tab">Subscriptions (3)</div>
               </button>
               <button
                 class="documents-nav-list-item"
@@ -345,24 +345,24 @@
                 <button class="dropdown-button">
                   <div class="nav-list-item nav-list-item-mobile">
                     <img
-                      src="../../assets/images/verification.svg"
+                      src="../../assets/images/subs-icon.svg"
                       alt="account-img"
                     />
-                    <div class="active-documents-tab">Subscriptions(3)</div>
+                    <div class="active-documents-tab">Subscriptions (3)</div>
                   </div>
                 </button>
                 <ul class="dropdown-list profile-mobile">
                   <li class="dropdown-list-item" data-value="subscriptions">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-subs-button-mobile">
                       <img
-                        src="../../assets/images/subcr-grey.svg"
+                        src="../../assets/images/subs-icon.svg"
                         alt="account-img"
                       />
-                      <div>Subscription(3)</div>
+                      <div class="active-documents-tab">Subscriptions (3)</div>
                     </div>
                   </li>
                   <li class="dropdown-list-item" data-value="confirms">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-confirms-button-mobile">
                       <img
                         src="../../assets/images/confirms-gray-icon.svg"
                         alt="lock-grey-img"
@@ -371,7 +371,7 @@
                     </div>
                   </li>
                   <li class="dropdown-list-item" data-value="statements">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-statements-button-mobile">
                       <img
                         src="../../assets/images/statements-gray-icon.svg"
                         alt="lock-grey-img"
@@ -380,7 +380,7 @@
                     </div>
                   </li>
                   <li class="dropdown-list-item" data-value="k-1">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-kdoc-button-mobile">
                       <img
                         src="../../assets/images/k-docs-gray-icon.svg"
                         alt="lock-grey-img"
@@ -389,7 +389,7 @@
                     </div>
                   </li>
                   <li class="dropdown-list-item" data-value="miscellaneous">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-miscell-button-mobile">
                       <img
                         src="../../assets/images/miscell-gray-icon.svg"
                         alt="lock-grey-img"
@@ -398,12 +398,12 @@
                     </div>
                   </li>
                   <li class="dropdown-list-item" data-value="private">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="documents-private-button-mobile">
                       <img
                         src="../../assets/images/private-gray-icon.svg"
                         alt="lock-grey-img"
                       />
-                      <div class="">Private(3)</div>
+                      <div class="">Private (3)</div>
                     </div>
                   </li>
                 </ul>
@@ -846,19 +846,19 @@
                 </button>
                 <ul class="dropdown-list-settings profile-mobile">
                   <li class="dropdown-list-item-settings" data-value="account">
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <button class="nav-list-item nav-list-item-mobile" id="settings-acc-button-mobile">
                       <img
                         src="../../assets/images/verification.svg"
                         alt="account-img"
                       />
                       <div class="active-settings-tab">Account</div>
-                    </div>
+                    </button>
                   </li>
                   <li
-                    class="dropdown-list-item-settings"
+                    class="dropdown-list-item-settings" data-value="changePassword"
                     data-value="changePassword"
                   >
-                    <div class="nav-list-item nav-list-item-mobile">
+                    <div class="nav-list-item nav-list-item-mobile" id="settings-password-button-mobile">
                       <img
                         src="../../assets/images/lock-grey.svg"
                         alt="lock-grey-img"
