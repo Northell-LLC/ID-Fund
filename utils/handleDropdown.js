@@ -18,19 +18,19 @@ userMenu.addEventListener('mouseout', () => {
     userDropdown.classList.remove('show-user-dropdown');
     userName.classList.remove('user-name-active');
     dropdownArrow.src = '../../assets/images/arrow-down.svg';
-    userIcon.src = '../../assets/images/person.svg';
+    // userIcon.src = '../../assets/images/person.svg';
 });
 
 userMenuMobile.addEventListener('mouseover', () => {
     userDropdownMobile.classList.add('show-user-dropdown');
     dropdownArrow.classList.add('dropdown-arrow-rotate');
-    userIconMobile.src = '../../assets/images/person-active.svg';
+    // userIconMobile.src = '../../assets/images/person-active.svg';
 });
 
 userMenuMobile.addEventListener('mouseout', () => {
     userDropdownMobile.classList.remove('show-user-dropdown');
     dropdownArrow.classList.remove('dropdown-arrow-rotate');
-    userIconMobile.src = '../../assets/images/person.svg';
+    // userIconMobile.src = '../../assets/images/person.svg';
 });
 
 userDropdown.addEventListener('mouseout', () => {
