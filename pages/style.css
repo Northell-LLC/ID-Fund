@@ -993,9 +993,6 @@ input::-webkit-inner-spin-button {
   .last-investments-mobile {
     display: none;
   }
-  .user-menu-mobile .person {
-    display: none;
-  }
   .registration .confirm-number-form {
     grid-gap: 10px;
   }
@@ -1361,11 +1358,6 @@ input::-webkit-inner-spin-button {
 
 .user-menu {
   position: relative;
-}
-
-.user-menu-mobile .person {
-  position: relative;
-  display: block;
 }
 
 .dropdown-arrow-rotate {
@@ -5114,6 +5106,16 @@ th {
   }
   .img-settings-block {
     display: none;
+  }
+}
+
+.user-menu-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .user-menu-mobile {
+    display: block;
   }
 }
 
