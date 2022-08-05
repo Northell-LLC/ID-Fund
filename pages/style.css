@@ -3170,6 +3170,9 @@ label span {
 .open-deals-tab {
   display: none;
 }
+.completed-deals-tab {
+  display: none;
+}
 
 .show-tab {
   display: block;
@@ -4079,6 +4082,7 @@ th {
   gap: 16px;
 }
 .open-deals-tab .subscriptions-table-container,
+.completed-deals-tab .subscriptions-table-container,
 .external-deals-tab .subscriptions-table-container {
   margin-top: 24px;
   justify-content: stretch;

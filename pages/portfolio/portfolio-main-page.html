@@ -74,6 +74,10 @@
                 <a class="nav-link" href="#">My Documents</a>
               </li>
               <hr class="navbar-mobile-line" />
+              <li class="nav-item mobile-list-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <hr class="navbar-mobile-line" />
             </ul>
             <div class="my-2 my-lg-0 user-menu user-menu-visible">
               <div class="btn my-2 my-sm-0" id="show-dropdown">
@@ -232,9 +236,6 @@
             <button class="select-item" id="completed-deals-tab-button">
               Completed Deals
             </button>
-            <button class="select-item" id="external-deals-tab-button">
-              External Deals
-            </button>
           </div>
           <hr class="hr" />
           <div class="open-deals-tab show-tab">
@@ -257,10 +258,9 @@
                 style="margin-top: -13px"
                 class="subscriptions-item-counter-mobile"
               >
-                3 Items
+                5 Items
               </div>
             </div>
-            <!-- <div class="table-wrapper"> -->
             <table
               style="display: flex; flex-direction: column"
               class="documents-table documents-table-scroll"
@@ -278,15 +278,6 @@
                   </th>
                   <th>Deal</th>
                   <th>Company</th>
-                  <th>
-                    Investment Breakdown
-                    <div class="table-sorters">
-                      <img
-                        src="../../assets/images/table-sorter.svg"
-                        alt="table-sorter-img"
-                      />
-                    </div>
-                  </th>
                   <th style="padding-right: 20px">
                     Investment Amount
                     <div class="table-sorters">
@@ -304,7 +295,6 @@
                   <td>Credit Sesame</td>
                   <td>Sesame</td>
                   <td>$100,000.00</td>
-                  <td>$100,000.00</td>
                 </tr>
 
                 <tr class="documents-table-body">
@@ -312,13 +302,11 @@
                   <td>Credit Sesame</td>
                   <td>Sesame</td>
                   <td>$100,000.00</td>
-                  <td>$100,000.00</td>
                 </tr>
                 <tr class="documents-table-body">
                   <td>18.04.2022</td>
                   <td>Credit Sesame</td>
                   <td>Sesame</td>
-                  <td>$100,000.00</td>
                   <td>$100,000.00</td>
                 </tr>
 
@@ -326,19 +314,14 @@
                   <td>18.04.2022</td>
                   <td>Credit Sesame</td>
                   <td>Sesame</td>
-                  <td>$100,000.00</td>
                   <td>$100,000.00</td>
                 </tr>
               </tbody>
             </table>
-            <!-- </div> -->
           </div>
-          <div class="external-deals-tab">
+          <div class="completed-deals-tab">
             <div class="subscriptions-table-container">
-              <div
-                style="margin-bottom: 0"
-                class="subscriptions-search-bar-container portfolio-search"
-              >
+              <div class="subscriptions-search-bar-container portfolio-search">
                 <button class="subscriptions-search-bar-button">
                   <img
                     src="../../assets/images/search-icon.svg"
@@ -351,26 +334,21 @@
                   class="subscriptions-search-bar"
                 />
               </div>
-              <div class="subscriptions-item-counter">5 Items</div>
+              <div class="subscriptions-item-counter">6 Items</div>
               <div
                 style="margin-top: -13px"
                 class="subscriptions-item-counter-mobile"
               >
-                3 Items
-              </div>
-              <div class="button-add-investment">
-                <button
-                  class="upload-doc-button open-modal-button open-address-modal-button"
-                >
-                  <img src="../../assets/images/plus-icon.svg" alt="plus-img" />
-                  Add Investment
-                </button>
+                6 Items
               </div>
             </div>
-            <div class="table-wrapper">
-              <div class="documents-table documents-table-scroll">
-                <div class="documents-table-header">
-                  <div class="table-header-item row-name">
+            <table
+              style="display: flex; flex-direction: column"
+              class="documents-table documents-table-scroll"
+            >
+              <thead style="padding: 0" class="documents-table-header">
+                <tr style="min-width: 100%" class="table-header-item">
+                  <th style="padding-left: 20px">
                     Date
                     <div class="table-sorters">
                       <img
@@ -378,183 +356,53 @@
                         alt="table-sorter-img"
                       />
                     </div>
-                  </div>
-
-                  <div class="table-header-item row-name">Company</div>
-                  <div class="table-header-item row-name">Symbol</div>
-                  <div class="table-header-item row-name">
-                    Type
+                  </th>
+                  <th>Deal</th>
+                  <th>Company</th>
+                  <th style="padding-right: 20px">
+                    Investment Amount
                     <div class="table-sorters">
                       <img
                         src="../../assets/images/table-sorter.svg"
                         alt="table-sorter-img"
                       />
                     </div>
-                  </div>
-                  <div class="table-header-item row-name">
-                    Shares
-                    <div class="table-sorters">
-                      <img
-                        src="../../assets/images/table-sorter.svg"
-                        alt="table-sorter-img"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="table-header-item row-name">
-                    Price Paid
-                    <div class="table-sorters">
-                      <img
-                        src="../../assets/images/table-sorter.svg"
-                        alt="table-sorter-img"
-                      />
-                    </div>
-                  </div>
-                  <div class="table-header-item table-header-item-long row-name">
-                    <span>Investment Amount</span>
-                    <div class="table-sorters">
-                      <img
-                        src="../../assets/images/table-sorter.svg"
-                        alt="table-sorter-img"
-                      />
-                    </div>
-                  </div>
-                  <div class="table-header-item invis-table-header"></div>
-                </div>
-                <div class="documents-table-body portfolio-table">
-                  <div class="documents-table-dates">
-                    <span>18.04.2022</span>
-                  </div>
-                  <div class="documents-table-deal">
-                    Dow Jones Indus…
-                  </div>
-                  <div class="documents-table-company">
-                    INDU:IND
-                  </div>
-                  <div class="documents-table-breakdowns">
-                    Stocks
-                  </div>
-                  <div class="documents-table-amount">
-                    3
-                  </div>
-                  <div class="documents-table-amount">
-                    $100,000.00
-                  </div>
-                  <div class="documents-table-amount">
-                    $100,000.00
-                  </div>
-                  <img src="../../assets/images/edit.svg" alt="edit" />
-                  <img src="../../assets/images/trash.svg" alt="delete" />
-                </div>
-                <hr class="hr">
-              </div>
-
-              <div class="modal-wrapper modal-address-wrapper">
-                <div class="modal modal-address">
-                  <div class="edit-address-title">Add Investment</div>
-                  <form class="edit-address-form">
-                    <div class="form-field">
-                      <div class="form-field">
-                        <div class="form-label">Company</div>
-                        <input
-                          type="text"
-                          class="number-input address-form-input"
-                          placeholder="Enter Company Name"
-                        />
-                      </div>
-                      <div class="form-field">
-                        <div class="form-label">
-                          Symbol
-                          <img
-                            src="../../assets/images/info.svg"
-                            alt="id-logo"
-                          />
-                        </div>
-                        <input
-                          type="text"
-                          class="number-input address-form-input"
-                          placeholder="Enter Company Sympol (Optional)"
-                        />
-                      </div>
-
-                      <div class="form-field">
-                        <div class="form-label">Investment Type</div>
-                        <select
-                          class="form-select edit-address-select"
-                          aria-label="Select Type"
-                        >
-                          <option value="1" selected>1 Type</option>
-                          <option value="2">2 Type</option>
-                          <option value="3">3 Type</option>
-                        </select>
-                      </div>
-                      <div class="form-field">
-                        <div class="form-label">Investment Amount</div>
-                        <input
-                          type="text"
-                          class="number-input address-form-input"
-                          placeholder="$ 0.00"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="form-city-block">
-                      <div class="form-field">
-                        <div class="form-label">
-                          Share Price
-                          <img
-                            src="../../assets/images/info.svg"
-                            alt="id-logo"
-                          />
-                        </div>
-                        <input
-                          type="text"
-                          class="number-input address-form-input"
-                          placeholder="$ 0.00"
-                        />
-                      </div>
-                      <div class="form-field">
-                        <div class="form-label">
-                          Number of Shares
-                          <img
-                            src="../../assets/images/info.svg"
-                            alt="id-logo"
-                          />
-                        </div>
-                        <input
-                          type="text"
-                          class="number-input address-form-input"
-                          placeholder="$ 0.00"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-field form-field-date">
-                      <div class="form-label">Date</div>
-                      <button class="calendar-button">
-                        <img src="../../assets/images/calendar.svg" alt="search-icon">
-                      </button>
-                      <input
-                        type="text"
-                        class="number-input address-form-input"
-                        placeholder="DD.MM.YYYY"
-                      />
-                    </div>
-                    <div class="address-form-buttons-block investment-modal">
-                      <button
-                        class="modal-cancel-button modal-address-cancel-button"
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        class="form-save-changes save-inve-changes add-investment"
-                      >
-                        Add Investment
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                </tr>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                </tr>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                </tr>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                </tr>
+                <tr class="documents-table-body">
+                  <td>18.04.2022</td>
+                  <td>Credit Sesame</td>
+                  <td>Sesame</td>
+                  <td>$100,000.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
